@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%#= stylesheet_link_tag "home", "data-turbo-track": "reload" %>
+    <%#= stylesheet_link_tag "categories", "data-turbo-track": "reload" %>
+    <%#= stylesheet_link_tag "tag", "data-turbo-track": "reload" %>
+    <%#= stylesheet_link_tag "about", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+
+  </head>
+
+
+  <nav>
+    <!--  <button class="home"onclick="location.href='/'"><span>Home</span></button>-->
+    <button><span><%= link_to "", root_path%>Home</span></button>
+    <%#= link_to "home", root_path %>
+
+    <button><span><%=link_to "", "#" %>Category</span></button>
+    <button><span><%=link_to "", "#" %>Tag</span></button>
+    <button><span><%=link_to "", "#" %>Archive</span></button>
+
+    <form method="get" action="#">
+      <input type="text" class="search">
+      <button type="submit" onclick="location.href='#'"><span class="material-symbols-outlined">search</span></button>
+    </form>
+  </nav>
+
+
+  <body>
+  <%= render 'layouts/nav' %>
+  <%= render 'layouts/main' %>
+  <header>  <p>Shin.Han   -   Blog. </p> </header>
+  <!-- //임시 -->
+  <div class="rows">
+    <p> 1<br>2 <br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10
+      <br>11<br>12<br>13<br>14<br>15<br>16<br><br>17<br><br>18<br>19<br>20
+      <br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>28<br>29<br>30 </p>
+    <div class="line_container" id="line_container"></div>
+  </div>
+  <!-- //임시 -->
+  <main>
+
+
+    </main>
+
+  <script>
+      const container = document.getElementById('line_container');
+      const Lines = 9;
+
+
+      for (let i = 1; i < Lines; i++) {
+          const line = document.createElement('div');
+          line.style.height = `calc(86vh - ${i*10}vh`; // height
+          line.style.marginTop = `calc(10px + ${4.9*10*i}px)`; // margin-top
+          line.style.marginLeft = `calc(0px + ${1}vw)`; // fallfrom left
+          line.style.width = '1px';
+          container.appendChild(line);
+      }
+  </script>
+    <%= yield %>
+  </body>
+</html>
