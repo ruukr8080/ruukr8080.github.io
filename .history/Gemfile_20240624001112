@@ -5,7 +5,6 @@ source "https://rubygems.org"
 gem 'csv'
 gem 'base64'
 gem 'tzinfo'
-gem 'tzinfo-data'
 
 gem "jekyll-theme-chirpy", "~> 7.0", ">= 7.0.1"
 gem 'jekyll-compose', group: [:jekyll_plugins]
