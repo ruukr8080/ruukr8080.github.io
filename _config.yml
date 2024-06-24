@@ -48,7 +48,7 @@ analytics:
 pageviews:
   provider: goatcounter
 
-theme_mode: dark
+theme_mode: light
 cdn:
   avatar: https://avatars.githubusercontent.com/u/131014787?v=4
   social_preview_image:
