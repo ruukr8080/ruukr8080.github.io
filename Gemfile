@@ -18,8 +18,12 @@ gem 'jekyll-avatar', '~> 0.8.0'
 gem 'jekyll-commonmark', '~> 1.4'
 gem 'jekyll-octicons', '~> 19.8' #A jekyll liquid plugin that makes including svg Octicons simple.
 gem 'jekyll-default-layout', '~> 0.1.5'
+gem 'sass', '~> 3.7', '>= 3.7.4'
 
-gem 'jekyll-compose', group: [:jekyll_plugins]
+group :jekyll_plugins do
+  gem 'jekyll-compose'
+end
+
 group :test do
-  gem "html-proofer", "~> 5.0"
+  gem 'html-proofer', '~> 5.0'
 end
