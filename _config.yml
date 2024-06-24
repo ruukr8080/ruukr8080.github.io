@@ -6,9 +6,12 @@ title: SHIN HAN
 tagline: 개발 블로그
 description: >
   ruukr8080의 개발블로그
+avatar: https://avatars.githubusercontent.com/u/131014787?v=4&size=64
 
 # Site Author
 author:
+  avatar: https://avatars.githubusercontent.com/u/131014787?v=4&size=64
+
   name: "Shin Han"
   email: ruukr8080@gmail.com
   url: "https://ruukr8080.github.io"
@@ -50,8 +53,8 @@ pageviews:
 
 theme_mode: light
 cdn:
-  avatar: assets/avatar/avatar.png
-  social_preview_image: assets/avatar/avatar.png
+  avatar: https://avatars.githubusercontent.com/u/131014787?v=4&size=64
+  social_preview_image: https://avatars.githubusercontent.com/u/131014787?v=4&size=64
 
 
 
