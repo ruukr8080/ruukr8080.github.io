@@ -56,11 +56,11 @@ cdn:
 comments:
   provider: giscus
   giscus:
-    repo: ruukr8080/ruukr8080.github.io
-    repo_id: ruukr8080.github.io
+    repo: ruukr8080/comments
+    repo_id: comments
     category: General
     category_id: 
-    mapping: https://github.com/ruukr8080/ruukr8080.github.io/discussions/4
+    mapping: Comments/5
     strict: 0
     input_position: bottom
     lang: ko
