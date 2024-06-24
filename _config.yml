@@ -1,14 +1,14 @@
-
 # 기본 설정
 theme: jekyll-theme-chirpy
-lang: ko-KR   # 상단 주소 확인
+lang: ko-KR
 timezone: Asia/Seoul
-title: SHIN HAN # the main title
-tagline: 개발 블로그 # it will display as the sub-title
-description: >- # used by seo meta and the atom feed
- ruukr8080의 개발블로그
+title: SHIN HAN
+tagline: 개발 블로그
+description: >
+  ruukr8080의 개발블로그
+
 # Site Author
-author: 
+author:
   name: "Shin Han"
   email: ruukr8080@gmail.com
   url: "https://ruukr8080.github.io"
@@ -19,98 +19,78 @@ author:
       url: https://toast1ng.tistory.com/
     links:
       - https://github.com/ruukr8080
-    - https://github.com/ruukr8080 # change to your github homepage
-    # - https://www.linkedin.com/in/username
+      - https://github.com/ruukr8080
 
 webmaster_verifications:
-  google: # fill in your Google verification code
-  bing: # fill in your Bing verification code
-  alexa: # fill in your Alexa verification code
-  yandex: # fill in your Yandex verification code
-  baidu: # fill in your Baidu verification code
-  facebook: # fill in your Facebook verification code
-
-# ↑ --------------------------
-# The end of `jekyll-seo-tag` settings
+  google: YOUR_GOOGLE_VERIFICATION_CODE
+  bing: YOUR_BING_VERIFICATION_CODE
+  alexa: YOUR_ALEXA_VERIFICATION_CODE
+  yandex: YOUR_YANDEX_VERIFICATION_CODE
+  baidu: YOUR_BAIDU_VERIFICATION_CODE
+  facebook: YOUR_FACEBOOK_VERIFICATION_CODE
 
 # Web Analytics Settings
 analytics:
   google:
-    id: # fill in your Google Analytics ID
+    id: YOUR_GOOGLE_ANALYTICS_ID
   goatcounter:
-    id: # fill in your GoatCounter ID
+    id: YOUR_GOATCOUNTER_ID
   umami:
-    id: # fill in your Umami ID
-    domain: # fill in your Umami domain
+    id: YOUR_UMAMI_ID
+    domain: YOUR_UMAMI_DOMAIN
   matomo:
-    id: # fill in your Matomo ID
-    domain: # fill in your Matomo domain
+    id: YOUR_MATOMO_ID
+    domain: YOUR_MATOMO_DOMAIN
   cloudflare:
-    id: # fill in your Cloudflare Web Analytics token
+    id: YOUR_CLOUDFLARE_ANALYTICS_TOKEN
 
 # Pageviews settings
 pageviews:
-  provider: goatcounter  # now only supports 'goatcounter'
+  provider: goatcounter
 
-theme_mode: dark # [light | dark]
+theme_mode: dark
 cdn:
-avatar: https://avatars.githubusercontent.com/u/131014787?v=4
-social_preview_image: # string, local or CORS resources
-toc: true
+  avatar: https://avatars.githubusercontent.com/u/131014787?v=4
+  social_preview_image:
 
 comments:
-  # Global switch for the post comment system. Keeping it empty means disabled.
-  provider: giscus # [disqus | utterances | giscus]
-  # The provider options are as follows:
-  disqus:
-    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-  # utterances settings › https://utteranc.es/
-  utterances:
-    repo: ruukr8080/ruukr8080.github.io # <gh-username>/<repo>
-    issue_term: # < url | pathname | title | ...>
-  # Giscus options › https://giscus.app
+  provider: giscus
   giscus:
-    repo: ruukr8080/ruukr8080.github.io.git # <gh-username>/<repo>
-    repo_id: ruukr8080
+    repo: ruukr8080/ruukr8080.github.io
+    repo_id: YOUR_REPO_ID
     category: General
-    category_id: ruukr8080
-    mapping: # optional, default to 'pathname'
-    strict: 0 # optional, default to '0'
-    input_position: bottom # optional, default to 'bottom'
-    lang: ko# optional, default to the value of `site.lang`
-    reactions_enabled: 1# optional, default to the value of `1`
+    category_id: YOUR_CATEGORY_ID
+    mapping: pathname
+    strict: 0
+    input_position: bottom
+    lang: ko
+    reactions_enabled: 1
 
-# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
   self_host:
-    enabled: # boolean, keep empty means false
-    # specify the Jekyll environment, empty means both
-    # only works if `assets.self_host.enabled` is 'true'
-    env: # [development | production]
+    enabled:
+    env:
 
 pwa:
-  enabled: true # the option for PWA feature (installable)
+  enabled: true
   cache:
-    enabled: true # the option for PWA offline cache
-    # Paths defined here will be excluded from the PWA cache.
-    # Usually its value is the `baseurl` of another website that
-    # shares the same domain name as the current website.
+    enabled: true
     deny_paths:
-      # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
 paginate: 10
 
-# The base URL of your site
 baseurl: ""
 repository: "https://github.com/ruukr8080/ruukr8080.github.io"
-# ------------ The following options are not recommended to be modified ------------------
+
+# 추가적인 설정들...
+
+# The following options are not recommended to be modified ------------------
 
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
   syntax_highlighter: rouge
-  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
+  syntax_highlighter_opts:
     css_class: highlight
-    # default_lang: console
     span:
       line_numbers: false
     block:
@@ -124,14 +104,12 @@ collections:
 
 defaults:
   - scope:
-      path: "" # An empty string here means all files in the project
+      path: ""
       type: posts
     values:
       layout: post
-      comments: true # Enable comments in posts.
-      toc: true # Display TOC column in posts.
-      # DO NOT modify the following parameter unless you are confident enough
-      # to update the code of all other post links in this project.
+      comments: true
+      toc: true
       permalink: /posts/:title/
   - scope:
       path: _drafts
@@ -139,7 +117,7 @@ defaults:
       comments: false
   - scope:
       path: ""
-      type: tabs # see `site.collections`
+      type: tabs
     values:
       layout: page
       permalink: /:title/
@@ -161,12 +139,8 @@ compress_html:
     envs: [development]
 
 exclude:
-  # - "*.gem"
-  # - "*.gemspec"
   - docs
   - tools
-  # - README.md
-  # - LICENSE
   - "*.config.js"
   - package*.json
 
@@ -178,4 +152,3 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
-
