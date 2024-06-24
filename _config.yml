@@ -53,18 +53,7 @@ cdn:
   avatar: https://avatars.githubusercontent.com/u/131014787?v=4
   social_preview_image:
 
-comments:
-  provider: giscus
-  giscus:
-    repo: ruukr8080/ruukr8080.github.io
-    repo_id:
-    category:
-    category_id: 
-    mapping: comments/6
-    strict: 0
-    input_position: bottom
-    lang: 
-    reactions_enabled: 1
+
 
 assets:
   self_host:
@@ -102,30 +91,57 @@ collections:
     output: true
     sort_by: order
 
+comments:
+  active: giscus
+  # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  # The active options are as follows:
+  disqus:
+    shortname: ...
+  utterances:
+    repo: ...
+  giscus:
+    repo: ruukr8080/ruukr8080.github.io
+    repo_id: R_kgDOMLRatg
+    category: Announcements
+    category_id: DIC_kwDOMLRats4CgVMI
+
 # _posts settings
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      comments: true
-      toc: true
-      permalink: /posts/:title/
-  - scope:
-      path: _drafts
-    values:
-      comments: false
-  - scope:
-      path: ""
-      type: tabs
-    values:
-      layout: page
-      permalink: /:title/
-  - scope:
-      path: assets/js/dist
-    values:
-      swcache: true
+jekyll_compose:
+  default_front_matter:
+    posts:
+      description:
+      image:
+        path:
+        alt:
+      category: []
+      tags: []
+      pin: false
+      math: true
+      mermaid: true
+
+# defaults:
+#   - scope:
+#       path: ""
+#       type: posts
+#     values:
+#       layout: post
+#       comments: true
+#       toc: true
+#       permalink: /posts/:title/
+#   - scope:
+#       path: _drafts
+#     values:
+#       comments: false
+#   - scope:
+#       path: ""
+#       type: tabs
+#     values:
+#       layout: page
+#       permalink: /:title/
+#   - scope:
+#       path: assets/js/dist
+#     values:
+#       swcache: true
 
 sass:
   style: compressed
