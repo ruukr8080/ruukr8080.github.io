@@ -35,3 +35,26 @@ Thymeleaf에서는 값을 표현하는 방법이 5가지다.
 - `th:case` : Switch-case 문이 필요할 때 사용.
 
 ---
+
+
+
+
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="ruukr8080/ruukr8080.github.io"
+        data-repo-id="R_kgDOMLRatg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOMLRats4CgVMI"
+        data-mapping="og:title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="top"
+        data-theme="noborder_light"
+        data-lang="ko"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</s...
+

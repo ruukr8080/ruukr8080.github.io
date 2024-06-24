@@ -50,8 +50,8 @@ pageviews:
 
 theme_mode: light
 cdn:
-  avatar: assets/avatar/avatar.jpg
-  social_preview_image: assets/avatar/avatar.jpg
+  avatar: assets/avatar/avatar.png
+  social_preview_image: assets/avatar/avatar.png
 
 
 
@@ -143,8 +143,8 @@ comments:
 #     values:
 #       swcache: true
 
-sass:
-  style: compressed
+# sass:
+#   style: compressed
 
 compress_html:
   clippings: all
