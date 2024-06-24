@@ -58,8 +58,8 @@ cdn:
 
 assets:
   self_host:
-    enabled:
-    env:
+    enabled: true
+    env: development
 
 pwa:
   enabled: true
