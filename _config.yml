@@ -1,5 +1,5 @@
 
-# Import the theme
+# 기본 설정
 theme: jekyll-theme-chirpy
 lang: ko-KR   # 상단 주소 확인
 timezone: Asia/Seoul
@@ -8,19 +8,17 @@ tagline: 개발 블로그 # it will display as the sub-title
 description: >- # used by seo meta and the atom feed
  ruukr8080의 개발블로그
 # Site Author
-url: "https://ruukr8080.github.io"
-github:
-  username: ruukr8080 # change to your github username
-social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Shin Han
-  email: ruukr8080@gmail.com # change to your email address
-  notion:
-    url: https://toast1ng.tistory.com/
-  links:
-    # The first element serves as the copyright owner's link
-    - https://github.com/ruukr8080 # change to your github homepage
+author: 
+  name: "Shin Han"
+  email: ruukr8080@gmail.com
+  url: "https://ruukr8080.github.io"
+  github:
+    username: ruukr8080
+  social:
+    notion:
+      url: https://toast1ng.tistory.com/
+    links:
+      - https://github.com/ruukr8080
     - https://github.com/ruukr8080 # change to your github homepage
     # - https://www.linkedin.com/in/username
 
@@ -52,7 +50,7 @@ analytics:
 
 # Pageviews settings
 pageviews:
-  provider: # now only supports 'goatcounter'
+  provider: goatcounter  # now only supports 'goatcounter'
 
 theme_mode: dark # [light | dark]
 cdn:
@@ -62,25 +60,25 @@ toc: true
 
 comments:
   # Global switch for the post comment system. Keeping it empty means disabled.
-  provider: # [disqus | utterances | giscus]
+  provider: giscus # [disqus | utterances | giscus]
   # The provider options are as follows:
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
   utterances:
-    repo: # <gh-username>/<repo>
+    repo: ruukr8080/ruukr8080.github.io # <gh-username>/<repo>
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: # <gh-username>/<repo>
-    repo_id:
-    category:
-    category_id:
+    repo: ruukr8080/ruukr8080.github.io.git # <gh-username>/<repo>
+    repo_id: ruukr8080
+    category: General
+    category_id: ruukr8080
     mapping: # optional, default to 'pathname'
-    strict: # optional, default to '0'
-    input_position: # optional, default to 'bottom'
-    lang: # optional, default to the value of `site.lang`
-    reactions_enabled: # optional, default to the value of `1`
+    strict: 0 # optional, default to '0'
+    input_position: bottom # optional, default to 'bottom'
+    lang: ko# optional, default to the value of `site.lang`
+    reactions_enabled: 1# optional, default to the value of `1`
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
@@ -163,12 +161,12 @@ compress_html:
     envs: [development]
 
 exclude:
-  - "*.gem"
-  - "*.gemspec"
+  # - "*.gem"
+  # - "*.gemspec"
   - docs
   - tools
-  - README.md
-  - LICENSE
+  # - README.md
+  # - LICENSE
   - "*.config.js"
   - package*.json
 
