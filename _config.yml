@@ -56,14 +56,14 @@ cdn:
 comments:
   provider: giscus
   giscus:
-    repo: ruukr8080/comments
-    repo_id: comments
-    category: General
+    repo: ruukr8080/ruukr8080.github.io
+    repo_id:
+    category:
     category_id: 
-    mapping: comments/5
+    mapping: comments/2
     strict: 0
     input_position: bottom
-    lang: ko
+    lang: 
     reactions_enabled: 1
 
 assets:
