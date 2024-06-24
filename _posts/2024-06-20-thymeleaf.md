@@ -51,10 +51,12 @@ Thymeleaf에서는 값을 표현하는 방법이 5가지다.
         data-reactions-enabled="1"
         data-emit-metadata="1"
         data-input-position="top"
-        data-theme="noborder_light"
+        data-theme="dark"
         data-lang="ko"
         data-loading="lazy"
         crossorigin="anonymous"
         async>
 </s...
+
+
 

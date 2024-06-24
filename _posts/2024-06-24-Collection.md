@@ -26,7 +26,7 @@ Collection Framework
         data-reactions-enabled="1"
         data-emit-metadata="1"
         data-input-position="top"
-        data-theme="noborder_light"
+        data-theme="dark"
         data-lang="ko"
         data-loading="lazy"
         crossorigin="anonymous"
