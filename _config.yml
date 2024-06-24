@@ -102,6 +102,7 @@ collections:
     output: true
     sort_by: order
 
+# _posts settings
 defaults:
   - scope:
       path: ""
