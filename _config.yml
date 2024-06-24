@@ -60,7 +60,7 @@ comments:
     repo_id:
     category:
     category_id: 
-    mapping: comments/2
+    mapping: comments/6
     strict: 0
     input_position: bottom
     lang: 
