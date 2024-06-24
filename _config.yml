@@ -57,10 +57,10 @@ comments:
   provider: giscus
   giscus:
     repo: ruukr8080/ruukr8080.github.io
-    repo_id: YOUR_REPO_ID
+    repo_id: ruukr8080.github.io
     category: General
-    category_id: YOUR_CATEGORY_ID
-    mapping: pathname
+    category_id: 
+    mapping: https://github.com/ruukr8080/ruukr8080.github.io/discussions/4
     strict: 0
     input_position: bottom
     lang: ko
