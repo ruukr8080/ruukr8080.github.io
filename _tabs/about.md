@@ -1,12 +1,7 @@
----
-# the default layout is 'page'
+<!-- ---
+layout: about
 icon: fas fa-info-circle
 order: 4
-
-
-
-
-
 ---
 
-> 안녕하세요 신한블로그 운영자입니다.
+> 안녕하세요 ~~ -->
