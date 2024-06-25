@@ -7,7 +7,6 @@ tagline: 블로그
 description: >
   ruukr8080's blog
 avatar: assets/images/avatar.png
-
 # Site Author
 author:
   name: "Shin Han"
@@ -52,10 +51,7 @@ pageviews:
 theme_mode: dark
 cdn:
   avatar: assets/images/avatar.png
-
-  social_preview_image: https://avatars.githubusercontent.com/u/131014787?v=4&size=64
-
-assets:
+  social_preview_image: 
   self_host:
     enabled: true
     env: development
