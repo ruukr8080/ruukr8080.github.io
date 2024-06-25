@@ -6,12 +6,10 @@ title: ruukr8080
 tagline: 블로그
 description: >
   ruukr8080's blog
-avatar: https://avatars.githubusercontent.com/u/131014787?v=4&size=64
+avatar: assets/images/avatar.png
 
 # Site Author
 author:
-  avatar: https://avatars.githubusercontent.com/u/131014787?v=4&size=64
-
   name: "Shin Han"
   email: ruukr8080@gmail.com
   url: "https://ruukr8080.github.io"
@@ -53,7 +51,8 @@ pageviews:
 
 theme_mode: dark
 cdn:
-  avatar: https://avatars.githubusercontent.com/u/131014787?v=4&size=64
+  avatar: assets/images/avatar.png
+
   social_preview_image: https://avatars.githubusercontent.com/u/131014787?v=4&size=64
 
 assets:
