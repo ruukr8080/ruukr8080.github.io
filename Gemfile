@@ -19,6 +19,7 @@ gem 'jekyll-commonmark', '~> 1.4'
 gem 'jekyll-octicons', '~> 19.8' #A jekyll liquid plugin that makes including svg Octicons simple.
 gem 'jekyll-default-layout', '~> 0.1.5'
 gem 'sass', '~> 3.7', '>= 3.7.4'
+gem 'jekyll-paginate'
 
 group :jekyll_plugins do
   gem 'jekyll-compose'

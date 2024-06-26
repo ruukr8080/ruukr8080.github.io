@@ -1,11 +1,11 @@
 # 기본 설정
-remote_theme: cotes2020/jekyll-theme-chirpy
+theme: jekyll-theme-chirpy
 lang: ko-KR
 timezone: Asia/Seoul
 title: ruukr8080
 tagline: Blog
 description: ruukr8080's blog
-avatar: assets/img/avatar.png
+
 
 # Site Author
 author:
@@ -51,7 +51,8 @@ pageviews:
 
 theme_mode: dark
 cdn:
-  social_preview_image: 
+ avatar:
+  social_preview_image:  assets/img/avatar.png
   self_host:
     enabled: true
     env: development
@@ -101,7 +102,11 @@ jekyll_compose:
       pin: false
       math: true
       mermaid: true
-      comment: true
+    comment: true
+    toc: true
+
+sass:
+  style: compressed
 
 comments:
   provider: giscus
@@ -112,35 +117,16 @@ comments:
     repo_id: R_kgDOMLRatg
     category: Announcements
     category_id: DIC_kwDOMLRats4CgVMI
+    toc: true
     
 
+assets:
+  self_host:
+    enabled: # boolean, keep empty means false
+    # specify the Jekyll environment, empty means both
+    # only works if `assets.self_host.enabled` is 'true'
+    env: # [development | production]
 
-# defaults:
-#   - scope:
-#       path: ""
-#       type: posts
-#     values:
-#       layout: post
-#       comments: true
-#       toc: true
-#       permalink: /posts/:title/
-#   - scope:
-#       path: _drafts
-#     values:
-#       comments: false
-#   - scope:
-#       path: ""
-#       type: tabs
-#     values:
-#       layout: page
-#       permalink: /:title/
-#   - scope:
-#       path: assets/js/dist
-#     values:
-#       swcache: true
-
-# sass:
-#   style: compressed
 
 compress_html:
   clippings: all

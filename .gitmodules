@@ -1,4 +1,4 @@
-[submodule "assets/lib"]
-	path = assets/lib
+[submodule "assets"]
+	path = assets
 	url = https://github.com/ruukr8080/ruukr8080.github.io
 	
