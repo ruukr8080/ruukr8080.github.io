@@ -1,17 +1,18 @@
 # 기본 설정
-theme: jekyll-theme-chirpy
+remote_theme: cotes2020/jekyll-theme-chirpy
 lang: ko-KR
 timezone: Asia/Seoul
 title: ruukr8080
 tagline: Blog
-description: >
-  ruukr8080's blog
-avatar: assets/images/avatar.png
+description: ruukr8080's blog
+avatar: assets/img/avatar.png
+
 # Site Author
 author:
   name: "Shin Han"
   email: ruukr8080@gmail.com
   url: "https://ruukr8080.github.io"
+
   github:
     username: ruukr8080
   social:
@@ -50,7 +51,6 @@ pageviews:
 
 theme_mode: dark
 cdn:
-  avatar: assets/images/avatar.png
   social_preview_image: 
   self_host:
     enabled: true
