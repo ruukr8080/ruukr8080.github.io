@@ -7,4 +7,55 @@
 {%- endif -%}
 ';
 
+
+
+
+/* title */
+h1 {
+  font-size: 3.0rem;
+  margin-bottom: 100px;
+}
+h2 {
+  font-size: 1.5rem;
+}
+
+br {
+  content: '';
+  display: block;
+  margin: 10px 0;
+}
+@font-face {
+  font-family: pretendard;
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/font/Pretendard-SemiBold.otf")
+}
+@font-face {
+  font-family: avenir;
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/font/AvenirNextCyr-Regular.ttf")
+}
+
+
+body {
+  $font-family-base: avenir;
+  $font-family-base: pretendard;
+  --font-monospace-default: "";
+  --font-interface-override: '??';
+  --font-interface-theme: '??';
+  --font-interface: var(--font-interface-override),var(--font-interface-theme),var(--default-font, '??'),var(--font-default);
+  --font-text-override: '??';
+  --font-text-theme: '??';
+  --font-text: var(--font-text-override),var(--font-text-theme),var(--font-interface);
+  --font-print-override: '??';
+  --font-print: var(--font-print-override),var(--font-text-override),var(--font-text-theme),'Arial';
+  --font-monospace-override: '??';
+  --font-monospace-theme: '??';
+  --font-monospace: var(--font-monospace-override),var(--font-monospace-theme),var(--font-monospace-default);
+  --font-text-size: 16px;
+  --font-mermaid: var(--font-text)
+}
 /* append your custom style below */
