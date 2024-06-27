@@ -50,10 +50,10 @@ pageviews:
   provider: goatcounter
 
 theme_mode: dark
-cdn:
-  avatar: assets/img/avatar.png
-  social_preview_image: assets/img/avatar.png
-  self_host:
+# cdn:
+avatar: assets/img/avatar.png
+social_preview_image: assets/img/avatar.png
+self_host:
     enabled: true
     env: development
 
