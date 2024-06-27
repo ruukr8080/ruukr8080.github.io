@@ -188,5 +188,4 @@ class Client {
         data-loading="lazy"
         crossorigin="anonymous"
         async>
-</script>
 
