@@ -44,42 +44,26 @@ paginate: 10
 baseurl: ""
 repository: "https://github.com/ruukr8080/ruukr8080.github.io"
 
-# 추가적인 설정들...
-
-# The following options are not recommended to be modified ------------------
 
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
-  syntax_highlighter: rouge
+  syntax_highlighter: 
   syntax_highlighter_opts:
     css_class: highlight
-    span:
+    span: 
       line_numbers: false
     block:
       line_numbers: true
       start_line: 1
+   
 
+
+
+   
 collections:
   tabs:
     output: true
     sort_by: order
-
-# _posts settings
-jekyll_compose:
-  auto_open: true # 게시글 생성시 자동열림
-  default_front_matter:
-    posts:
-      description:  #기본적으로 넣고 싶은 내용이 있으면 넣어준다.
-      image:
-        path:
-        alt:
-      category: []
-      tags: []
-      pin: false
-      math: true
-      mermaid: true
-    comment: true
-    toc: true
 
 sass:
   style: compressed
@@ -96,16 +80,6 @@ comments:
     toc: true
     
 
-# assets:
-#   self_host:
-#     enabled: false 
-#   css:
-#     url:
-#   js:
-#     url:
-#   env: # [development | production]
-
-
 compress_html:
   clippings: all
   comments: all
@@ -114,6 +88,8 @@ compress_html:
   blanklines: false
   ignore:
     envs: [development]
+
+
 
 exclude:
   - docs

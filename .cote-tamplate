@@ -1,23 +1,54 @@
 ---
 layout: post
-title: 
+title: 코딩테스트_Lv 
 description: " "
-category: java
-tags: [자바, collection ,List]
-author: Han
-summary: Collection, list
+category: Algorithm
+tags: [algorithm]
 image:
-  path: /assets/img/collection.png
-  alt: Click image to enlarge
+  path: /../assets/img/cote/
+  alt: "출처 : [프로그래머스](https://school.programmers.co.kr)"
+---
+
+- * "" *
+* `JAVA` , `Phython` , `JS` , `C`
+
 ---
 
 
-포
-스
-트 
+## **My Solution**`JAVA`
+```java
 
-내
-용
+```
+
+>
+
+---
+
+## **Someone else's solution** 
+
+```java
+
+```
+> 
+
+===
+```python
+
+```
+>
+
+===
+```javascript
+
+```
+>
+
+===
+```c
+
+```
+>
+
 
 
 
@@ -36,4 +67,5 @@ image:
         data-loading="lazy"
         crossorigin="anonymous"
         async>
-</script>
+
+

@@ -7,6 +7,7 @@ author: Han
 tags: [디자인패턴, 팩토리 패턴]
 summary: 
 toc: true
+
 ---
 
 
@@ -27,7 +28,7 @@ toc: true
 
 
 
-![추상팩토리구조](/assets/img/디자인패턴/추상팩토리구조.png)
+![추상팩토리구조](/assets/img/design_pattern/추상팩토리구조.png)
 
 - <span style='color:var(--mk-color-red)'>AbstractFactory</span> : 최상위 공장 클래스. 여러개의 제품들을 생성하는 여러 메소드들을 추상화 한다.
 - <span style='color:var(--mk-color-red)'>ConcreteFactory</span> : 서브 공장 클래스들은 타입에 맞는 제품 객체를 반환하도록 메소드들을 재정의한다.
@@ -45,12 +46,12 @@ toc: true
 
 ## class diagram (구조)
 
-![추상팩토리클래스다이어그램](/assets/img/디자인패턴/추상팩토리클래스다이어그램.png)
+![추상팩토리클래스다이어그램](/assets/img/design_pattern/추상팩토리클래스다이어그램.png)
 
 
 
 ## sequence diagram (흐름)
-![추상팩토리절차다이어그램](/assets/img/디자인패턴/추상팩토리클래스다이어그램.png)
+![추상팩토리절차다이어그램](/assets/img/design_pattern/추상팩토리클래스다이어그램.png)
 
 
 ---

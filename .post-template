@@ -1,16 +1,15 @@
 ---
 layout: post
-title: 
-description: " "
-category: java
-tags: [자바, collection ,List]
-author: Han
-summary: Collection, list
+title: " "
+date: YYYY-MM-DD HH:MM:SS 
+categories: [ , ]
+tags: [ , ]
+author: 
 image:
-  path: /assets/img/collection.png
-  alt: Click image to enlarge
+  path: asset/img/
+  alt: 
+description: " "
 ---
-
 
 포
 스
@@ -35,5 +34,4 @@ image:
         data-lang="en"
         data-loading="lazy"
         crossorigin="anonymous"
-        async>
 </script>
