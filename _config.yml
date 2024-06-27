@@ -6,7 +6,6 @@ title: Ruukr's Blog
 tagline: A blog focused on software development
 description: ruukr8080's blog
 
-
 # Site Author
 author: 
   name: Han
@@ -21,29 +20,6 @@ author:
     links:
       - https://github.com/ruukr8080
       - https://github.com/ruukr8080
-
-webmaster_verifications:
-  google: YOUR_GOOGLE_VERIFICATION_CODE
-  bing: YOUR_BING_VERIFICATION_CODE
-  alexa: YOUR_ALEXA_VERIFICATION_CODE
-  yandex: YOUR_YANDEX_VERIFICATION_CODE
-  baidu: YOUR_BAIDU_VERIFICATION_CODE
-  facebook: YOUR_FACEBOOK_VERIFICATION_CODE
-
-# Web Analytics Settings
-analytics:
-  google:
-    id: YOUR_GOOGLE_ANALYTICS_ID
-  goatcounter:
-    id: YOUR_GOATCOUNTER_ID
-  umami:
-    id: YOUR_UMAMI_ID
-    domain: YOUR_UMAMI_DOMAIN
-  matomo:
-    id: YOUR_MATOMO_ID
-    domain: YOUR_MATOMO_DOMAIN
-  cloudflare:
-    id: YOUR_CLOUDFLARE_ANALYTICS_TOKEN
 
 # Pageviews settings
 pageviews:
@@ -120,12 +96,14 @@ comments:
     toc: true
     
 
-assets:
-  self_host:
-    enabled: # boolean, keep empty means false
-    # specify the Jekyll environment, empty means both
-    # only works if `assets.self_host.enabled` is 'true'
-    env: # [development | production]
+# assets:
+#   self_host:
+#     enabled: false 
+#   css:
+#     url:
+#   js:
+#     url:
+#   env: # [development | production]
 
 
 compress_html:
