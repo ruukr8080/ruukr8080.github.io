@@ -1,6 +1,6 @@
 <!-- markdownlint-disable-next-line -->
 
 
-# my blog
+# [Blog](ruukr8080.github.io)
 
 ## latest post
