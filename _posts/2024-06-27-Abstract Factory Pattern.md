@@ -51,7 +51,7 @@ toc: true
 
 
 ## sequence diagram (흐름)
-![추상팩토리절차다이어그램](/assets/img/design_pattern/추상팩토리클래스다이어그램.png)
+![추상팩토리절차다이어그램](/assets/img/design_pattern/추상팩토리절차다이어그램.png)
 
 
 ---
