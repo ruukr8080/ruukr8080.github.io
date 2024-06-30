@@ -6,10 +6,42 @@
   .bundle
 {%- endif -%}
 ';
+@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
 
 
-
-
+@font-face {
+  font-family: 'GmarketSans';
+  font-weight: 300;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf') format("truetype");
+  font-display: swap;
+} 
+@font-face {
+  font-family: 'GmarketSans';
+  font-weight: 500;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.ttf') format("truetype");
+  font-display: swap;
+} 
+@font-face {
+  font-family: 'GmarketSans';
+  font-weight: 700;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.ttf') format("truetype");
+  font-display: swap;
+} 
 /* title */
 h1 {
   font-size: 3.0rem;
@@ -24,25 +56,11 @@ br {
   display: block;
   margin: 10px 0;
 }
-@font-face {
-  font-family: pretendard;
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-  src: url("/assets/font/Pretendard-SemiBold.otf")
-}
-@font-face {
-  font-family: avenir;
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-  src: url("/assets/font/AvenirNextCyr-Regular.ttf")
-}
-
 
 body {
-  $font-family-base: avenir;
-  $font-family-base: pretendard;
+  font-family: 'GmarketSans';
+  $font-family-base: "GmarketSans";
+  $font-family-base:  "GmarketSans";
   --font-monospace-default: "";
   --font-interface-override: '??';
   --font-interface-theme: '??';
