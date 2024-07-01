@@ -10,7 +10,7 @@ tail_includes:
 ---
 
 {% include lang.html %}
-
+<div class="markdown-content">
 <article class="px-1">
   <header>
     <h1 data-toc-skip>{{ page.title }}</h1>
@@ -59,7 +59,6 @@ tail_includes:
             {% assign authors = page.authors %}
           {% endif %}
 
-          {{ site.data.locales[lang].post.written_by }}
 
           <em>
             {% if authors %}
@@ -89,7 +88,9 @@ tail_includes:
           {% endif %}
 
           <!-- read time -->
-          {% include read-time.html content=content prompt=true lang=lang %}
+          <!-- {{ site.data.locales[lang].post.written_by }} -->
+        
+
         </div>
       </div>
     </div>
@@ -149,4 +150,5 @@ tail_includes:
     <!-- .post-tail-bottom -->
   </div>
   <!-- div.post-tail-wrapper -->
+</div>
 </article>

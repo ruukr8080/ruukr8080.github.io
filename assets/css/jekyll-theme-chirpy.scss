@@ -1,12 +1,15 @@
----
+// ---
 
----
+// ---
 
-@import 'main
-{%- if jekyll.environment == 'production' -%}
-  .bundle
-{%- endif -%}
-';
+// @import 'main
+// {%- if jekyll.environment == 'production' -%}
+//   .bundle
+// {%- endif -%}
+// ';
+
+
+
 @import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
 
 
@@ -77,4 +80,12 @@ body {
   --font-text-size: 16px;
   --font-mermaid: var(--font-text)
 }
+
+.panel panel-info{
+  color: red;
+}
 /* append your custom style below */
+
+
+
+

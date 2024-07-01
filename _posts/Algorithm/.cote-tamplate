@@ -1,19 +1,15 @@
 ---
 layout: post
-title: 코딩테스트_Lv 
+title: 두수의 차
 description: "구현"
 category: 코딩테스트
-tags: [코딩테스트_Lv0]
+tags: [코딩테스트,Lv0]
 image:
-  path: /../assets/img/cote/
-  alt: "출처 : [프로그래머스](https://school.programmers.co.kr)"
+  path: /../assets/img/cote/al.png
+  alt: "문제 출처 : 프로그래머스"
 ---
-
-- * "" *
 * `JAVA` , `Phython` , `JS` , `C`
-
 ---
-
 
 ## **My Solution**`JAVA`
 ```java

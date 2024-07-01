@@ -1,3 +1,46 @@
-{% if page.mermaid %}
-{% include mermaid.html %}
-{% endif %}
+{% assign _content = include.content %}
+
+<!-- 기존 코드: 테이블, 코드 스니펫, 체크박스 처리 -->
+
+<!-- Add marp-style-block processing -->
+{% capture marp_block_patterns %}
+  {% raw %}
+    :note:,
+    :warning:,
+    :tip:,
+    :important:
+  {% endraw %}
+{% endcapture %}
+{% assign marp_block_patterns = marp_block_patterns | split: ',' %}
+
+{% assign marp_content = _content %}
+
+{% for pattern in marp_block_patterns %}
+  {% assign pattern = pattern | strip %}
+  {% assign mark_start = pattern %}
+  {% assign mark_end = pattern | replace_first: ':', ':\n' %}
+
+  {% if marp_content contains mark_start %}
+    {% assign new_marp_content = '' %}
+    {% assign snippets = marp_content | split: mark_start %}
+    {% for snippet in snippets %}
+      {% if forloop.first %}
+        {% assign new_marp_content = snippet %}
+        {% continue %}
+      {% endif %}
+      {% assign inner_content = snippet | split: mark_end | first %}
+      {% assign remaining_content = snippet | remove: inner_content | remove_first: mark_end %}
+      {% capture wrapped_content %}
+<div class="marp-block {{ pattern | replace_first: ':', '' }}">
+  {{ inner_content | strip_newlines }}
+</div>
+      {% endcapture %}
+      {% assign new_marp_content = new_marp_content | append: wrapped_content | append: remaining_content %}
+    {% endfor %}
+    {% assign marp_content = new_marp_content %}
+  {% endif %}
+{% endfor %}
+
+
+<!-- return -->
+{{ _content }}
