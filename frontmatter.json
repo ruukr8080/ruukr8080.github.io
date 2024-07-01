@@ -51,7 +51,12 @@
   "frontMatter.preview.host": "http://localhost:4000",
   "frontMatter.content.pageFolders": [
     {
-      "path": "[[workspace]]/_posts"
+      "path": "[[workspace]]/_posts",
+      "title": "_posts"
+    },
+    {
+      "title": "Algorithm",
+      "path": "[[workspace]]/_posts/Algorithm"
     }
   ],
   "frontMatter.git.enabled": true,

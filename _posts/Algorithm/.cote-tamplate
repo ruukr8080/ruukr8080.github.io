@@ -1,52 +1,22 @@
 ---
 layout: post
-title: 두수의 차
-description: "구현"
+title: ""
+description: 난이도 입문
 category: 코딩테스트
-tags: [코딩테스트,Lv0]
+tags:
+  - 코딩테스트_Lv0
 image:
-  path: /../assets/img/cote/al.png
+  path: /../assets/img/cote/
   alt: "문제 출처 : 프로그래머스"
 ---
-* `JAVA` , `Phython` , `JS` , `C`
----
 
-## **My Solution**`JAVA`
+
+# Solution
 ```java
 
 ```
 
 >
-
----
-
-## **Someone else's solution** 
-
-```java
-
-```
-> 
-
-===
-```python
-
-```
->
-
-===
-```javascript
-
-```
->
-
-===
-```c
-
-```
->
-
-
-
 
 <script src="https://giscus.app/client.js"
         data-repo="ruukr8080/ruukr8080.github.io"

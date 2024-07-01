@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Gof Design Pattern- Creational_no.1
+description: 생성 패턴_추상팩토리패턴
+descript:
 date: 2024-06-27 15:15
 category: software
 author: Han
@@ -11,7 +13,7 @@ toc: true
 ---
 
 
-# <span style='color:#A589F7' >Abstract Factory - 추상 팩토리 패턴 </span>
+# <span style='color:#A589F7'>Abstract Factory - 추상 팩토리 패턴 </span>
 <br>
 비슷한 속성의 객체들을 인터페이스로 규격화된 팩토리에서 일관된 방식으로 생성하고, 생성된 객체끼리는 쉽게 교체될 수 있도록 고안한 패턴이다. 
 **추상 팩토리 패턴은 클라이언트가 타입을 정의하지 않고도** 서로 관련성이 있거나 독립적인 여러 객체의 군을 생성하기 위한 인터페이스를 제공한다.
@@ -55,6 +57,7 @@ toc: true
 
 
 ---
+
 # <span style='color:#E7E1FF'>Code</span>
 
 #### Factory class
