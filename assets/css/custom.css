@@ -1,0 +1,13 @@
+/* 스타일링이 필요한 다른 CSS 코드 */
+
+pre code {
+  white-space: pre-wrap; /* 줄 띄기를 유지하기 위해 pre-wrap 속성을 사용합니다 */
+  word-break: break-word; /* 단어가 너무 길어서 줄 바꿈이 필요할 경우, 줄 바꿈을 허용합니다 */
+  padding: 1em; /* 코드 블럭에 패딩을 추가하여 가독성을 높입니다 */
+  background-color: #f8f8f8; /* 코드 블럭의 배경색을 설정합니다 */
+  border: 1px solid #ddd; /* 코드 블럭에 테두리를 추가합니다 */
+  border-radius: 4px; /* 코드 블럭의 테두리를 둥글게 만듭니다 */
+  overflow-x: auto; /* 코드 블럭의 가로 스크롤을 허용합니다 */
+}
+
+/* 스타일링이 필요한 다른 CSS 코드 */

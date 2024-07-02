@@ -5,7 +5,32 @@ timezone: Asia/Seoul
 title: Han 
 tagline: programer
 description: ruukr8080's blog
+url: https://ruukr8080.github.io
+production_url: https://ruukr8080.github.io/
 
+plugins: 
+
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-avatar
+  - jekyll-commonmark
+  - jekyll-octicons
+  - jekyll-default-layout
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-archives
+paginate: 10
+paginate_path: "/page/:num/"
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
 # Site Author
 author: 
   name: Han
@@ -19,13 +44,13 @@ author:
       url: https://toast1ng.tistory.com/
     links:
       - https://github.com/ruukr8080
-      - https://github.com/ruukr8080
 
 # Pageviews settings
 pageviews:
   provider: goatcounter
 
 theme_mode: dark
+
 # cdn:
 avatar: assets/img/avatar.png
 social_preview_image: assets/img/avatar.png
@@ -39,27 +64,36 @@ pwa:
     enabled: true
     deny_paths:
 
-paginate: 10
 
 baseurl: ""
 repository: "https://github.com/ruukr8080/ruukr8080.github.io"
 
+# highlighter: coderay
+markdown: CommonMark
+
+
+
+
+commonmark:
+  extensions: [table, strikethrough, autolink, tasklist, superscript, shortcodes, multiline_block_quotes,math_code]
+  options:
+    smart: true
+    footnotes: true
+    sourcepos: true
 
 kramdown:
+  input: GFM
+  highlighter: kramdown
   footnote_backlink: "&#8617;&#xfe0e;"
   syntax_highlighter: 
   syntax_highlighter_opts:
     css_class: highlight
     span: 
-      line_numbers: false
+      line_numbers: ture
     block:
       line_numbers: true
       start_line: 1
-   
 
-
-
-   
 collections:
   tabs:
     output: true
@@ -70,8 +104,6 @@ sass:
 
 comments:
   provider: giscus
-  # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
-  # The active options are as follows:
   giscus:
     repo: ruukr8080/ruukr8080.github.io
     repo_id: R_kgDOMLRatg
@@ -97,11 +129,4 @@ exclude:
   - "*.config.js"
   - package*.json
 
-jekyll-archives:
-  enabled: [categories, tags]
-  layouts:
-    category: category
-    tag: tag
-  permalinks:
-    tag: /tags/:name/
-    category: /categories/:name/
+

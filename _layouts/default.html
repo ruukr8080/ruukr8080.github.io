@@ -15,14 +15,11 @@ layout: compress
 <!-- `site.alt_lang` can specify a language different from the UI -->
 <html lang="{{ page.lang | default: site.alt_lang | default: site.lang }}" {{ prefer_mode }}>
   {% include head.html %}
-
   <body>
     {% include sidebar.html lang=lang %}
-
     <div id="main-wrapper" class="d-flex justify-content-center">
       <div class="container d-flex flex-column px-xxl-5">
         {% include topbar.html lang=lang %}
-
         <div class="row flex-grow-1">
           <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
             {% if layout.refactor or layout.layout == 'default' %}
@@ -31,21 +28,18 @@ layout: compress
               {{ content }}
             {% endif %}
           </main>
-
           <!-- panel -->
           <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 mb-5 text-muted">
             <div class="access">
-              {% include_cached update-list.html lang=lang %}
-              {% include_cached trending-tags.html lang=lang %}
+              {% include update-list.html lang=lang %}
+              {% include trending-tags.html lang=lang %}
             </div>
-
             {% for _include in layout.panel_includes %}
               {% assign _include_path = _include | append: '.html' %}
               {% include {{ _include_path }} lang=lang %}
             {% endfor %}
           </aside>
         </div>
-
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
@@ -54,11 +48,11 @@ layout: compress
               {% include {{ _include_path }} lang=lang %}
             {% endfor %}
 
-            {% include_cached footer.html lang=lang %}
+            {% include footer.html lang=lang %}
           </div>
         </div>
 
-        {% include_cached search-results.html lang=lang %}
+        {% include search-results.html lang=lang %}
       </div>
 
       <aside aria-label="Scroll to Top">
@@ -71,12 +65,11 @@ layout: compress
     <div id="mask"></div>
 
     {% if site.pwa.enabled %}
-      {% include_cached notification.html lang=lang %}
+      {% include notification.html lang=lang %}
     {% endif %}
 
     <!-- JavaScripts -->
     {% include js-selector.html lang=lang %}
-
-    {% include_cached search-loader.html lang=lang %}
+    {% include search-loader.html lang=lang %}
   </body>
 </html>

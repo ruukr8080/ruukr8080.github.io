@@ -13,3 +13,20 @@ Jekyll::Hooks.register :posts, :post_init do |post|
   end
 
 end
+
+
+# module Jekyll
+#   module Converters
+#     class Markdown::CommonMark < Markdown::CommonMark
+#       def initialize(config)
+#         super(config)
+
+#         # CommonMark의 설정을 변경할 수 있습니다.
+#         @config['commonmark'] ||= {}
+#         @config['commonmark']['options'] ||= {}
+#         @config['commonmark']['options']['sourcepos'] = true
+#         @config['commonmark']['extensions'] = ['table', 'strikethrough', 'autolink']
+#       end
+#     end
+#   end
+# end
