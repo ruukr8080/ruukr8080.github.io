@@ -5,7 +5,8 @@ source "https://rubygems.org"
 #제거대상
 
 gem 'rouge'
-gem 'sass'
+gem 'sass-embedded', '~> 1.77', '>= 1.77.5'
+gem 'csv' # (Comma-Separated Values) 를 사용할 수 있도록 도와주는 RubyGem입니다. CSV는 텍스트 파일 형식으로 데이터를 저장할 때 주로 사용되며
 group :jekyll_plugins do
 # - jekyll-optional-front-matter
 # - jekyll-readme-index
@@ -24,6 +25,7 @@ group :jekyll_plugins do
     gem 'jekyll-titles-from-headings'
     gem 'jekyll-include-cache'
     gem 'jemoji'
+    gem 'jekyll-sass-converter'
 end
 
 group :test do
