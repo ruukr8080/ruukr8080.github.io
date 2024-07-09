@@ -5,7 +5,7 @@ source "https://rubygems.org"
 #제거대상
 
 gem 'rouge'
-
+gem 'sass'
 group :jekyll_plugins do
 # - jekyll-optional-front-matter
 # - jekyll-readme-index

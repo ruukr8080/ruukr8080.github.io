@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2023-05-15
+# last_modified_at: 2023-05-15
 no_link_title:    false 
 no_excerpt:       false 
 hide_image:       false
@@ -24,7 +24,7 @@ permalink:        /
 
 posts_page:       /Posts/
 selected_posts:
-  - _posts/2023-05-15-Welcome.md
+  # - _posts/2023-05-15-Welcome.md
 projects_page:    /Projects/
 selected_projects: # MAX 4
   - _projects/MultiDomainX.md

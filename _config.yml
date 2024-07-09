@@ -15,7 +15,7 @@ include:
   - _pages
 exclude:
   - .jekyll-cache
-  - .sass-cache
+  # - .sass-cache
   - '*.toml'
   - vendor
   - Gemfile
@@ -50,7 +50,7 @@ legal:                # Add links to the footer. Typically you'll want to link t
     url:              /Policies/Cookies/
 
 paginate:             10
-paginate_path:        /:num/
+paginate_path:        "/page:num/"
 excerpt_separator:    <!--more-->
 
 # Customization
@@ -93,7 +93,7 @@ defaults:
 comments:              # 'disqus' / 'giscus' / 'utterances' are available
   provider:            giscus
 giscus:
-  repo:                "ryvor/ryvor.github.io"
+  repo:                "ruukr8080/ruukr8080.github.io"
   repo-id:             "638951686"
   category:            "Comments"
   category-id:         "DIC_kwDOEHDTNc4B-MIg"
@@ -192,7 +192,7 @@ plugins:
   - jekyll-include-cache
   # - jekyll-last-modified-at
   - jemoji
-
+  # - scssify
 # SEO Tag
 # ---------------------------------------------------------------------------------------
 webmaster_verifications:
