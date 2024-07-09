@@ -1,0 +1,57 @@
+---
+# Copyright (c) 2018 Florian Klampfer <https://qwtel.com/>
+layout: base
+---
+
+{% assign version    = jekyll.version | split:'.' %}
+{% assign major      = version[0] | plus:0 %}
+{% assign minor      = version[1] | plus:0 %}
+{% assign patch      = version[2] | plus:0 %}
+
+{% assign no_link_title = true %}
+{% assign hide_image    = page.hide_image   %}
+{% assign hide_title    = page.hide_title   %}
+{% assign strings       = site.data.strings %}
+
+<div class="page">
+    <header>
+		{% unless page.hide_title %}
+      <h1 class="page-title" property="name">
+        {{ page.title | default:strings.not_found.title | default: "404: Page Not Found" }}
+      </h1>
+		{% endunless %}
+    {% assign alt = false %}
+    {% unless hide_image %}
+      {% if page.image %}
+        {% unless no_link_title %}
+          <a href="{{ page.url | relative_url }}" class="no-hover no-print-link {% unless page.hide_image %}flip-project{% endunless %}" tabindex="-1">
+        {% endunless %}
+        <div class="img-wrapper lead aspect-ratio sixteen-nine flip-project-img">
+          {% include_cached components/hy-img.html img=page.image alt=page.title width=864 height=486 %}
+        </div>
+        {% unless no_link_title %}
+          </a>
+        {% endunless %}
+        {% assign alt = '' %}
+      {% endif %}
+    {% endunless %}
+
+    {% include components/message.html text=project.description hide=page.hide_description property="description" alt="" %}
+    {% if project.caption %}
+      <meta property="disambiguatingDescription" content="{{ page.caption }}"/>
+    {% endif %}
+    </header>
+  <div class="hr pb0"></div>
+
+  {% assign test = page.content | strip_newlines %}
+  {% if test != "" %}
+    {{ content }}
+  {% else %}
+    {% capture home_link %}<a href="{{ '/' | relative_url }}">{{ strings.not_found.home_link | default:"Head back home" }}</a>{% endcapture %}
+    {% assign text = strings.not_found.message
+      | default:"Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <!--home_link--> to try finding it again." %}
+    <p class="lead">
+      {{ text | replace:"<!--home_link-->", home_link }}
+    </p>
+  {% endif %}
+</div>
