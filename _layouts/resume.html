@@ -11,7 +11,7 @@ layout: base
 {% assign strings = site.data.strings %}
 {% assign colon = strings.colon | default:":" %}
 {% assign icons = strings.resume.icons %}
-{% assign from_to_format = strings.date_formats.resume | default:"%b %Y" %}
+{% assign from_to_format = strings.date_formats.resume | default:"%Y %m" %}
 
 {% assign nsd = site.hydejack.no_structured_data | default:site.no_structured_data %}
 {% assign resume = page.resume | default:site.data.resume %}
@@ -37,7 +37,6 @@ layout: base
     {% assign r_col = page.right_column %}
     {% unless l_col %}{% assign l_col = 'work,volunteer,education,awards,publications,references' | split:',' %}{% endunless %}
     {% unless r_col %}{% assign r_col = 'languages,skills,interests' | split:',' %}{% endunless %}
-
     <div class="column column-3-5">
       {% for sec in l_col %}
         {% case sec %}

@@ -46,6 +46,8 @@
 
   .bc {
     color: var(--body-color);
+    font-weight: 400;
+    font-size: small;
   }
 
   .bold {
@@ -84,9 +86,10 @@
 
   .contact {
     margin-top: 2rem;
+    
 
     dl {
-      margin-bottom: 0;
+      margin-bottom: 10rem;
     }
 
     dt, dd {
@@ -137,7 +140,8 @@
 
   .columns {
     margin-left: -$pad;
-
+    
+    
     &::after {
       @extend .clearfix;
     }
@@ -147,6 +151,7 @@
     float: left;
     padding-left: $pad;
     width: 100%;
+
   }
 
   .fr {
@@ -162,7 +167,8 @@
   }
 
   @media screen and (min-width: $break-point-dynamic) {
-    .columns-break {
+   
+        .columns-break { 
       $helper: calc($content-width-5 / 2) - $content-margin-5 - 1rem;
       width: calc(50vw + #{$helper});
       > .column-3-5 {

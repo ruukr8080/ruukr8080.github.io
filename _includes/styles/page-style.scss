@@ -11,5 +11,4 @@ html {
   --dark-mode-body-bg: #{hsl(hue(rgb(25, 55, 71)), calc(saturation(rgb(25, 55, 71)) / 8), 17.5%)};
   --dark-mode-border-color: #{hsl(hue({{ theme_color }}), calc(saturation({{ theme_color }}) / 8), 22.5%)};
   --dark-mode-border-color: #{hsl(hue({{ theme_color }}), calc(saturation({{ theme_color }}) / 8), 22.5%)};
-
 }

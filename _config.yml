@@ -33,14 +33,14 @@ author:               # This should be the same author as first entry in `_data/
   email:              ruukr8080@gmail.com
   about:              "Software Programmer"
   picture:
-    path:             /assets/img/ryvor.png
+    path:             /assets/img/han.png
   social:
     github:           han
     twitter:          han__
     email:            ruukr8080@gmail.com
 github_username:      ruukr8080
 
-copyright:            © ryvor 2023. All rights reserved.
+copyright:            © Han 2023. All rights reserved.
 legal:                # Add links to the footer. Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
   - title:            Licenses
     url:              /Licenses/
@@ -56,13 +56,13 @@ excerpt_separator:    <!--more-->
 # Customization
 # ----------------------------------------------------------------------------------------
 
-accent_image:         /assets/img/sidebar/sidebar-bg.png # Sidebar image and theme color of the site.
+accent_image:         /assets/img/sidebar/computer.gif # Sidebar image and theme color of the site.
 accent_color:         rgb(50, 50, 56)
 theme_color:          rgb(25, 55, 71)
-logo:                 /assets/img//users/ryvor.png
+logo:                 /assets/img//users/han.png
 title:                "Han"
 description:          "Software Programmer"
-tagline:              "블로그"
+tagline:              "blog"
 
 google_fonts:         Roboto+Slab:700|Noto+Sans:400,400i,700,700i
 font:                 system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif

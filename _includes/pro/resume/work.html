@@ -14,7 +14,8 @@
       >
       {% if work.startDate.size > 0 %}
         <p class="faded">
-          {% include components/from-to.html from=work.startDate to=work.endDate format=from_to_format %}
+          {% include components/from-to.html from=work.startDate to=work.endDate format=from_to_format %}          
+          <span>( 개월 ) </span>
         </p>
       {% endif %}
       <h3 class="h4 faded">
