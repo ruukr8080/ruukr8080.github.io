@@ -23,7 +23,7 @@ exclude:
   - node_modules
 
 lang:                 en-US
-timezone:             Europe/London
+timezone:             Korea/seoul
 
 keywords:
   - MultiDomainX
