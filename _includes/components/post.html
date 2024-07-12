@@ -15,7 +15,7 @@
     <div class="post-date">
       {% capture foobar %}
         {%- unless site.hydejack.hide_dates -%}
-          {%- assign post_format = site.data.strings.date_formats.post | default:"%d %b %Y" -%}
+          {%- assign post_format = site.data.strings.date_formats.post | default:"%Y %m %D" -%}
           <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:post_format }}</time>
         {%- else -%}
           {{- site.data.strings.posted | default:"Posted" -}}
@@ -73,6 +73,7 @@
 
     {% capture post_title %}<a class="heading flip-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>{% endcapture %}
     {% assign text = site.data.strings.continue_reading | default:"Continue reading <!--post_title-->" %}
+
     <footer>
       <p class="read-more">
         {{ text | replace:"<!--post_title-->", post_title }}

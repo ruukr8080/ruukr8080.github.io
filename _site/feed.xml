@@ -1,8 +1,1089 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-07-11T17:43:16+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Han</title><subtitle>Software Programmer</subtitle><author><name>Han</name><email>ruukr8080@gmail.com</email></author><entry><title type="html">test</title><link href="http://localhost:4000/Posts/test/" rel="alternate" type="text/html" title="test" /><published>2024-07-11T12:32:16+01:00</published><updated>2024-07-11T12:32:16+01:00</updated><id>http://localhost:4000/Posts/test</id><content type="html" xml:base="http://localhost:4000/Posts/test/"><![CDATA[<p>dsasd</p>]]></content><author><name>Han</name><email>ruukr8080@gmail.com</email></author><summary type="html"><![CDATA[dsasd]]></summary></entry><entry><title type="html">hihi</title><link href="http://localhost:4000/Posts/hihi-copy/" rel="alternate" type="text/html" title="hihi" /><published>2024-05-15T16:42:00+01:00</published><updated>2024-05-15T16:42:00+01:00</updated><id>http://localhost:4000/Posts/hihi%20copy</id><content type="html" xml:base="http://localhost:4000/Posts/hihi-copy/"><![CDATA[]]></content><author><name>Han</name><email>ruukr8080@gmail.com</email></author><category term="General" /><summary type="html"><![CDATA[Welcome to my blog!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/banner/banner.png" /><media:content medium="image" url="http://localhost:4000/assets/img/banner/banner.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">hihi</title><link href="http://localhost:4000/Posts/hihi/" rel="alternate" type="text/html" title="hihi" /><published>2024-05-15T16:42:00+01:00</published><updated>2024-05-15T16:42:00+01:00</updated><id>http://localhost:4000/Posts/hihi</id><content type="html" xml:base="http://localhost:4000/Posts/hihi/"><![CDATA[]]></content><author><name>Han</name><email>ruukr8080@gmail.com</email></author><category term="General" /><summary type="html"><![CDATA[Welcome to my blog!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/banner/banner.png" /><media:content medium="image" url="http://localhost:4000/assets/img/banner/banner.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">h1 마크다운</title><link href="http://localhost:4000/Posts/new-post/" rel="alternate" type="text/html" title="h1 마크다운" /><published>2024-05-15T16:42:00+01:00</published><updated>2024-05-15T16:42:00+01:00</updated><id>http://localhost:4000/Posts/new-post</id><content type="html" xml:base="http://localhost:4000/Posts/new-post/"><![CDATA[<blockquote>
   <p>tip</p>
+=======
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="ko" /><updated>2024-07-12T07:04:31+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Han</title><subtitle>Software Programmer</subtitle><author><name>Han</name><email>ruukr8080@gmail.com</email></author><entry><title type="html">[Programmers] 5명씩.java</title><link href="http://localhost:4000/Posts/5%EB%AA%85%EC%94%A9/" rel="alternate" type="text/html" title="[Programmers] 5명씩.java" /><published>2024-07-12T00:00:00+01:00</published><updated>2024-07-12T00:00:00+01:00</updated><id>http://localhost:4000/Posts/5%EB%AA%85%EC%94%A9</id><content type="html" xml:base="http://localhost:4000/Posts/5%EB%AA%85%EC%94%A9/"><![CDATA[<h2 id="my-solution">My Solution</h2>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ShinHan</span> <span class="o">{</span>
+    <span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
+        <span class="kd">public</span> <span class="nc">String</span><span class="o">[]</span> <span class="nf">solution</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">names</span><span class="o">)</span> <span class="o">{</span>
+            <span class="nc">List</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+            <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">names</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span> <span class="o">+=</span> <span class="mi">5</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">names</span><span class="o">[</span><span class="n">i</span><span class="o">]);</span>
+            <span class="o">}</span>
+            <span class="k">return</span> <span class="n">list</span><span class="o">.</span><span class="na">toArray</span><span class="o">(</span><span class="k">new</span> <span class="nc">String</span><span class="o">[</span><span class="mi">0</span><span class="o">]);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<blockquote>
+  <blockquote>
+    <p>ArrayList 사용.
+names[] 요소 전체를 탐색.
+요소의 5번째 인덱스마다 탐색한 요소 전부 list에 담는다.
+그리고 toArray로 맨 앞사람 리턴.</p>
+  </blockquote>
+>>>>>>> cf54814 (update posts)
 </blockquote>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="n">staic</span> <span class="n">main</span>
+<h2 id="someone-elses-solution"><strong>Someone else’s solution</strong></h2>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>  
+    <span class="kd">public</span> <span class="nc">String</span><span class="o">[]</span> <span class="nf">solution</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">names</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">String</span><span class="o">[]</span> <span class="n">answer</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">[(</span><span class="n">names</span><span class="o">.</span><span class="na">length</span><span class="o">-</span><span class="mi">1</span><span class="o">)/</span><span class="mi">5</span><span class="o">+</span><span class="mi">1</span><span class="o">];</span>
+        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">answer</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="n">answer</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">names</span><span class="o">[</span><span class="mi">5</span><span class="o">*</span><span class="n">i</span><span class="o">];</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="n">answer</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>배열api 안쓰고 단순한 연산을 잘 활용했다.
+내용은 내 풀이와 순서만 다르다.</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">names</span><span class="p">):</span>
+ <span class="k">return</span> <span class="n">names</span><span class="p">[::</span><span class="mi">5</span><span class="p">]</span>
+</code></pre></div></div>
+<blockquote>
+  <p>슬라이싱함수 사용. ‘names[start:end:step]’
+names라는 리스트를 입력으로 받아서 5 간격으로 요소들을 선택한 새로운 리스트를 반환.
+start는 시작 인덱스, end는 끝 인덱스(포함되지 않음), step은 요소를 선택할 간격.</p>
+</blockquote>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nf">solution</span><span class="p">(</span><span class="nx">names</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">groups</span> <span class="o">=</span> <span class="p">[];</span>
+    <span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="k">while </span><span class="p">(</span><span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">names</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">groups</span><span class="p">.</span><span class="nf">push</span><span class="p">(</span><span class="nx">names</span><span class="p">.</span><span class="nf">slice</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="nx">i</span> <span class="o">+</span> <span class="mi">5</span><span class="p">));</span>
+            <span class="nx">i</span> <span class="o">+=</span> <span class="mi">5</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">groups</span><span class="p">.</span><span class="nf">map</span><span class="p">(</span><span class="nx">group</span> <span class="o">=&gt;</span> <span class="nx">group</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<blockquote>
+  <p>Array.prototype.slice(begin,end) 함수 활용.
+i += 5; 를 하여 5개씩 끊어서 group이라는 배열에 push할 후,
+Array.prototype.map()으로 0번쨰 요소 리턴했다.</p>
+</blockquote>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;stdbool.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp">
+</span>
+<span class="kt">char</span><span class="o">**</span> <span class="nf">solution</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">names</span><span class="p">[],</span> <span class="kt">size_t</span> <span class="n">names_len</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="p">(</span><span class="n">names_len</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="kt">char</span><span class="o">**</span> <span class="n">answer</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span><span class="o">**</span><span class="p">)</span><span class="n">malloc</span><span class="p">(</span><span class="n">len</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">));</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">len</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="n">answer</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">names</span><span class="p">[</span><span class="n">i</span> <span class="o">*</span> <span class="mi">5</span><span class="p">];</span>
+    <span class="k">return</span> <span class="n">answer</span><span class="p">;</span>
+<span class="p">}</span>
 
 </code></pre></div></div>
-<p>sadasdfsdfgaewfheuwhufehnwikou</p>]]></content><author><name>Han</name><email>ruukr8080@gmail.com</email></author><category term="General" /><summary type="html"><![CDATA[Welcome to my blog!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/banner/banner.png" /><media:content medium="image" url="http://localhost:4000/assets/img/banner/banner.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Welcome</title><link href="http://localhost:4000/Posts/Welcome/" rel="alternate" type="text/html" title="Welcome" /><published>2023-05-15T16:42:00+01:00</published><updated>2023-05-15T00:00:00+01:00</updated><id>http://localhost:4000/Posts/Welcome</id><content type="html" xml:base="http://localhost:4000/Posts/Welcome/"><![CDATA[<p>Welcome to my site!</p>]]></content><author><name>Han</name><email>ruukr8080@gmail.com</email></author><category term="General" /><summary type="html"><![CDATA[Welcome to my blog!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/banner/banner.png" /><media:content medium="image" url="http://localhost:4000/assets/img/banner/banner.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<blockquote>
+  <p>java solution과 똑같다.</p>
+</blockquote>
+
+<script src="https://giscus.app/client.js" data-repo="ruukr8080/ruukr8080.github.io" data-repo-id="R_kgDOMLRatg" data-category="Announcements" data-category-id="DIC_kwDOMLRats4CgVMI" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="dark" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
+</script>]]></content><author><name>Han</name><email>ruukr8080@gmail.com</email></author><category term="" /><category term="algorithm" /><summary type="html"><![CDATA[My Solution import java.util.*; public class ShinHan { class Solution { public String[] solution(String[] names) { List&lt;String&gt; list = new ArrayList&lt;&gt;(); for (int i = 0; i &lt; names.length; i += 5) { list.add(names[i]); } return list.toArray(new String[0]); } } } ArrayList 사용. names[] 요소 전체를 탐색. 요소의 5번째 인덱스마다 탐색한 요소 전부 list에 담는다. 그리고 toArray로 맨 앞사람 리턴. Someone else’s solution class Solution { public String[] solution(String[] names) { String[] answer = new String[(names.length-1)/5+1]; for(int i=0; i&lt;answer.length; i++) { answer[i] = names[5*i]; } return answer; } } 배열api 안쓰고 단순한 연산을 잘 활용했다. 내용은 내 풀이와 순서만 다르다. def solution(names): return names[::5] 슬라이싱함수 사용. ‘names[start:end:step]’ names라는 리스트를 입력으로 받아서 5 간격으로 요소들을 선택한 새로운 리스트를 반환. start는 시작 인덱스, end는 끝 인덱스(포함되지 않음), step은 요소를 선택할 간격. function solution(names) { const groups = []; let i = 0; while (i &lt; names.length) { groups.push(names.slice(i, i + 5)); i += 5; } return groups.map(group =&gt; group[0]); } Array.prototype.slice(begin,end) 함수 활용. i += 5; 를 하여 5개씩 끊어서 group이라는 배열에 push할 후, Array.prototype.map()으로 0번쨰 요소 리턴했다. #include &lt;stdio.h&gt; #include &lt;stdbool.h&gt; #include &lt;stdlib.h&gt; char** solution(const char* names[], size_t names_len) { int len = (names_len - 1) / 5 + 1; char** answer = (char**)malloc(len * sizeof(char*)); for(int i = 0; i &lt; len; i++) answer[i] = names[i * 5]; return answer; } java solution과 똑같다.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/posts/Algorithm/al.png" /><media:content medium="image" url="http://localhost:4000/assets/img/posts/Algorithm/al.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">[Programmers] 개미군단.java</title><link href="http://localhost:4000/Posts/%EA%B0%9C%EB%AF%B8%EA%B5%B0%EB%8B%A8/" rel="alternate" type="text/html" title="[Programmers] 개미군단.java" /><published>2024-07-12T00:00:00+01:00</published><updated>2024-07-12T00:00:00+01:00</updated><id>http://localhost:4000/Posts/%EA%B0%9C%EB%AF%B8%EA%B5%B0%EB%8B%A8</id><content type="html" xml:base="http://localhost:4000/Posts/%EA%B0%9C%EB%AF%B8%EA%B5%B0%EB%8B%A8/"><![CDATA[<blockquote>
+  <p>개미 군단이 사냥을 나가려고 합니다. 개미군단은 사냥감의 체력에 딱 맞는 병력을 데리고 나가려고 합니다. 장군개미는 5의 공격력을, 병정개미는 3의 공격력을 일개미는 1의 공격력을 가지고 있습니다. 예를 들어 체력 23의 여치를 사냥하려고 할 때, 일개미 23마리를 데리고 가도 되지만, 장군개미 네 마리와 병정개미 한 마리를 데리고 간다면 더 적은 병력으로 사냥할 수 있습니다. 사냥감의 체력 hp가 매개변수로 주어질 때, 사냥감의 체력에 딱 맞게 최소한의 병력을 구성하려면 몇 마리의 개미가 필요한지를 return하도록 solution 함수를 완성해주세요.</p>
+</blockquote>
+
+<h1 id="solution">Solution</h1>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kt">int</span> <span class="nf">solution1</span><span class="o">(</span><span class="kt">int</span> <span class="n">hp</span><span class="o">)</span> <span class="o">{</span>
+<span class="kt">int</span> <span class="n">answer</span> <span class="o">=</span><span class="mi">0</span><span class="o">;</span>
+<span class="kt">int</span> <span class="n">t1</span> <span class="o">=</span> <span class="n">hp</span><span class="o">/</span><span class="mi">5</span><span class="o">;</span>
+<span class="kt">int</span> <span class="n">t2</span> <span class="o">=</span> <span class="mi">1</span><span class="n">t</span><span class="o">/</span><span class="mi">3</span><span class="o">;</span>
+<span class="kt">int</span> <span class="n">t3</span> <span class="o">=</span><span class="mi">1</span><span class="o">;</span>
+<span class="k">return</span> <span class="n">answer</span> <span class="o">=</span> <span class="o">(</span><span class="mi">1</span><span class="n">t</span><span class="o">+</span><span class="mi">2</span><span class="n">t</span> <span class="o">)+</span> <span class="o">(</span><span class="n">x</span><span class="o">%</span><span class="mi">3</span><span class="n">t</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<blockquote>
+  <p>개미군단이 사냥나갈건데
+사냥감의 hp는 출전한 개미군단의 각 개미들의 공격력 만큼 닳음.
+사냥감의 hp에 비례하는 최적의 개미군단은 몇마리?
+개미는 3종류고 각 공격력은 5,3,1임</p>
+</blockquote>
+
+<hr />
+
+<script src="https://giscus.app/client.js" data-repo="ruukr8080/ruukr8080.github.io" data-repo-id="R_kgDOMLRatg" data-category="Announcements" data-category-id="DIC_kwDOMLRats4CgVMI" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="dark" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
+</script>]]></content><author><name>Han</name><email>ruukr8080@gmail.com</email></author><category term="" /><category term="algorithm" /><summary type="html"><![CDATA[개미 군단이 사냥을 나가려고 합니다. 개미군단은 사냥감의 체력에 딱 맞는 병력을 데리고 나가려고 합니다. 장군개미는 5의 공격력을, 병정개미는 3의 공격력을 일개미는 1의 공격력을 가지고 있습니다. 예를 들어 체력 23의 여치를 사냥하려고 할 때, 일개미 23마리를 데리고 가도 되지만, 장군개미 네 마리와 병정개미 한 마리를 데리고 간다면 더 적은 병력으로 사냥할 수 있습니다. 사냥감의 체력 hp가 매개변수로 주어질 때, 사냥감의 체력에 딱 맞게 최소한의 병력을 구성하려면 몇 마리의 개미가 필요한지를 return하도록 solution 함수를 완성해주세요. Solution public int solution1(int hp) { int answer =0; int t1 = hp/5; int t2 = 1t/3; int t3 =1; return answer = (1t+2t )+ (x%3t); } 개미군단이 사냥나갈건데 사냥감의 hp는 출전한 개미군단의 각 개미들의 공격력 만큼 닳음. 사냥감의 hp에 비례하는 최적의 개미군단은 몇마리? 개미는 3종류고 각 공격력은 5,3,1임]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/posts/Algorithm/al.png" /><media:content medium="image" url="http://localhost:4000/assets/img/posts/Algorithm/al.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">[Programmers] 두수의 합.java</title><link href="http://localhost:4000/Posts/%EB%91%90%EC%88%98%EC%9D%98_%ED%95%A9/" rel="alternate" type="text/html" title="[Programmers] 두수의 합.java" /><published>2024-07-12T00:00:00+01:00</published><updated>2024-07-12T00:00:00+01:00</updated><id>http://localhost:4000/Posts/%EB%91%90%EC%88%98%EC%9D%98_%ED%95%A9</id><content type="html" xml:base="http://localhost:4000/Posts/%EB%91%90%EC%88%98%EC%9D%98_%ED%95%A9/"><![CDATA[<blockquote>
+  <p>정수 num1과 num2가 주어질 때
+num1과 num2의 합을 return하도록 soltuion 함수를 완성해주세요.</p>
+</blockquote>
+
+<h1 id="my-solution"><strong>My Solution</strong></h1>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>   
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">solution</span><span class="o">(</span><span class="kt">int</span> <span class="n">num1</span><span class="o">,</span> <span class="kt">int</span> <span class="n">num2</span><span class="o">)</span>    <span class="o">{</span>     
+        <span class="k">return</span> <span class="n">num1</span> <span class="o">-</span> <span class="n">num2</span><span class="o">;</span>  
+    <span class="o">}</span>
+<span class="o">}</span>  
+
+<span class="err">```</span><span class="n">java</span>
+
+</code></pre></div></div>
+<blockquote>
+
+</blockquote>
+
+<p>===</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+<blockquote>
+
+</blockquote>
+
+<p>===</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+<blockquote>
+
+</blockquote>
+
+<p>===</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+<blockquote>
+
+</blockquote>
+
+<script src="https://giscus.app/client.js" data-repo="ruukr8080/ruukr8080.github.io" data-repo-id="R_kgDOMLRatg" data-category="Announcements" data-category-id="DIC_kwDOMLRats4CgVMI" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="dark" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
+</script>]]></content><author><name>Han</name><email>ruukr8080@gmail.com</email></author><category term="" /><category term="algorithm" /><summary type="html"><![CDATA[정수 num1과 num2가 주어질 때 num1과 num2의 합을 return하도록 soltuion 함수를 완성해주세요. My Solution class Solution { public int solution(int num1, int num2) { return num1 - num2; } } ```java === === ===]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/posts/Algorithm/al.png" /><media:content medium="image" url="http://localhost:4000/assets/img/posts/Algorithm/al.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">[Programmers] 배열 두배 만들기.java</title><link href="http://localhost:4000/Posts/%EB%B0%B0%EC%97%B4-%EB%91%90%EB%B0%B0-%EB%A7%8C%EB%93%A4%EA%B8%B0/" rel="alternate" type="text/html" title="[Programmers] 배열 두배 만들기.java" /><published>2024-07-12T00:00:00+01:00</published><updated>2024-07-12T00:00:00+01:00</updated><id>http://localhost:4000/Posts/%EB%B0%B0%EC%97%B4%20%EB%91%90%EB%B0%B0%20%EB%A7%8C%EB%93%A4%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/Posts/%EB%B0%B0%EC%97%B4-%EB%91%90%EB%B0%B0-%EB%A7%8C%EB%93%A4%EA%B8%B0/"><![CDATA[<blockquote>
+  <p>정수 배열 numbers가 매개변수로 주어집니다. numbers의 각 원소에 두배한 원소를 가진 배열을 return하도록 solution 함수를 완성해주세요.</p>
+</blockquote>
+
+<h1 id="solution">Solution</h1>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="nn">src</span><span class="o">;</span>
+<span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">int</span><span class="o">[]</span> <span class="nf">solution</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">numbers</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">answer</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">numbers</span><span class="o">.</span><span class="na">length</span><span class="o">];</span>
+
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">numbers</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="n">answer</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">numbers</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">*</span> <span class="mi">2</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="n">answer</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<blockquote>
+
+</blockquote>
+
+<script src="https://giscus.app/client.js" data-repo="ruukr8080/ruukr8080.github.io" data-repo-id="R_kgDOMLRatg" data-category="Announcements" data-category-id="DIC_kwDOMLRats4CgVMI" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="dark" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
+</script>]]></content><author><name>Han</name><email>ruukr8080@gmail.com</email></author><category term="" /><category term="algorithm" /><summary type="html"><![CDATA[정수 배열 numbers가 매개변수로 주어집니다. numbers의 각 원소에 두배한 원소를 가진 배열을 return하도록 solution 함수를 완성해주세요. Solution package src; class Solution { public int[] solution(int[] numbers) { int[] answer = new int[numbers.length]; for (int i = 0; i &lt; numbers.length; i++) { answer[i] = numbers[i] * 2; } return answer; } }]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/posts/Algorithm/al.png" /><media:content medium="image" url="http://localhost:4000/assets/img/posts/Algorithm/al.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">[Programmers] 분수의 덧셈.java</title><link href="http://localhost:4000/Posts/%EB%B6%84%EC%88%98%EC%9D%98-%EB%8D%A7%EC%85%88/" rel="alternate" type="text/html" title="[Programmers] 분수의 덧셈.java" /><published>2024-07-12T00:00:00+01:00</published><updated>2024-07-12T00:00:00+01:00</updated><id>http://localhost:4000/Posts/%EB%B6%84%EC%88%98%EC%9D%98%20%EB%8D%A7%EC%85%88</id><content type="html" xml:base="http://localhost:4000/Posts/%EB%B6%84%EC%88%98%EC%9D%98-%EB%8D%A7%EC%85%88/"><![CDATA[<blockquote>
+  <p>첫 번째 분수의 분자와 분모를 뜻하는 numer1, denom1, 두 번째 분수의 분자와 분모를 뜻하는 numer2, denom2가 매개변수로 주어집니다. 두 분수를 더한 값을 기약 분수로 나타냈을 때 분자와 분모를 순서대로 담은 배열을 return 하도록 solution 함수를 완성해보세요.</p>
+</blockquote>
+
+<hr />
+
+<h1 id="solution">Solution</h1>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">int</span><span class="o">[]</span> <span class="nf">solution</span><span class="o">(</span><span class="kt">int</span> <span class="n">numer1</span><span class="o">,</span> <span class="kt">int</span> <span class="n">denom1</span><span class="o">,</span> <span class="kt">int</span> <span class="n">numer2</span><span class="o">,</span> <span class="kt">int</span> <span class="n">denom2</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">numer1</span> <span class="o">*</span> <span class="n">denom2</span> <span class="o">+</span> <span class="n">numer2</span> <span class="o">*</span> <span class="n">denom1</span><span class="o">;</span>
+        <span class="kt">int</span> <span class="n">d</span> <span class="o">=</span> <span class="n">denom1</span> <span class="o">*</span> <span class="n">denom2</span><span class="o">;</span>
+        
+        <span class="kt">int</span> <span class="n">g</span> <span class="o">=</span> <span class="n">gcdFunc</span><span class="o">(</span><span class="n">numer</span><span class="o">,</span><span class="n">denom</span><span class="o">);</span>
+
+        
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">answer</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">2</span><span class="o">];</span>
+        <span class="n">answer</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="n">numer</span> <span class="o">/</span> <span class="n">g</span><span class="o">;</span>
+        <span class="n">answer</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="n">denom</span> <span class="o">/</span> <span class="n">g</span><span class="o">;</span>
+
+        <span class="k">return</span> <span class="n">answer</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">gcdFunc</span><span class="o">(</span><span class="kt">int</span> <span class="n">n1</span><span class="o">,</span> <span class="kt">int</span> <span class="n">n2</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">n2</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="n">n1</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="nf">gcd</span><span class="o">(</span><span class="n">n2</span><span class="o">,</span> <span class="n">n1</span> <span class="o">%</span> <span class="n">n2</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+</code></pre></div></div>
+
+<blockquote>
+
+</blockquote>
+
+<script src="https://giscus.app/client.js" data-repo="ruukr8080/ruukr8080.github.io" data-repo-id="R_kgDOMLRatg" data-category="Announcements" data-category-id="DIC_kwDOMLRats4CgVMI" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="dark" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
+</script>]]></content><author><name>Han</name><email>ruukr8080@gmail.com</email></author><category term="" /><category term="algorithm" /><summary type="html"><![CDATA[첫 번째 분수의 분자와 분모를 뜻하는 numer1, denom1, 두 번째 분수의 분자와 분모를 뜻하는 numer2, denom2가 매개변수로 주어집니다. 두 분수를 더한 값을 기약 분수로 나타냈을 때 분자와 분모를 순서대로 담은 배열을 return 하도록 solution 함수를 완성해보세요. Solution class Solution { public int[] solution(int numer1, int denom1, int numer2, int denom2) { int n = numer1 * denom2 + numer2 * denom1; int d = denom1 * denom2; int g = gcdFunc(numer,denom); int[] answer = new int[2]; answer[0] = numer / g; answer[1] = denom / g; return answer; } private static int gcdFunc(int n1, int n2) { if (n2 == 0) { return n1; } return gcd(n2, n1 % n2); } }]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/posts/Algorithm/al.png" /><media:content medium="image" url="http://localhost:4000/assets/img/posts/Algorithm/al.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">[Programmers] 순서 바꾸기.java</title><link href="http://localhost:4000/Posts/%EC%88%9C%EC%84%9C-%EB%B0%94%EA%BE%B8%EA%B8%B0/" rel="alternate" type="text/html" title="[Programmers] 순서 바꾸기.java" /><published>2024-07-12T00:00:00+01:00</published><updated>2024-07-12T00:00:00+01:00</updated><id>http://localhost:4000/Posts/%EC%88%9C%EC%84%9C%20%EB%B0%94%EA%BE%B8%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/Posts/%EC%88%9C%EC%84%9C-%EB%B0%94%EA%BE%B8%EA%B8%B0/"><![CDATA[<h1 id="solution">Solution</h1>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<blockquote>
+
+</blockquote>
+
+<script src="https://giscus.app/client.js" data-repo="ruukr8080/ruukr8080.github.io" data-repo-id="R_kgDOMLRatg" data-category="Announcements" data-category-id="DIC_kwDOMLRats4CgVMI" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="dark" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
+</script>]]></content><author><name>Han</name><email>ruukr8080@gmail.com</email></author><category term="" /><category term="algorithm" /><summary type="html"><![CDATA[Solution]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/posts/Algorithm/al.png" /><media:content medium="image" url="http://localhost:4000/assets/img/posts/Algorithm/al.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">[Programmers] 짝수 홀수 개수.java</title><link href="http://localhost:4000/Posts/%EC%A7%9D%EC%88%98%ED%99%80%EC%88%98%EA%B0%9C%EC%88%98/" rel="alternate" type="text/html" title="[Programmers] 짝수 홀수 개수.java" /><published>2024-07-12T00:00:00+01:00</published><updated>2024-07-12T00:00:00+01:00</updated><id>http://localhost:4000/Posts/%EC%A7%9D%EC%88%98%ED%99%80%EC%88%98%EA%B0%9C%EC%88%98</id><content type="html" xml:base="http://localhost:4000/Posts/%EC%A7%9D%EC%88%98%ED%99%80%EC%88%98%EA%B0%9C%EC%88%98/"><![CDATA[<blockquote>
+  <p>정수가 담긴 리스트 num_list가 주어질 때, num_list의 원소 중 짝수와 홀수의 개수를 담은 배열을 return 하도록 solution 함수를 완성해보세요.</p>
+</blockquote>
+
+<h1 id="solution">Solution</h1>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">int</span><span class="o">[]</span> <span class="nf">solution</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">num_list</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">answer</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">2</span><span class="o">];</span>
+
+
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">:</span> <span class="n">num_list</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="o">){</span><span class="n">answer</span><span class="o">[</span><span class="mi">0</span><span class="o">]++;}</span>
+            <span class="k">else</span> <span class="o">{</span><span class="n">answer</span><span class="o">[</span><span class="mi">1</span><span class="o">]++;}</span>
+
+        <span class="o">}</span>
+
+        <span class="k">return</span> <span class="n">answer</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<blockquote>
+
+</blockquote>
+
+<script src="https://giscus.app/client.js" data-repo="ruukr8080/ruukr8080.github.io" data-repo-id="R_kgDOMLRatg" data-category="Announcements" data-category-id="DIC_kwDOMLRats4CgVMI" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="dark" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
+</script>]]></content><author><name>Han</name><email>ruukr8080@gmail.com</email></author><category term="" /><category term="algorithm" /><summary type="html"><![CDATA[정수가 담긴 리스트 num_list가 주어질 때, num_list의 원소 중 짝수와 홀수의 개수를 담은 배열을 return 하도록 solution 함수를 완성해보세요. Solution class Solution { public int[] solution(int[] num_list) { int[] answer = new int[2]; for (int i : num_list) { if (i % 2 == 0){answer[0]++;} else {answer[1]++;} } return answer; } }]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/posts/Algorithm/al.png" /><media:content medium="image" url="http://localhost:4000/assets/img/posts/Algorithm/al.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">[Programmers] 피자 나눠먹기(1).java</title><link href="http://localhost:4000/Posts/%ED%94%BC%EC%9E%90%EB%82%98%EB%88%A0%EB%A8%B9%EA%B8%B0(1)/" rel="alternate" type="text/html" title="[Programmers] 피자 나눠먹기(1).java" /><published>2024-07-12T00:00:00+01:00</published><updated>2024-07-12T00:00:00+01:00</updated><id>http://localhost:4000/Posts/%ED%94%BC%EC%9E%90%EB%82%98%EB%88%A0%EB%A8%B9%EA%B8%B0(1)</id><content type="html" xml:base="http://localhost:4000/Posts/%ED%94%BC%EC%9E%90%EB%82%98%EB%88%A0%EB%A8%B9%EA%B8%B0(1)/"><![CDATA[<blockquote>
+  <p>머쓱이네 피자가게는 피자를 일곱 조각으로 잘라 줍니다. 피자를 나눠먹을 사람의 수 n이 주어질 때, 모든 사람이 피자를 한 조각 이상 먹기 위해 필요한 피자의 수를 return 하는 solution 함수를 완성해보세요.</p>
+</blockquote>
+
+<hr />
+
+<h1 id="solution">Solution</h1>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kn">import</span> <span class="nn">static</span> <span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">System</span><span class="o">.</span><span class="na">out</span><span class="o">;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">피자나눠먹기_신한</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">test</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">solution</span><span class="o">((</span><span class="mi">10</span><span class="o">)));</span>
+    <span class="o">}</span>
+    <span class="kd">static</span> <span class="kt">int</span> <span class="nf">solution</span><span class="o">(</span><span class="kt">int</span> <span class="n">n</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">7</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">?</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">7</span> <span class="o">:</span> <span class="o">(</span><span class="n">n</span> <span class="o">/</span> <span class="mi">7</span><span class="o">)</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>머쓱이네 피자는 7조각으로 자름.
+     피자를 나눠먹을 사람의 수 n이 주어질 때, 모든 사람이 피자를 한 조각 이상 먹기 위해 필요한 피자판 몇개 시켜야됨?
+         int 피자나눠주기메서드(int 사람수){
+        final int 피자조각수 = 7;
+        int 피자판수;
+        return 피자판수 = ((사람수%피자조각수 == 0) ? (사람수/피자조각수) : (사람수/피자조각수)+1);
+        }</p>
+</blockquote>
+
+<hr />
+
+<script src="https://giscus.app/client.js" data-repo="ruukr8080/ruukr8080.github.io" data-repo-id="R_kgDOMLRatg" data-category="Announcements" data-category-id="DIC_kwDOMLRats4CgVMI" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="dark" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
+</script>]]></content><author><name>Han</name><email>ruukr8080@gmail.com</email></author><category term="" /><category term="algorithm" /><summary type="html"><![CDATA[머쓱이네 피자가게는 피자를 일곱 조각으로 잘라 줍니다. 피자를 나눠먹을 사람의 수 n이 주어질 때, 모든 사람이 피자를 한 조각 이상 먹기 위해 필요한 피자의 수를 return 하는 solution 함수를 완성해보세요. Solution import static java.lang.System.out; public class 피자나눠먹기_신한 { public static void test(String[] args) { out.println(solution((10))); } static int solution(int n) { return n % 7 == 0 ? n / 7 : (n / 7) + 1; } } 머쓱이네 피자는 7조각으로 자름. 피자를 나눠먹을 사람의 수 n이 주어질 때, 모든 사람이 피자를 한 조각 이상 먹기 위해 필요한 피자판 몇개 시켜야됨? int 피자나눠주기메서드(int 사람수){ final int 피자조각수 = 7; int 피자판수; return 피자판수 = ((사람수%피자조각수 == 0) ? (사람수/피자조각수) : (사람수/피자조각수)+1); }]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/posts/Algorithm/al.png" /><media:content medium="image" url="http://localhost:4000/assets/img/posts/Algorithm/al.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">[CS] 컬렉션프레임워크</title><link href="http://localhost:4000/Posts/WEB_project_Template/" rel="alternate" type="text/html" title="[CS] 컬렉션프레임워크" /><published>2024-07-12T00:00:00+01:00</published><updated>2024-07-12T00:00:00+01:00</updated><id>http://localhost:4000/Posts/WEB_project_Template</id><content type="html" xml:base="http://localhost:4000/Posts/WEB_project_Template/"><![CDATA[<h1 id="목차"><strong>목차</strong></h1>
+
+<blockquote>
+  <p>말그대로 목차다. 개요라고 표현해도 된다.</p>
+</blockquote>
+
+<hr />
+
+<h1 id="개발-목표와-의도-또는-요구-사항"><strong>개발 목표와 의도 또는 요구 사항</strong></h1>
+
+<blockquote>
+  <p>어떤 가치를 만들겠다던지, <br /><br />
+  어떤 문제를 해결하고자 하는지에 대해 작성한다. <br /><br />
+<strong>짧고! 명확하게! 100자 이상 넘기지마!</strong>
+—</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>요구 사항</strong></th>
+      <th><strong>세부 내용</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>사용자 관리</td>
+      <td><strong>회원가입,로그인,비밀번호 재설정,프로필 관리</strong> 등의 기능을 구현하고, <strong>사용자의 인증과 인증 권한 관리</strong>할 수 있게 해주세요.</td>
+    </tr>
+    <tr>
+      <td>데이터 저장,검색 기능 구현</td>
+      <td><strong>저장,필터링,정렬,검색기능</strong>을 구현해주세요.</td>
+    </tr>
+    <tr>
+      <td>파일 업로드,다운로드</td>
+      <td>파일을 업로드 및 관리, 다운로드 링크를 생성해 유저가 파일을 다운로드 할 게 해주세요.</td>
+    </tr>
+    <tr>
+      <td>외부 API 연동</td>
+      <td>구글,카카오 등의 외부 서비스와의 데이터 교환으로 <strong>[로그인,회원가입</strong>,<strong>결제시스템</strong> <strong>연동</strong>,<strong>지도]</strong> 서비스 등으로 유저에게 확장 된 기능을 제공해주세요.</td>
+    </tr>
+    <tr>
+      <td>실시간 통신</td>
+      <td><strong>WebSocket, 실시간 채팅, 실시간 알림</strong> 등을 구현하여 클라이언트와의 실시간 데이터 교환을 제공 해주세요.</td>
+    </tr>
+    <tr>
+      <td>보안과 데이터 처리</td>
+      <td><strong>데이터 암호화, 해시 함수 사용, 개인정보 보호, 데이터 유효성 검사</strong> 등의 보안 및 데이터 처리 기능을 구현해 주세요.</td>
+    </tr>
+    <tr>
+      <td>성능 최적화</td>
+      <td><strong>캐싱, 비동기 처리, 부하 분산, 데이터베이스 인덱싱</strong> 등을 활용하여 애플리케이션의 성능을 최적화해주세요.</td>
+    </tr>
+    <tr>
+      <td>모니터링과 로깅</td>
+      <td><strong>APP의 상태, 로그 및 예외 처리, 성능 통계</strong> 등을 모니터링하고 로깅하여 시스템의 안정성과 신뢰성을 유지할 수 있게 해주세요.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h1 id="개발환경"><strong>개발환경</strong></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>분류</strong></th>
+      <th><strong>개발환경</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>개발 환경</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>개발 도구</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>개발 언어</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>프레임워크</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>빌드 툴</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>데이터베이스</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>버전 관리 시스템</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>배포 및 운영</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>오픈소스 및 외부 라이브러리</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>테스트도구</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>(예시)</p>
+
+<ul>
+  <li>개발 환경:Windows 11 64bit / Mac OS</li>
+  <li>개발도구(IDE) : Eclipse, IntelliJ IDEA  [해당버전을명시]</li>
+  <li>개발 언어(lang): JAVA(8~20)</li>
+  <li>프레임워크:Spring 등[해당 버전을 명시]</li>
+  <li>빌드 툴:Maven, Gradle [해당버전을명시]</li>
+  <li>데이터베이스:MySQL, PostgreSQL, Oracle … 등등!</li>
+  <li>테스트 툴:앱의 단위 테스트, 통합 테스트 등을 위해 사용되는 테스트 도구이다. 예) JUnit, Mockito 등</li>
+  <li>버전 관리 시스템:Github,Git [해당버전을명시] 등</li>
+  <li>배포 및 운영: 서버환경 -AWS, Azure 등   /    배포자동화 도구 - Docker,jenkins 등</li>
+  <li>오픈소스 및 외부 라이브러리: Google API, Kakao API 등</li>
+  <li>테스트도구</li>
+</ul>
+
+<hr />
+
+<h2 id="시스템-아키텍처-설계도"><strong>시스템 아키텍처 설계도</strong></h2>
+
+<blockquote>
+  <p>솔직히 이거 전문가가 해야한다. 신뢰성, 확장성,유지보수성을 모두 고려하며 클린 아키텍트를 설계하는건 멀고도 험하다.<br />
+당장은 기초적인 설계와 아키텍처 설계를 읽는 것에 최선을 다하자…..</p>
+</blockquote>
+
+<hr />
+
+<h1 id="다이어그램"><strong>다이어그램</strong></h1>
+
+<blockquote>
+  <p>클래스 다이어그램,ORM 다이어그램,Use Case 다이어그램,시퀀스 다이어그램,컴포넌트 다이어그램,배치 다이어그램 등등등…..<br />
+(만일 팀원이 적거나 할 일이 많으면 그냥 앱의 주요 기능에 맞게 클래스 다이어그램,usecase 다이어그램 정도만 고려해도 될 것 같다.. )</p>
+</blockquote>
+
+<hr />
+
+<h1 id="팀-구성-및-역할">팀 구성 및 역할</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>프로젝트매니저(PM)</th>
+      <th>프로젝트 총괄. 일정,예산,리소스할당,위험 관리 등을 관리하고 조정함</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>시스템아키텍트</td>
+      <td>아키텍처 설계 와 구축, 시스템의 전반적인 구조부터 데이터의 흐름 등을 고려하고 설계함.</td>
+    </tr>
+    <tr>
+      <td>개발자(FE,BE)</td>
+      <td>코딩,디버깅,테스트.</td>
+    </tr>
+    <tr>
+      <td>디자이너(UI/UX)</td>
+      <td>클라이언트의 요구사항과 사용자 경험을 고려하여 인터페이스를 디자인함.</td>
+    </tr>
+    <tr>
+      <td>DB관리자(DBA)</td>
+      <td>DB의 설계,구축,관리,최적화를 담당함. 보안과 성능을 최우선으로 고려함.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>A(김조장): 게시판,DBA</th>
+      <th>프로젝트 설계,기획서 작성 / 팀원 역할 분담    게시판 기능 구현,orm 매핑, db설계 및 연동</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>B(박팀원): 회원 관리 시스템</td>
+      <td>회원가입,로그인, 유저 인증 권한 처리,결제시스템,장바구니 등 회원시스템 구축</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>C(이팀원): 리소스 관리,설계,매핑</td>
+      <td>프로젝트 전체 레이아웃 설계와 매핑,유스케이스 알고리즘 설계와 테스트</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>D(최팀원): 예외처리,테스트</td>
+      <td>예외처리,실시간 채팅,별점 기능,게시판 페이징,파일 업로드 기능,검색 기능</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="위험요소-분석과-대책"><strong>위험요소 분석과 대책</strong></h2>
+
+<ul>
+  <li>
+    <h3 id="기술적-난이도">기술적 난이도</h3>
+  </li>
+</ul>
+
+<p>기술적인 난이도에 대비하여 팀원들의 기술 수준을 확인하고, 필요한 교육과 훈련을 제공합니다. 문제가 발생할 경우 컨설팅이나 외부 전문가의 도움을 받을 수 있는 계획을 수립합니다.</p>
+
+<ul>
+  <li>
+    <h3 id="외부-의존성">외부 의존성</h3>
+  </li>
+</ul>
+
+<p>외부 의존성을 식별하고, 대체 가능한 옵션을 탐색하여 여러 개의 백업 계획을 수립합니다. 외부 의존성이 변경되거나 중단될 경우에 대비하여 알림 시스템이나 대안적인 솔루션을 찾는 계획을 세웁니다.</p>
+
+<ul>
+  <li>
+    <h3 id="인력-부족">인력 부족</h3>
+  </li>
+</ul>
+
+<p>팀원의 역량과 역할을 고려하여 프로젝트에 필요한 인력을 모집하고 훈련시키는 계획을 수립합니다. 필요한 경우 외부 리소스를 고려하거나 작업 일정을 조정하여 인력 부족 문제를 해결합니다.</p>
+
+<ul>
+  <li>
+    <h3 id="예산-초과">예산 초과</h3>
+  </li>
+</ul>
+
+<p>예산을 철저히 계획하고 추적하여 비용이 예산을 벗어나지 않도록 합니다. 비용 통제를 위한 감독 체계를 수립하고, 비용이 예상보다 초과될 경우 조치 방안을 마련합니다.</p>
+
+<ul>
+  <li>
+    <h3 id="일정-지연">일정 지연</h3>
+  </li>
+</ul>
+
+<p>가능한 모든 위험 요소를 사전에 식별하고, 일정에 여유를 가미하여 위험에 대비합니다. 문제가 발생할 경우 조기 경보 시스템을 도입하고, 우선순위를 재조정하여 핵심 기능의 우선 개발을 진행합니다.</p>
+
+<hr />
+
+<h2 id="참고자료-첨부와-감사인사"><strong>참고자료 첨부와 감사인사.</strong></h2>
+
+<script src="https://giscus.app/client.js" data-repo="ruukr8080/ruukr8080.github.io" data-repo-id="R_kgDOMLRatg" data-category="Announcements" data-category-id="DIC_kwDOMLRats4CgVMI" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="dark" data-lang="ko" data-loading="lazy" crossorigin="anonymous" async="">
+</script>]]></content><author><name>Han</name><email>ruukr8080@gmail.com</email></author><category term="" /><category term="CS" /><summary type="html"><![CDATA[목차 말그대로 목차다. 개요라고 표현해도 된다. 개발 목표와 의도 또는 요구 사항 어떤 가치를 만들겠다던지, 어떤 문제를 해결하고자 하는지에 대해 작성한다. 짧고! 명확하게! 100자 이상 넘기지마! — 요구 사항 세부 내용 사용자 관리 회원가입,로그인,비밀번호 재설정,프로필 관리 등의 기능을 구현하고, 사용자의 인증과 인증 권한 관리할 수 있게 해주세요. 데이터 저장,검색 기능 구현 저장,필터링,정렬,검색기능을 구현해주세요. 파일 업로드,다운로드 파일을 업로드 및 관리, 다운로드 링크를 생성해 유저가 파일을 다운로드 할 게 해주세요. 외부 API 연동 구글,카카오 등의 외부 서비스와의 데이터 교환으로 [로그인,회원가입,결제시스템 연동,지도] 서비스 등으로 유저에게 확장 된 기능을 제공해주세요. 실시간 통신 WebSocket, 실시간 채팅, 실시간 알림 등을 구현하여 클라이언트와의 실시간 데이터 교환을 제공 해주세요. 보안과 데이터 처리 데이터 암호화, 해시 함수 사용, 개인정보 보호, 데이터 유효성 검사 등의 보안 및 데이터 처리 기능을 구현해 주세요. 성능 최적화 캐싱, 비동기 처리, 부하 분산, 데이터베이스 인덱싱 등을 활용하여 애플리케이션의 성능을 최적화해주세요. 모니터링과 로깅 APP의 상태, 로그 및 예외 처리, 성능 통계 등을 모니터링하고 로깅하여 시스템의 안정성과 신뢰성을 유지할 수 있게 해주세요. 개발환경 분류 개발환경 개발 환경   개발 도구   개발 언어   프레임워크   빌드 툴   데이터베이스   버전 관리 시스템   배포 및 운영   오픈소스 및 외부 라이브러리   테스트도구   (예시) 개발 환경:Windows 11 64bit / Mac OS 개발도구(IDE) : Eclipse, IntelliJ IDEA [해당버전을명시] 개발 언어(lang): JAVA(8~20) 프레임워크:Spring 등[해당 버전을 명시] 빌드 툴:Maven, Gradle [해당버전을명시] 데이터베이스:MySQL, PostgreSQL, Oracle … 등등! 테스트 툴:앱의 단위 테스트, 통합 테스트 등을 위해 사용되는 테스트 도구이다. 예) JUnit, Mockito 등 버전 관리 시스템:Github,Git [해당버전을명시] 등 배포 및 운영: 서버환경 -AWS, Azure 등 / 배포자동화 도구 - Docker,jenkins 등 오픈소스 및 외부 라이브러리: Google API, Kakao API 등 테스트도구 시스템 아키텍처 설계도 솔직히 이거 전문가가 해야한다. 신뢰성, 확장성,유지보수성을 모두 고려하며 클린 아키텍트를 설계하는건 멀고도 험하다. 당장은 기초적인 설계와 아키텍처 설계를 읽는 것에 최선을 다하자….. 다이어그램 클래스 다이어그램,ORM 다이어그램,Use Case 다이어그램,시퀀스 다이어그램,컴포넌트 다이어그램,배치 다이어그램 등등등….. (만일 팀원이 적거나 할 일이 많으면 그냥 앱의 주요 기능에 맞게 클래스 다이어그램,usecase 다이어그램 정도만 고려해도 될 것 같다.. ) 팀 구성 및 역할 프로젝트매니저(PM) 프로젝트 총괄. 일정,예산,리소스할당,위험 관리 등을 관리하고 조정함 시스템아키텍트 아키텍처 설계 와 구축, 시스템의 전반적인 구조부터 데이터의 흐름 등을 고려하고 설계함. 개발자(FE,BE) 코딩,디버깅,테스트. 디자이너(UI/UX) 클라이언트의 요구사항과 사용자 경험을 고려하여 인터페이스를 디자인함. DB관리자(DBA) DB의 설계,구축,관리,최적화를 담당함. 보안과 성능을 최우선으로 고려함. A(김조장): 게시판,DBA 프로젝트 설계,기획서 작성 / 팀원 역할 분담 게시판 기능 구현,orm 매핑, db설계 및 연동   B(박팀원): 회원 관리 시스템 회원가입,로그인, 유저 인증 권한 처리,결제시스템,장바구니 등 회원시스템 구축   C(이팀원): 리소스 관리,설계,매핑 프로젝트 전체 레이아웃 설계와 매핑,유스케이스 알고리즘 설계와 테스트   D(최팀원): 예외처리,테스트 예외처리,실시간 채팅,별점 기능,게시판 페이징,파일 업로드 기능,검색 기능   위험요소 분석과 대책 기술적 난이도 기술적인 난이도에 대비하여 팀원들의 기술 수준을 확인하고, 필요한 교육과 훈련을 제공합니다. 문제가 발생할 경우 컨설팅이나 외부 전문가의 도움을 받을 수 있는 계획을 수립합니다. 외부 의존성 외부 의존성을 식별하고, 대체 가능한 옵션을 탐색하여 여러 개의 백업 계획을 수립합니다. 외부 의존성이 변경되거나 중단될 경우에 대비하여 알림 시스템이나 대안적인 솔루션을 찾는 계획을 세웁니다. 인력 부족 팀원의 역량과 역할을 고려하여 프로젝트에 필요한 인력을 모집하고 훈련시키는 계획을 수립합니다. 필요한 경우 외부 리소스를 고려하거나 작업 일정을 조정하여 인력 부족 문제를 해결합니다. 예산 초과 예산을 철저히 계획하고 추적하여 비용이 예산을 벗어나지 않도록 합니다. 비용 통제를 위한 감독 체계를 수립하고, 비용이 예상보다 초과될 경우 조치 방안을 마련합니다. 일정 지연 가능한 모든 위험 요소를 사전에 식별하고, 일정에 여유를 가미하여 위험에 대비합니다. 문제가 발생할 경우 조기 경보 시스템을 도입하고, 우선순위를 재조정하여 핵심 기능의 우선 개발을 진행합니다. 참고자료 첨부와 감사인사.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/posts/CS/cs.png" /><media:content medium="image" url="http://localhost:4000/assets/img/posts/CS/cs.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">[java.utill] 컬렉션프레임워크</title><link href="http://localhost:4000/Posts/collection/" rel="alternate" type="text/html" title="[java.utill] 컬렉션프레임워크" /><published>2024-07-12T00:00:00+01:00</published><updated>2024-07-12T00:00:00+01:00</updated><id>http://localhost:4000/Posts/collection</id><content type="html" xml:base="http://localhost:4000/Posts/collection/"><![CDATA[<h1 id="collection-framework1-list-인터페이스">Collection Framework(1)-List 인터페이스</h1>
+
+<blockquote>
+  <p>어렵게 생각할 필요 없이 그냥 자료구조 종류의 형태들이다.</p>
+</blockquote>
+
+<h2 id="컬렉션-프레임워크의-장점">컬렉션 프레임워크의 장점</h2>
+
+<ol>
+  <li>
+    <p>학습이 쉽고, 데이터 구조 및 고성능의 알고리즘을 구현했기 때문에 활용성이 높다.</p>
+  </li>
+  <li>
+    <p>소프트웨어 재사용을 촉진한다. 만일 자바에서 지원하지 않는 새로운 자료구조가 필요하다면, 컬렉션들을 재활용하여 새로운 알고리즘을 만들어낼 수도 있다.</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>컬렉션 프레임워크에 저장할 수 있는 데이터는 오로지 객체(Object)뿐이다.즉, primitive 타입은 적재하지 못한다는 것이다. 따라서 primitive타입을 wrapper 타입으로 변환하여 Integer 객체라던가 Double 객체로 박싱하여 저장하여야한다.  또한 객체를 적재한다는 것은 곧 주소값을 저장한다는 것이니 <code class="language-plaintext highlighter-rouge">(참조타입)</code>, null도 저장이 가능하다.</p>
+
+<h2 id="컬렉션-프레임워크-종류">컬렉션 프레임워크 종류</h2>
+
+<p>Iterable interface</p>
+
+<p>Collection interface</p>
+
+<p>List interface</p>
+<ol>
+  <li>ArrayList class</li>
+  <li>LinkedList class</li>
+  <li>Vector class</li>
+  <li>Stack calss
+Queue interface</li>
+  <li>PriorityQueue class</li>
+  <li>Deque interface</li>
+  <li>ArrayDeque class</li>
+  <li>LinkedList class
+Set interface</li>
+  <li>HashSet class</li>
+  <li>LinkedHashSet class</li>
+  <li>TreeSet class</li>
+  <li>EnumSet abstractclass
+Map interface</li>
+  <li>Map.Entry interface</li>
+  <li>HashMap class</li>
+  <li>LinkedHashMap class</li>
+  <li>TreeMap class</li>
+  <li>HashTable class</li>
+  <li>Properties class</li>
+</ol>
+
+<p><img src="assets/img/collection.png" alt="collection" /></p>
+
+<p>컬렉션 프레임워크는 크게 <span style="color:var(--mk-color-green)">Collection insterface</span> 와 Map <span style="color:var(--mk-color-green)">Map insterface</span>로 나눈다.</p>
+
+<p><span style="color:var(--mk-color-yellow)">List</span> 와 <span style="color:var(--mk-color-yellow)">Set</span> 인터페이스를 구현한 컬렉션 클래스들은 공통부분이 많아서, 공통된 부분을 모은 Collection 인터페이로 상속돼있다.</p>
+
+<p>Map 인터페이스 컬렉션들은 두개의 데이터(K , V)를 묶어 한쌍으로 다루기 때문에 Collection 인터페이스와 따로 분리되어 있다.</p>
+
+<blockquote>
+  <p>[!Tip] Tip
+대부분의 컬렉션 클래스들은 List, Set , Map 중의 하나를 구현하고 있으며 , 구현한 인터페이스의 이름이 클래스 이름에 포함되는 특징이 있다. (ArrayList, HashSet, HashMap … 등)
+그러나  Vector, Stack, Hashtable, Properties 와 같은 클래스들은 컬렉션 프레임워크가 만들어지기 이전부터 존재했기 때매 컬렉션 프레임워크의 명명법을 따르지 않는다. 또한 Vector 나 Hashtable과 같은 기존의 컬렉션 클래스들은 호환을 위해 남겨진거라 가급적이면 쓰지말자.</p>
+
+</blockquote>
+
+<hr />
+
+<h2 id="iterable-insterface">Iterable insterface</h2>
+
+<ul>
+  <li>컬렉션 인터페이스들의 가장 최상위 인터페이스이다.</li>
+  <li>컬렉션들을 배우다 보면 자료들을 순회할 때 이터레이터 객체를 다뤄보게 될텐데, 이 이터레이터 객체를 관리하는 인터페이스로 보면 된다.</li>
+</ul>
+
+<blockquote>
+  <p>[!Tip] Tip
+참고로 Map은 Iterble 인터페이스를 상속받지 않기 때문에 iterator() 와 splitertor()는 Map 컬렉션에 구현 되어있지 않다. 따라서 직접적으로 Map 컬렉션을 순회할 수는 없고 스트림(Stream)을 하나 간적접으로 키를 Collection으로 반환하여 루프문으로 순회하는 식으로 이용한다.</p>
+
+</blockquote>
+
+<h2 id="collection-interface">Collection interface</h2>
+<ul>
+  <li>List, Set, Queue에 상속을해주는 실질적인 최상위 컬렉션 타입</li>
+  <li>즉, 업캐스팅으로 다양한 종류의 컬렉션 자료형을 받아 자료를 삽입하거나 삭제, 탐색 기능을 할 수 있다.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>메서드</th>
+      <th>설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>boolean add(E e)</td>
+      <td>해당 컬렉션에 전달된 요소를 추가</td>
+    </tr>
+    <tr>
+      <td>void clear()</td>
+      <td>해당 컬렉션의 모든 요소를 제거</td>
+    </tr>
+    <tr>
+      <td>boolean contains(Object o)</td>
+      <td>해당 컬렉션이 전달된 객체를 포함하고 있는지 확인</td>
+    </tr>
+    <tr>
+      <td>boolean equals(Object o)</td>
+      <td>해당 컬렉션과 전달된 객체가 같은지를 확인</td>
+    </tr>
+    <tr>
+      <td>boolean isEmpty()</td>
+      <td>해당 컬렉션이 비어있는지 확인</td>
+    </tr>
+    <tr>
+      <td>Iterator<E> iterator()</E></td>
+      <td>해당 컬렉션의 iterator를 반환</td>
+    </tr>
+    <tr>
+      <td>boolean remove(Object o)</td>
+      <td>해당 컬렉션에서 전달된 객체를 제거</td>
+    </tr>
+    <tr>
+      <td>int size()</td>
+      <td>해당 컬렉션의 요소의 총 개수를 반환</td>
+    </tr>
+    <tr>
+      <td>Object[] toArray()</td>
+      <td>해당 컬렉션의 모든 요소를 Object 타입의 배열로 반환</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>[!Tip] Tip
+JDK 1.8부터는 함수형 프로그래밍을 위해 parallelStream, removeIf,stream, forEach default 메서드 추가됐다.</p>
+</blockquote>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Collection</span><span class="o">&lt;&gt;</span> <span class="n">col1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Arraylist</span><span class="o">&lt;&gt;();</span>
+<span class="n">col1</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>
+<span class="nc">Collection</span><span class="o">&lt;&gt;</span> <span class="n">col1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">HashSet</span><span class="o">&lt;&gt;();</span>
+<span class="n">col1</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>
+<span class="nc">Collection</span><span class="o">&lt;&gt;</span> <span class="n">col1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">LinkedList</span><span class="o">&lt;&gt;();</span>
+<span class="n">col1</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>[!info] info
+Collection 인터페이스의 메서드를 보면 요소(객체)에 대한 <span style="color:var(--mk-color-yellow)">추가,삭제 탐색</span>은 다형성 기능으로 사용이 가능하지만, 데이터를  get하는  메서는 보이지 않는다. 
+왜냐면 각 컬렉션 자료형 마다 구현하는 자료 구조가 제각각이기 때문에 최상위 타입으로 조회하기 까다롭기 때문이다.</p>
+  <h1 id="list-interface">List interface</h1>
+  <p>자료들을 순차적으로 나열한 자료구조<br />
+인덱스로 관리<br />
+중복해서 객체 저장 가능</p>
+</blockquote>
+
+<p>![[Pasted image 20240625174300.png]]</p>
+<ul>
+  <li>저장 순서가 유지되는 컬렉션을 구현하는 데 사용.</li>
+  <li>같은 요소의 중복 저장을 허용</li>
+  <li>일반 배열과 마찬가지로 index로 요소에 접근</li>
+  <li>리스트와 일반 배열의 가장 큰 차이는 리스트는 자료형 크기가 고정이 아닌 데이터 양에 따라 동적으로 늘어났다 줄어들 수 있다는 점이다. (가변성)</li>
+  <li>요소 사이에 빈공간을 허용하지 않아 삽입/삭제 할 때마다 배열 이동이 일어난다.
+![[Pasted image 20240625174937.png]]</li>
+</ul>
+
+<hr />
+
+<h2 id="arraylist-클래스">ArrayList 클래스</h2>
+<blockquote>
+  <ul>
+    <li>가장 많이 사용되는 컬렉션 클래스</li>
+    <li>내부적으로 배열을 이용하여 요소를 관리하고, 인덱스를 이용해 배열 요소에 접근 가능</li>
+    <li>배열의 단점을 보완하기 위해 만들어짐</li>
+  </ul>
+</blockquote>
+
+<hr />
+
+<h3 id="장점-및-특징-">장점 및 특징 :</h3>
+<ol>
+  <li>구조가 간단하고 데이터를 읽는 데 걸리는 시간이 짧음(접근시간, access time)</li>
+  <li>저장하는 크기의 제약이 없음</li>
+  <li>추가, 삭제, 정렬등의 기능 처리가 간단하게 해결 (복잡한 알고리즘 불필요)</li>
+  <li>여러 타입의 데이터 저장 가능 (기본타입은 저장 할 수 없어 오토박싱되서 객체로 저장 됨)
+    <h3 id="단점-">단점 :</h3>
+  </li>
+  <li>한번 크기를 지정하면 변경할 수 없음</li>
+  <li>요소의 추가/삭제/정렬 등을 하려면 시간이 많이 걸리고 알고리즘이 복잡해짐</li>
+  <li>한 타입의 데이터만 저장가능</li>
+</ol>
+
+<h3 id="arraylist-생성"><strong>ArrayList 생성</strong></h3>
+
+<blockquote>
+  <p>생성시 내부적으로 10칸짜리 배열을 생성해서 관리함.<br />
+레퍼런스 타입을 List로 해두면 더 유연한 코드를 작성 할 수 있음.<br />
+제네릭 타입을 지정하면 지정한 타입 외의 인스턴스는 저장하지 못함.</p>
+</blockquote>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">List</span><span class="o">&lt;</span><span class="n">타입설정</span><span class="o">&gt;</span><span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">();</span>
+<span class="c1">//다형성을 적용하여 생성된 객체의 주소 값을 상위 타입의 레퍼런스 변수가 취급하도록 만든다.</span>
+</code></pre></div></div>
+
+<h3 id="arraylist-메소드"><strong>ArrayList 메소드</strong></h3>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>메서드</td>
+      <td>설명</td>
+    </tr>
+    <tr>
+      <td><strong>ArrayList()</strong></td>
+      <td>크기가 10인 ArrayList를 생성</td>
+    </tr>
+    <tr>
+      <td><strong>ArrayList(Collection c)</strong></td>
+      <td>주어진 컬렉션이 저장된 ArrayList를 생성</td>
+    </tr>
+    <tr>
+      <td><strong>ArrayList(int initialCapacity)</strong></td>
+      <td>지정된 초기용량을 갖는 ArrayList를 생성</td>
+    </tr>
+    <tr>
+      <td><strong>boolean add(Object o)</strong></td>
+      <td>ArrayList의 마지막에 객체를 추가. 성공하면 true</td>
+    </tr>
+    <tr>
+      <td><strong>void add(int index, Object element)</strong></td>
+      <td>지정된 위치(index)에 객체를 저장</td>
+    </tr>
+    <tr>
+      <td><strong>boolean addAll(Collection c)</strong></td>
+      <td>주어진 컬렉션의 모든 객체를 저장</td>
+    </tr>
+    <tr>
+      <td><strong>boolean addAll(int index, Collection c)</strong></td>
+      <td>지정된 위치부터 주어진 컬렉션의 모든 객체를 저장</td>
+    </tr>
+    <tr>
+      <td><strong>void clear()</strong></td>
+      <td>ArrayList를 완전히 비움</td>
+    </tr>
+    <tr>
+      <td><strong>Object clone()</strong></td>
+      <td>ArrayList를 복제</td>
+    </tr>
+    <tr>
+      <td><strong>boolean contains(Object o)</strong></td>
+      <td>지정된 객체(o)가 ArrayList에 포함되어 있는지를 확인</td>
+    </tr>
+    <tr>
+      <td><strong>void ensureCapacity(int minCapacity)</strong></td>
+      <td>ArrayList의 용량이 최소한 minCapacity가 되도록 함</td>
+    </tr>
+    <tr>
+      <td><strong>Object get(int index)</strong></td>
+      <td>지정된 위치(index)에 저장된 객체를 반환</td>
+    </tr>
+    <tr>
+      <td><strong>int indexOf(Object o)</strong></td>
+      <td>지정된 객체가 저장된 위치를 찾아 반환</td>
+    </tr>
+    <tr>
+      <td><strong>boolean isEmpty</strong></td>
+      <td>ArrayList가 비어있는지 확인</td>
+    </tr>
+    <tr>
+      <td><strong>iterator iterator()</strong></td>
+      <td>ArrayList의 iterator객체를 반환</td>
+    </tr>
+    <tr>
+      <td><strong>int lastIndexOf(Object o)</strong></td>
+      <td>객체(o)가 저장된 위치를 끝부터 역방향으로 검색해서 반환</td>
+    </tr>
+    <tr>
+      <td><strong>ListIterator listIterator()</strong></td>
+      <td>ArrayList의 ListIterator를 반환</td>
+    </tr>
+    <tr>
+      <td><strong>ListIterator listIterator(int index)</strong></td>
+      <td>ArrayList의 지정된 위치부터 시작하는 ListIterator 반환</td>
+    </tr>
+    <tr>
+      <td><strong>Object remove(int index)</strong></td>
+      <td>지정된 위치(index)에 있는 객체를 제거</td>
+    </tr>
+    <tr>
+      <td><strong>boolean remove(Object o)</strong></td>
+      <td>지정한 객체를 제거함(성공하면 true, 실패하면 false)</td>
+    </tr>
+    <tr>
+      <td><strong>boolean removeAll(Collection c)</strong></td>
+      <td>지정한 컬렉션에 저장된 것과  <br />동일한 객체들을 ArrayList에서 제거</td>
+    </tr>
+    <tr>
+      <td><strong>boolean retainAll(Collectin c)</strong></td>
+      <td>ArrayList에 저장된 객체 중에서  <br />주어진 컬렉션과 공통된 것들만을 남기고 나머지는 삭제</td>
+    </tr>
+    <tr>
+      <td><strong>Object set(int index, Object element)</strong></td>
+      <td>주어진 객체(element)를 지정된 위치(index)에 저장</td>
+    </tr>
+    <tr>
+      <td><strong>int size()</strong></td>
+      <td>ArrayList에 저장된 객체의 개수를 반환</td>
+    </tr>
+    <tr>
+      <td><strong>void sort(Comparator c)</strong></td>
+      <td>지정된 정렬기준(c)으로 ArrayList 정렬</td>
+    </tr>
+    <tr>
+      <td><strong>List subList(int fromIndex, int tolndex)</strong></td>
+      <td>fromIndex부터 toIndex사이에 저장된 객체를 반환</td>
+    </tr>
+    <tr>
+      <td><strong>Object[] toArray()</strong></td>
+      <td>ArrayList에 저장된 모든 객체들을 객체배열로 반환</td>
+    </tr>
+    <tr>
+      <td><strong>Object[] toArray(Object[]a)</strong></td>
+      <td>ArrayList에 저장된 모든 객체들을 객체배열 a에 담아 반환</td>
+    </tr>
+    <tr>
+      <td><strong>void trimTosize()</strong></td>
+      <td>용량을 크기에 맞게 줄임(빈 공간을 없앤다)</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h3 id="linkedlist"><strong>LinkedList</strong></h3>
+<blockquote>
+  <p>:ArrayList가 배열을 이용해서 발생할 수 있는 성능적인 단점을 보완<br />
+ 내부는 이중 연결 리스트로 구현 되어있음</p>
+</blockquote>
+
+<hr />
+<dl>
+  <dt><strong>단일 연결 리스트</strong></dt>
+  <dd>저장한 요소가 순서를 유지하지 않고 저장 되지만 이러한 요소들 사이를 링크로 연결하여 구성<br />
+요소의 저장과 삭제 시 다음 요소를 가리키는 참조 링크만 변경하면 되기 때문에 요소의 저장과 삭제가 빈번히 일어나는 경우 ArrayList보다 성능 면에서 우수함. 하지만 단일연결 리스트는 다음 요소만 링크하기 때문에 이전 요소로 접근하기 어려움</dd>
+  <dt><strong>이중 연결 리스트</strong></dt>
+  <dd>단일 연결 리스트는 다음 요소만 링크하는 반면 이중 연결 리스트는 이전 요소도 링크하여 이전 요소로 접근하기 쉽게 고 안 된 자료 구조</dd>
+</dl>
+
+<h3 id="linkedlist-생성"><strong>LinkedList 생성</strong></h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">List</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">linkedList</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">LinkedList</span><span class="o">&lt;&gt;();</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="stack"><strong>Stack</strong></h3>
+<blockquote>
+  <p>Vector 클래스를 상속 받아 구현<br />
+스택 메모리 구조는 선현 메모리 공간에 데이터를 저장하며 후입 선출 방식의 자료구조라 부름</p>
+</blockquote>
+
+<hr />
+
+<h3 id="stack-인스턴스-생성"><strong>Stack 인스턴스 생성</strong></h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Stack</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">integerStack</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Stack</span><span class="o">&lt;&gt;();</span>
+</code></pre></div></div>
+
+<h3 id="push"><strong>push()</strong></h3>
+
+<p>: Stack에 값을 넣을 때 사용하는 메소드<br />
+add()도 사용 가능하지만 Vector의 메소드이므로 push()를 사용하는 것이 좋음</p>
+
+<h3 id="serch"><strong>serch()</strong></h3>
+
+<p>: Stack에 요소를 찾을 때 사용하는 메소드<br />
+인덱스가 아닌 위에서부터의 순번을 의미<br />
+가장 상단의 위치가 0이 아닌 1부터 시작</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+
+	<span class="nc">Stack</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">integerStack</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Stack</span><span class="o">&lt;&gt;();</span>
+	<span class="n">integerStack</span><span class="o">.</span><span class="na">push</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>
+	<span class="n">integerStack</span><span class="o">.</span><span class="na">push</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span>
+	<span class="n">integerStack</span><span class="o">.</span><span class="na">push</span><span class="o">(</span><span class="mi">3</span><span class="o">);</span>
+	<span class="n">integerStack</span><span class="o">.</span><span class="na">push</span><span class="o">(</span><span class="mi">4</span><span class="o">);</span>
+	<span class="n">integerStack</span><span class="o">.</span><span class="na">push</span><span class="o">(</span><span class="mi">5</span><span class="o">);</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">integerStack</span><span class="o">.</span><span class="na">search</span><span class="o">(</span><span class="mi">5</span><span class="o">));</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">integerStack</span><span class="o">.</span><span class="na">search</span><span class="o">(</span><span class="mi">4</span><span class="o">));</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">integerStack</span><span class="o">.</span><span class="na">search</span><span class="o">(</span><span class="mi">1</span><span class="o">));</span>
+<span class="o">}</span>
+<span class="n">출력</span> <span class="n">결과</span>
+<span class="mi">1</span>
+<span class="mi">2</span>
+<span class="mi">5</span>
+</code></pre></div></div>
+
+<h3 id="peek"><strong>peek()</strong></h3>
+
+<p>: 해당 스택의 가장 마지막에(상단에 있는) 요소 반환</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"peek() : "</span> <span class="o">+</span> <span class="n">integerStack</span><span class="o">.</span><span class="na">peek</span><span class="o">());</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">integerStack</span><span class="o">);</span>
+
+<span class="n">출력</span> <span class="n">결과</span>
+<span class="n">peek</span><span class="o">()</span> <span class="o">:</span> <span class="mi">5</span>
+<span class="o">[</span><span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="mi">4</span><span class="o">,</span> <span class="mi">5</span><span class="o">]</span> 
+<span class="o">=&gt;</span> <span class="n">요소</span> <span class="n">보여주고</span> <span class="n">제거x</span>
+</code></pre></div></div>
+
+<h3 id="pop"><strong>pop()</strong></h3>
+
+<p>: 해당 스택의 가장 마지막에(상단에 있는) 요소 반환 수 제거<br />
+pop은 꺼내면서 요소를 제거하기 때문에 스택이 비어있는 경우 에러 발생</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"pop() : "</span> <span class="o">+</span> <span class="n">integerStack</span><span class="o">.</span><span class="na">pop</span><span class="o">());</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">integerStack</span><span class="o">);</span>
+
+<span class="n">출력</span> <span class="n">결과</span>
+<span class="n">pop</span><span class="o">()</span> <span class="o">:</span> <span class="mi">5</span>
+<span class="o">[</span><span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="mi">4</span><span class="o">]</span>
+<span class="o">=&gt;</span> <span class="n">요소</span> <span class="n">보여주고</span> <span class="n">제거됨</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="queue"><strong>Queue</strong></h3>
+<blockquote>
+  <p>선형 메모리 공간에 데이터를 저장하는 선입선출 방식의 자료 구조<br />
+queue 인터페이스를 상속 받는 하위 인터페이스들은<br />
+Deque, blockingQueue, TransferQueue 등 다양하지만<br />
+대부분의 큐 는 LinkedList를 이용</p>
+</blockquote>
+
+<hr />
+
+<h3 id="queue-생성"><strong>Queue 생성</strong></h3>
+
+<p>:Queue는 인터페이스이기 때문에 인스턴스 생성이 불가하여 LinkedList로 생성해야 함</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Queue</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">que</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">LinkedList</span><span class="o">&lt;&gt;();</span>
+</code></pre></div></div>
+
+<h3 id="ofrr"><strong>ofrr()</strong></h3>
+
+<p>: Queue 데이터를 넣을 때 사용하는 메소드</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">que</span><span class="o">.</span><span class="na">offer</span><span class="o">(</span><span class="s">"first"</span><span class="o">);</span>
+<span class="n">que</span><span class="o">.</span><span class="na">offer</span><span class="o">(</span><span class="s">"second"</span><span class="o">);</span>
+<span class="n">que</span><span class="o">.</span><span class="na">offer</span><span class="o">(</span><span class="s">"third"</span><span class="o">);</span>
+<span class="n">que</span><span class="o">.</span><span class="na">offer</span><span class="o">(</span><span class="s">"fourth"</span><span class="o">);</span>
+<span class="n">que</span><span class="o">.</span><span class="na">offer</span><span class="o">(</span><span class="s">"fifth"</span><span class="o">);</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">que</span><span class="o">);</span>
+<span class="n">출력결과</span>
+<span class="o">[</span><span class="n">first</span><span class="o">,</span> <span class="n">second</span><span class="o">,</span> <span class="n">third</span><span class="o">,</span> <span class="n">fourth</span><span class="o">,</span> <span class="n">fifth</span><span class="o">]</span>
+</code></pre></div></div>
+
+<h3 id="peek-1"><strong>peek()</strong></h3>
+
+<p>: 해당 큐의 가장 앞에 있는 요소(먼저 들어온 요소)를 반환</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"peek() : "</span> <span class="o">+</span> <span class="n">que</span><span class="o">.</span><span class="na">peek</span><span class="o">());</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">que</span><span class="o">);</span>
+<span class="n">출력</span> <span class="n">결과</span>
+<span class="n">peek</span><span class="o">()</span> <span class="o">:</span> <span class="n">first</span>
+<span class="o">[</span><span class="n">first</span><span class="o">,</span> <span class="n">second</span><span class="o">,</span> <span class="n">third</span><span class="o">,</span> <span class="n">fourth</span><span class="o">,</span> <span class="n">fifth</span><span class="o">]</span>
+</code></pre></div></div>
+
+<h3 id="poll"><strong>poll()</strong></h3>
+
+<p>: 해당 큐의 가장 앞에 있는 요소(먼저 들어온 요소)를 반환하고 제거<br />
+더이상 반환 값이 없는 경우에는 null 값으로 반환</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"poll() : "</span> <span class="o">+</span> <span class="n">que</span><span class="o">.</span><span class="na">poll</span><span class="o">());</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">que</span><span class="o">);</span>
+
+<span class="n">출력</span> <span class="n">결과</span>
+<span class="n">poll</span><span class="o">()</span> <span class="o">:</span> <span class="n">first</span>
+<span class="o">[</span><span class="n">second</span><span class="o">,</span> <span class="n">third</span><span class="o">,</span> <span class="n">fourth</span><span class="o">,</span> <span class="n">fifth</span><span class="o">]</span>
+</code></pre></div></div>
+
+<h1 id="컬렉션-프레임워크-선택-시점--list">컬렉션 프레임워크 선택 시점 : List</h1>
+
+<p>![[Pasted image 20240625181316.png]]</p>
+
+<p>익숙해질 때 까지는 그냥 위에 사진 보면서 선택하자.</p>
+
+<ul>
+  <li>
+    <p>ArrayList</p>
+
+    <ul>
+      <li>리스트 자료구조를 사용한다면 기본 선택</li>
+      <li>임의의 요소에 대한 접근성이 뛰어남</li>
+      <li>순차적인 추가/삭제 제일 빠름</li>
+      <li>요소의 추가/삭제 불리</li>
+    </ul>
+  </li>
+  <li>
+    <p>LinkedList</p>
+
+    <ul>
+      <li>요소의 추가/삭제 유리</li>
+      <li>임의의 요소에 대한 접근성이 좋지 않음</li>
+    </ul>
+  </li>
+  <li>
+    <p>HashMap / HashSet</p>
+
+    <ul>
+      <li>해싱을 이용해 임의의 요소에 대한 추가/삭제/검색/접근성 모두 뛰어남</li>
+      <li>검색에 최고성능 ( get 메서드의 성능이 O(1) )</li>
+    </ul>
+  </li>
+  <li>
+    <p>TreeMap / TreeSet</p>
+
+    <ul>
+      <li>요소 정렬이 필요할때</li>
+      <li>검색(특히 범위검색)에 적합</li>
+      <li>그래도 검색 성능은 HashMap보다 떨어짐</li>
+    </ul>
+  </li>
+  <li>
+    <p>LinkedHashMap / LinkedHashSet : HashMap과 HashSet에 저장 순서 유지 기능을 추가</p>
+  </li>
+  <li>
+    <p>Queue : 스택(LIFO) / 큐(FIFO) 자료구조가 필요하면 ArrayDeque 사용</p>
+  </li>
+  <li>
+    <p>Stack, Hashtable : 가급적 사용 X (deprecated)</p>
+  </li>
+</ul>
+
+<script src="https://giscus.app/client.js" data-repo="ruukr8080/ruukr8080.github.io" data-repo-id="R_kgDOMLRatg" data-category="Announcements" data-category-id="DIC_kwDOMLRats4CgVMI" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="dark" data-lang="ko" data-loading="lazy" crossorigin="anonymous" async="">
+</script>]]></content><author><name>Han</name><email>ruukr8080@gmail.com</email></author><category term="" /><category term="CS" /><summary type="html"><![CDATA[Collection Framework(1)-List 인터페이스 어렵게 생각할 필요 없이 그냥 자료구조 종류의 형태들이다. 컬렉션 프레임워크의 장점 학습이 쉽고, 데이터 구조 및 고성능의 알고리즘을 구현했기 때문에 활용성이 높다. 소프트웨어 재사용을 촉진한다. 만일 자바에서 지원하지 않는 새로운 자료구조가 필요하다면, 컬렉션들을 재활용하여 새로운 알고리즘을 만들어낼 수도 있다. 컬렉션 프레임워크에 저장할 수 있는 데이터는 오로지 객체(Object)뿐이다.즉, primitive 타입은 적재하지 못한다는 것이다. 따라서 primitive타입을 wrapper 타입으로 변환하여 Integer 객체라던가 Double 객체로 박싱하여 저장하여야한다.  또한 객체를 적재한다는 것은 곧 주소값을 저장한다는 것이니 (참조타입), null도 저장이 가능하다. 컬렉션 프레임워크 종류 Iterable interface Collection interface List interface ArrayList class LinkedList class Vector class Stack calss Queue interface PriorityQueue class Deque interface ArrayDeque class LinkedList class Set interface HashSet class LinkedHashSet class TreeSet class EnumSet abstractclass Map interface Map.Entry interface HashMap class LinkedHashMap class TreeMap class HashTable class Properties class 컬렉션 프레임워크는 크게 Collection insterface 와 Map Map insterface로 나눈다. List 와 Set 인터페이스를 구현한 컬렉션 클래스들은 공통부분이 많아서, 공통된 부분을 모은 Collection 인터페이로 상속돼있다. Map 인터페이스 컬렉션들은 두개의 데이터(K , V)를 묶어 한쌍으로 다루기 때문에 Collection 인터페이스와 따로 분리되어 있다. [!Tip] Tip 대부분의 컬렉션 클래스들은 List, Set , Map 중의 하나를 구현하고 있으며 , 구현한 인터페이스의 이름이 클래스 이름에 포함되는 특징이 있다. (ArrayList, HashSet, HashMap … 등) 그러나 Vector, Stack, Hashtable, Properties 와 같은 클래스들은 컬렉션 프레임워크가 만들어지기 이전부터 존재했기 때매 컬렉션 프레임워크의 명명법을 따르지 않는다. 또한 Vector 나 Hashtable과 같은 기존의 컬렉션 클래스들은 호환을 위해 남겨진거라 가급적이면 쓰지말자. Iterable insterface 컬렉션 인터페이스들의 가장 최상위 인터페이스이다. 컬렉션들을 배우다 보면 자료들을 순회할 때 이터레이터 객체를 다뤄보게 될텐데, 이 이터레이터 객체를 관리하는 인터페이스로 보면 된다. [!Tip] Tip 참고로 Map은 Iterble 인터페이스를 상속받지 않기 때문에 iterator() 와 splitertor()는 Map 컬렉션에 구현 되어있지 않다. 따라서 직접적으로 Map 컬렉션을 순회할 수는 없고 스트림(Stream)을 하나 간적접으로 키를 Collection으로 반환하여 루프문으로 순회하는 식으로 이용한다. Collection interface List, Set, Queue에 상속을해주는 실질적인 최상위 컬렉션 타입 즉, 업캐스팅으로 다양한 종류의 컬렉션 자료형을 받아 자료를 삽입하거나 삭제, 탐색 기능을 할 수 있다. 메서드 설명 boolean add(E e) 해당 컬렉션에 전달된 요소를 추가 void clear() 해당 컬렉션의 모든 요소를 제거 boolean contains(Object o) 해당 컬렉션이 전달된 객체를 포함하고 있는지 확인 boolean equals(Object o) 해당 컬렉션과 전달된 객체가 같은지를 확인 boolean isEmpty() 해당 컬렉션이 비어있는지 확인 Iterator iterator() 해당 컬렉션의 iterator를 반환 boolean remove(Object o) 해당 컬렉션에서 전달된 객체를 제거 int size() 해당 컬렉션의 요소의 총 개수를 반환 Object[] toArray() 해당 컬렉션의 모든 요소를 Object 타입의 배열로 반환 [!Tip] Tip JDK 1.8부터는 함수형 프로그래밍을 위해 parallelStream, removeIf,stream, forEach default 메서드 추가됐다. Collection&lt;&gt; col1 = new Arraylist&lt;&gt;(); col1.add(1); Collection&lt;&gt; col1 = new HashSet&lt;&gt;(); col1.add(1); Collection&lt;&gt; col1 = new LinkedList&lt;&gt;(); col1.add(1); [!info] info Collection 인터페이스의 메서드를 보면 요소(객체)에 대한 추가,삭제 탐색은 다형성 기능으로 사용이 가능하지만, 데이터를 get하는 메서는 보이지 않는다. 왜냐면 각 컬렉션 자료형 마다 구현하는 자료 구조가 제각각이기 때문에 최상위 타입으로 조회하기 까다롭기 때문이다. List interface 자료들을 순차적으로 나열한 자료구조 인덱스로 관리 중복해서 객체 저장 가능 ![[Pasted image 20240625174300.png]] 저장 순서가 유지되는 컬렉션을 구현하는 데 사용. 같은 요소의 중복 저장을 허용 일반 배열과 마찬가지로 index로 요소에 접근 리스트와 일반 배열의 가장 큰 차이는 리스트는 자료형 크기가 고정이 아닌 데이터 양에 따라 동적으로 늘어났다 줄어들 수 있다는 점이다. (가변성) 요소 사이에 빈공간을 허용하지 않아 삽입/삭제 할 때마다 배열 이동이 일어난다. ![[Pasted image 20240625174937.png]] ArrayList 클래스 가장 많이 사용되는 컬렉션 클래스 내부적으로 배열을 이용하여 요소를 관리하고, 인덱스를 이용해 배열 요소에 접근 가능 배열의 단점을 보완하기 위해 만들어짐 장점 및 특징 : 구조가 간단하고 데이터를 읽는 데 걸리는 시간이 짧음(접근시간, access time) 저장하는 크기의 제약이 없음 추가, 삭제, 정렬등의 기능 처리가 간단하게 해결 (복잡한 알고리즘 불필요) 여러 타입의 데이터 저장 가능 (기본타입은 저장 할 수 없어 오토박싱되서 객체로 저장 됨) 단점 : 한번 크기를 지정하면 변경할 수 없음 요소의 추가/삭제/정렬 등을 하려면 시간이 많이 걸리고 알고리즘이 복잡해짐 한 타입의 데이터만 저장가능 ArrayList 생성 생성시 내부적으로 10칸짜리 배열을 생성해서 관리함. 레퍼런스 타입을 List로 해두면 더 유연한 코드를 작성 할 수 있음. 제네릭 타입을 지정하면 지정한 타입 외의 인스턴스는 저장하지 못함. List&lt;타입설정&gt;list = new ArrayList(); //다형성을 적용하여 생성된 객체의 주소 값을 상위 타입의 레퍼런스 변수가 취급하도록 만든다. ArrayList 메소드     메서드 설명 ArrayList() 크기가 10인 ArrayList를 생성 ArrayList(Collection c) 주어진 컬렉션이 저장된 ArrayList를 생성 ArrayList(int initialCapacity) 지정된 초기용량을 갖는 ArrayList를 생성 boolean add(Object o) ArrayList의 마지막에 객체를 추가. 성공하면 true void add(int index, Object element) 지정된 위치(index)에 객체를 저장 boolean addAll(Collection c) 주어진 컬렉션의 모든 객체를 저장 boolean addAll(int index, Collection c) 지정된 위치부터 주어진 컬렉션의 모든 객체를 저장 void clear() ArrayList를 완전히 비움 Object clone() ArrayList를 복제 boolean contains(Object o) 지정된 객체(o)가 ArrayList에 포함되어 있는지를 확인 void ensureCapacity(int minCapacity) ArrayList의 용량이 최소한 minCapacity가 되도록 함 Object get(int index) 지정된 위치(index)에 저장된 객체를 반환 int indexOf(Object o) 지정된 객체가 저장된 위치를 찾아 반환 boolean isEmpty ArrayList가 비어있는지 확인 iterator iterator() ArrayList의 iterator객체를 반환 int lastIndexOf(Object o) 객체(o)가 저장된 위치를 끝부터 역방향으로 검색해서 반환 ListIterator listIterator() ArrayList의 ListIterator를 반환 ListIterator listIterator(int index) ArrayList의 지정된 위치부터 시작하는 ListIterator 반환 Object remove(int index) 지정된 위치(index)에 있는 객체를 제거 boolean remove(Object o) 지정한 객체를 제거함(성공하면 true, 실패하면 false) boolean removeAll(Collection c) 지정한 컬렉션에 저장된 것과 동일한 객체들을 ArrayList에서 제거 boolean retainAll(Collectin c) ArrayList에 저장된 객체 중에서 주어진 컬렉션과 공통된 것들만을 남기고 나머지는 삭제 Object set(int index, Object element) 주어진 객체(element)를 지정된 위치(index)에 저장 int size() ArrayList에 저장된 객체의 개수를 반환 void sort(Comparator c) 지정된 정렬기준(c)으로 ArrayList 정렬 List subList(int fromIndex, int tolndex) fromIndex부터 toIndex사이에 저장된 객체를 반환 Object[] toArray() ArrayList에 저장된 모든 객체들을 객체배열로 반환 Object[] toArray(Object[]a) ArrayList에 저장된 모든 객체들을 객체배열 a에 담아 반환 void trimTosize() 용량을 크기에 맞게 줄임(빈 공간을 없앤다) LinkedList :ArrayList가 배열을 이용해서 발생할 수 있는 성능적인 단점을 보완 내부는 이중 연결 리스트로 구현 되어있음 단일 연결 리스트 저장한 요소가 순서를 유지하지 않고 저장 되지만 이러한 요소들 사이를 링크로 연결하여 구성 요소의 저장과 삭제 시 다음 요소를 가리키는 참조 링크만 변경하면 되기 때문에 요소의 저장과 삭제가 빈번히 일어나는 경우 ArrayList보다 성능 면에서 우수함. 하지만 단일연결 리스트는 다음 요소만 링크하기 때문에 이전 요소로 접근하기 어려움 이중 연결 리스트 단일 연결 리스트는 다음 요소만 링크하는 반면 이중 연결 리스트는 이전 요소도 링크하여 이전 요소로 접근하기 쉽게 고 안 된 자료 구조 LinkedList 생성 List&lt;String&gt; linkedList = new LinkedList&lt;&gt;(); Stack Vector 클래스를 상속 받아 구현 스택 메모리 구조는 선현 메모리 공간에 데이터를 저장하며 후입 선출 방식의 자료구조라 부름 Stack 인스턴스 생성 Stack&lt;Integer&gt; integerStack = new Stack&lt;&gt;(); push() : Stack에 값을 넣을 때 사용하는 메소드 add()도 사용 가능하지만 Vector의 메소드이므로 push()를 사용하는 것이 좋음 serch() : Stack에 요소를 찾을 때 사용하는 메소드 인덱스가 아닌 위에서부터의 순번을 의미 가장 상단의 위치가 0이 아닌 1부터 시작 public static void main(String[] args) { Stack&lt;Integer&gt; integerStack = new Stack&lt;&gt;(); integerStack.push(1); integerStack.push(2); integerStack.push(3); integerStack.push(4); integerStack.push(5); System.out.println(integerStack.search(5)); System.out.println(integerStack.search(4)); System.out.println(integerStack.search(1)); } 출력 결과 1 2 5 peek() : 해당 스택의 가장 마지막에(상단에 있는) 요소 반환 System.out.println("peek() : " + integerStack.peek()); System.out.println(integerStack); 출력 결과 peek() : 5 [1, 2, 3, 4, 5] =&gt; 요소 보여주고 제거x pop() : 해당 스택의 가장 마지막에(상단에 있는) 요소 반환 수 제거 pop은 꺼내면서 요소를 제거하기 때문에 스택이 비어있는 경우 에러 발생 System.out.println("pop() : " + integerStack.pop()); System.out.println(integerStack); 출력 결과 pop() : 5 [1, 2, 3, 4] =&gt; 요소 보여주고 제거됨 Queue 선형 메모리 공간에 데이터를 저장하는 선입선출 방식의 자료 구조 queue 인터페이스를 상속 받는 하위 인터페이스들은 Deque, blockingQueue, TransferQueue 등 다양하지만 대부분의 큐 는 LinkedList를 이용 Queue 생성 :Queue는 인터페이스이기 때문에 인스턴스 생성이 불가하여 LinkedList로 생성해야 함 Queue&lt;String&gt; que = new LinkedList&lt;&gt;(); ofrr() : Queue 데이터를 넣을 때 사용하는 메소드 que.offer("first"); que.offer("second"); que.offer("third"); que.offer("fourth"); que.offer("fifth"); System.out.println(que); 출력결과 [first, second, third, fourth, fifth] peek() : 해당 큐의 가장 앞에 있는 요소(먼저 들어온 요소)를 반환 System.out.println("peek() : " + que.peek()); System.out.println(que); 출력 결과 peek() : first [first, second, third, fourth, fifth] poll() : 해당 큐의 가장 앞에 있는 요소(먼저 들어온 요소)를 반환하고 제거 더이상 반환 값이 없는 경우에는 null 값으로 반환 System.out.println("poll() : " + que.poll()); System.out.println(que); 출력 결과 poll() : first [second, third, fourth, fifth] 컬렉션 프레임워크 선택 시점 : List ![[Pasted image 20240625181316.png]] 익숙해질 때 까지는 그냥 위에 사진 보면서 선택하자. ArrayList 리스트 자료구조를 사용한다면 기본 선택 임의의 요소에 대한 접근성이 뛰어남 순차적인 추가/삭제 제일 빠름 요소의 추가/삭제 불리 LinkedList 요소의 추가/삭제 유리 임의의 요소에 대한 접근성이 좋지 않음 HashMap / HashSet 해싱을 이용해 임의의 요소에 대한 추가/삭제/검색/접근성 모두 뛰어남 검색에 최고성능 ( get 메서드의 성능이 O(1) ) TreeMap / TreeSet 요소 정렬이 필요할때 검색(특히 범위검색)에 적합 그래도 검색 성능은 HashMap보다 떨어짐 LinkedHashMap / LinkedHashSet : HashMap과 HashSet에 저장 순서 유지 기능을 추가 Queue : 스택(LIFO) / 큐(FIFO) 자료구조가 필요하면 ArrayDeque 사용 Stack, Hashtable : 가급적 사용 X (deprecated)]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/posts/CS/java.png" /><media:content medium="image" url="http://localhost:4000/assets/img/posts/CS/java.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

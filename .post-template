@@ -1,0 +1,31 @@
+---
+no_link_title:    false 
+no_excerpt:       false 
+hide_image:       false
+
+layout:           post
+cover:            false
+sidebar:          false
+order:            0
+
+image:
+  path:           /assets/img/posts/ 
+  srcset:
+    1920w:        /assets/img/posts/ 
+    960w:         /assets/img/posts/ 
+    480w:         /assets/img/posts/  
+caption:          
+
+title:            ' '
+date:             ' '
+hide_title:       false
+description:      ' '
+hide_description: true
+featured:         false
+tag:              [ ]
+last_modified_at: ' '
+---
+
+# Welcome to my site!
+
+

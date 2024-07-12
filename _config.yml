@@ -4,8 +4,8 @@
 
 # General settings
 # ---------------------------------------------------------------------------------------
-serve:
-  port: 4001
+# serve:
+#   port: 4001
 url:                  https://ruukr8080.github.io/
 source:               .
 destination:          ./_site
@@ -22,8 +22,13 @@ exclude:
   - Gemfile.lock
   - node_modules
 
+<<<<<<< HEAD
 lang:                 en-US
 timezone:             Korea/seoul
+=======
+lang:                 ko
+timezone:             Europe/London
+>>>>>>> cf54814 (update posts)
 
 keywords:
   - MultiDomainX
@@ -33,7 +38,7 @@ author:               # This should be the same author as first entry in `_data/
   email:              ruukr8080@gmail.com
   about:              "Software Programmer"
   picture:
-    path:             /assets/img/han.png
+    path:             /assets/img/user/han.png
   social:
     github:           han
     twitter:          han__
@@ -104,10 +109,10 @@ giscus:
   data-lang:           "en"
   crossorigin:         "anonymous"
   
-kramdown:
-  math_engine:         mathjax
-  math_engine_opts:    {}
-  footnote_backlink:   '&#x21a9;&#xfe0e;'
+# kramdown:
+#   math_engine:         mathjax
+#   math_engine_opts:    {}
+#   footnote_backlink:   '&#x21a9;&#xfe0e;'
 
 google_search_console:
   enabled:            true
@@ -188,10 +193,10 @@ plugins:
   - jekyll-relative-links
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-titles-from-headings
+  # - jekyll-titles-from-headings
   - jekyll-include-cache
   # - jekyll-last-modified-at
-  - jemoji
+  # - jemoji
   # - scssify
 # SEO Tag
 # ---------------------------------------------------------------------------------------
@@ -221,3 +226,27 @@ compress_html:
     endings:          all
 sass:
     style:            compressed
+
+
+
+    # ----
+
+kramdown: #기본
+  input: GFM #GitHub Flavored Markdown을 입력 형식으로 사용합니다.
+  # auto_ids: true #헤더에 자동으로 ID를 생성합니다.
+  # toc_levels: 1..6 #목차(Table of Contents)에 포함할 헤더 레벨을 지정합니다
+  entity_output: as_char #HTML 엔티티를 문자로 출력합니다.
+  smart_quotes: lsquo,rsquo,ldquo,rdquo #스마트 따옴표를 사용합니다 (좌우 구분).
+  show_warnings: false #경고 메시지를 표시하지 않습니다.
+kramdown: #구문 강조
+  # hard_wrap: false
+  highlighter: rouge  #Rouge를 구문 강조기로 사용합니다.
+  syntax_highlighter: 
+  # syntax_highlighter_opts:
+    # default_lang: 
+    # css_class: highlight #조된 코드에 적용할 CSS 클래스를 지정합니다.
+    # span: 
+      # line_numbers: false
+    # block:
+      # line_numbers: true
+      # start_line: 1
