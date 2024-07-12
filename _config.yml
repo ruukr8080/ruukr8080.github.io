@@ -22,13 +22,10 @@ exclude:
   - Gemfile.lock
   - node_modules
 
-<<<<<<< HEAD
-lang:                 en-US
-timezone:             Korea/seoul
-=======
+
 lang:                 ko
 timezone:             Europe/London
->>>>>>> cf54814 (update posts)
+
 
 keywords:
   - MultiDomainX
