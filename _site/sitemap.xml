@@ -109,6 +109,10 @@
 <lastmod>2024-07-12T00:00:00+01:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/Posts/WEB3EL/</loc>
+<lastmod>2024-07-18T00:00:00+01:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/Projects/MultiDomainX/</loc>
 <lastmod>2023-05-15T00:00:00+01:00</lastmod>
 </url>
@@ -164,6 +168,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/page2/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/page3/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/assets/resume/resume.pdf</loc>
