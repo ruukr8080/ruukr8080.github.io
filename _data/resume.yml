@@ -1,19 +1,19 @@
 basics:
-  name: "Shin Han"
+  name: "Han"
   label: "Programmer "
   picture: /assets/img/users/han.png
   email: "ruukr8080@gamil.com"
   phone: "+82 010 3700 ####"
   website: "https://ruukr8080.github.io/"
   summary: |
-    #### 안녕하세요! 신입 개발자 신한 입니다.
+    #### 안녕하세요! 신입 개발자 Han 입니다.
 
     저는 컴퓨터를 사랑하는 소프트웨어 개발자입니다.
     저는 웹 개발에 필요한 다양한 언어와 프레임워크 등을 다룰 수 있습니다.
     언제나 겸손한 마음가짐으로 배우고, 도전을 즐깁니다.
 
 
-    #### Hello! I'm a new developer, Shinhan.
+    #### Hello! I'm a new developer, Han.
 
     I am a computer-loving software developer.
     I can deal with various languages and frameworks needed for web development.
@@ -33,14 +33,14 @@ basics:
     # - network: "Twitter"
     #   username: "_ryvor"
       # url: "https://twitter.com/"
-    - network: "Email"
-      username: "ruukr8080@gmail.com"
-      url: "mailto:ruukr8080@gamil.com"
+    # - network: "Email"
+      # username: "ruukr8080@gmail.com"
+      # url: "mailto:ruukr8080@gamil.com"
 work:
   - company:     
-    position:    "일산대진고등학교"
-    startDate:   "2011-03-20 30"
-    endDate:     "2008-03-14"
+    # position:    "일산대진고등학교"
+    # startDate:   "2011-03-20 30"
+    # endDate:     "2008-03-14"
     
   - company:     
     position:    "일본 도쿄"

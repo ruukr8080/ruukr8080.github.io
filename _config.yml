@@ -32,14 +32,14 @@ keywords:
 
 author:               # This should be the same author as first entry in `_data/authors.yml`.
   name:               Han
-  email:              ruukr8080@gmail.com
+  # email:              ruukr8080@gmail.com
   about:              "Software Programmer"
   picture:
     path:             /assets/img/user/han.png
   social:
     github:           han
     twitter:          han__
-    email:            ruukr8080@gmail.com
+    # email:            ruukr8080@gmail.com
 github_username:      ruukr8080
 
 copyright:            © Han 2023. All rights reserved.
