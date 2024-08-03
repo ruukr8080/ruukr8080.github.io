@@ -14,7 +14,12 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 .content {
-  // <<< inline
+  --root-font-size: #{$root-font-size};
+--root-font-size-medium: #{$root-font-size-medium};
+--root-font-size-large: #{$root-font-size-large};
+--root-font-size-print: #{$root-font-size-print};
+--root-line-height: #{$root-line-height};
+  --root-font-size: #{$root-font-size};
   margin-left: auto;
   margin-right: auto;
   padding: 8rem $content-padding 12rem;

@@ -23,11 +23,6 @@
   --menu-text: #{$menu-text};
   --inv-body-color: #ccc;
   --inv-body-bg: var(--dark-mode-body-bg);
-
-  .content {
-    -webkit-font-smoothing: initial;
-    -moz-osx-font-smoothing: initial;
-  }
 }
 
 @mixin aspect-ratio($width, $height) {

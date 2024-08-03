@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2023-05-15
+last_modified_at: 2024-05-15
 no_link_title:    false
 no_excerpt:       false
 hide_image:       false
@@ -19,7 +19,7 @@ image:
 caption:          A simple website solution for multiple domains.
 
 title:            Multi Domain X
-date:             2023-03-29 11:37:00
+date:             2024-03-29 11:37:00
 description:      Information about Multi Domain X
 hide_description: true
 featured:         false

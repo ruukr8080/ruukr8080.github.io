@@ -18,7 +18,7 @@
   margin-bottom: 3em;
 
   li + li {
-    margin-top: .25rem;
+    margin-top: .2rem;
   }
 
   > header {
@@ -38,7 +38,7 @@ body:not(.no-third-column) {
       @media screen and (min-width: $break-point-dynamic) {
         position: absolute;
         right: -25rem;
-        width: 21rem;
+        width: 25rem;
         bottom: 0;
         margin-bottom: 0;
       }

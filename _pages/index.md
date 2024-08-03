@@ -27,19 +27,20 @@ selected_posts:
   # - _posts/2024-05-15-Welcome.md
 projects_page:    /Projects/
 selected_projects: # MAX 4
-  - _projects/MultiDomainX.md
-  - _projects/AuraOS.md
-  - _projects/AvaAssistant.md
+  - _projects/Kosain-CVE.md
+  # - _projects/AuraOS.md
+  # - _projects/AvaAssistant.md
 ---
 
-# Hello World!
+## 나를 위한 블로그
 
-✨ redis 및 batch 를 활용한 총 방문자, 오늘 방문자, 블로그 운영일, 총 포스팅 카운트 작업
+✨ redis 및 batch 를 활용한
+ 총 방문자, 오늘 방문자, 블로그 운영일, 총 포스팅 갯수 카운팅 구현중....
 
-***
+---
 
 <!--projects-->
 
-***
+---
 
 <!--posts-->
