@@ -46,4 +46,6 @@ export {
   Comments,
 }
 
-export { default as RootNavBar } from "./RootNavBar" // 커스텀
+// 커스텀
+export { default as LayoutWithNavBar } from "./LayoutWithNavBar"
+export { default as NavBar } from "./NavBar"

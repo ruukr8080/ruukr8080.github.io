@@ -22,3 +22,4 @@ function RootNavBar({ displayClass }: QuartzComponentProps) {
   )
 }
 
+export default (() => RootNavBar) satisfies QuartzComponentConstructor

@@ -20,7 +20,6 @@ import MobileOnly from "./MobileOnly"
 import RecentNotes from "./RecentNotes"
 import Breadcrumbs from "./Breadcrumbs"
 import Comments from "./Comments"
-import RootNavBar from "./RootNavBar"  // 커스텀
 
 export {
   ArticleTitle,
@@ -46,5 +45,6 @@ export {
   Breadcrumbs,
   Comments,
 }
-
-export { default as RootNavBar } from "./RootNavBar" // 커스텀
+// 커스텀
+export { default as LayoutWithNavBar } from "./LayoutWithNavBar"
+export { default as NavBar } from "./NavBar"

@@ -2,7 +2,8 @@
 import clipboardScript from "./scripts/clipboard.inline"
 import clipboardStyle from "./styles/clipboard.scss"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
-import { RootNavBar } from "./RootNavBar"
+import { RootNavBar } from "." // RootNavBar  커스텀
+
 
 const Body: QuartzComponent = ({ children, ...rest }: QuartzComponentProps) => {
   return (
