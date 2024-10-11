@@ -1,0 +1,32 @@
+// quartz/components/NavBar.tsx
+import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import style from "./styles/navbar.scss"
+
+interface Options {
+  links: Record<string, string>
+}
+
+export default ((opts?: Options) => {
+  const NavBar: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
+    const links = opts?.links ?? {
+      Home: "/",
+      Tags: "/tags",
+      About: "/about",
+    }
+
+    return (
+      <nav class={`navbar ${displayClass ?? ""}`}>
+        <ul>
+          {Object.entries(links).map(([text, link]) => (
+            <li key={text}>
+              <a href={link}>{text}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    )
+  }
+
+  NavBar.css = style
+  return NavBar
+}) satisfies QuartzComponentConstructor
