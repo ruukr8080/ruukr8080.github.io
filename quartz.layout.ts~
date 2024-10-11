@@ -1,13 +1,12 @@
-/** @jsxImportSource preact */
+/** @jsxImportSource react */
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
-import { ComponentType } from "preact"
 
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [CustomNavigationBar,Component.PageTitle()],
+  header: [Component.PageTitle()],
   // afterBody: [],
   footer: Component.Footer({
     links: {

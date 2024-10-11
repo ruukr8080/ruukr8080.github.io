@@ -19,9 +19,6 @@ const config: QuartzConfig = {
     baseUrl: "ruukr8080.github.io",
     ignorePatterns: ["private", "templates", "README.md", ],
     defaultDateType: "created",
-    styles: {
-      custom: ["/quartz/styles/custom.scss"],
-    },
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
