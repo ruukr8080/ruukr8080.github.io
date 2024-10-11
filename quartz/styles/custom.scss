@@ -1,3 +1,48 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+.root-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--light);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .root-navbar-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .root-navbar-items {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-left: 1rem;
+
+      a {
+        color: var(--dark);
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+body {
+  padding-top: 50px; // RootNavBar 높이에 맞게 조절
+}
+
+#quartz-body {
+  margin-top: 50px; // RootNavBar 높이만큼 여백 추가
+}
