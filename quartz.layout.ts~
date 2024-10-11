@@ -1,54 +1,14 @@
+/** @jsxImportSource preact */
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import { ComponentType } from "preact"
 
-
-
-
-// 새로운 네비게이션 바 컴포넌트
-const NavigationBar = () => {
-  return (
-    <nav class="navbar">
-    <div class="navbar-title">Dev Uni</div>
-  <ul class="navbar-links">
-  <li><a href="/">Home</a></li>
-  <li><a href="/about">About</a></li>
-  <li><a href="/brain">Brain</a></li>
-  <li><a href="/project">Project</a></li>
-  </ul>
-  <div class="navbar-search">
-    {Component.Search()}
-    </div>
-    </nav>
-)
-}
-
-// 카테고리 목록 컴포넌트
-const CategoryList = () => {
-  return (
-    <div class="category-list">
-    <h3>Brain</h3>
-    <ul>
-    <li><a href="/java">Java</a></li>
-  <li><a href="/spring">Spring</a></li>
-  <li><a href="/database">Database</a></li>
-  <li><a href="/infra">Infra</a></li>
-  <li><a href="/common">Common</a></li>
-  <li><a href="/computer-science">Computer Science</a></li>
-  <li><a href="/interview">Interview</a></li>
-  <li><a href="/lecture">강의</a></li>
-  <li><a href="/book">도서</a></li>
-  <li><a href="/devops">데브옵스</a></li>
-  <li><a href="/coding-test">코딩테스트</a></li>
-  </ul>
-  </div>
-)
-}
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [],
-  afterBody: [],
+  header: [CustomNavigationBar,Component.PageTitle()],
+  // afterBody: [],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/ruukr8080/ruukr8080.github.io",
@@ -94,3 +54,4 @@ export const defaultListPageLayout: PageLayout = {
   ],
   right: [],
 }
+
