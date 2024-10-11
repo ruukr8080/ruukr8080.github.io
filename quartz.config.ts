@@ -52,6 +52,9 @@ const config: QuartzConfig = {
         },
       },
     },
+    // styles: {
+    //   custom: ["/quartz/styles/custom.scss"],
+    // },
   },
   plugins: {
     transformers: [
