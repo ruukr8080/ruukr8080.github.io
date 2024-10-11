@@ -20,7 +20,7 @@ import MobileOnly from "./MobileOnly"
 import RecentNotes from "./RecentNotes"
 import Breadcrumbs from "./Breadcrumbs"
 import Comments from "./Comments"
-
+import CustomHeader from "./CustomHeader"// 커스텀
 export {
   ArticleTitle,
   Content,
@@ -44,8 +44,7 @@ export {
   NotFound,
   Breadcrumbs,
   Comments,
+  CustomHeader,// 커스텀
 }
 
-// 커스텀
-export { default as LayoutWithNavBar } from "./LayoutWithNavBar"
-export { default as NavBar } from "./NavBar"
+

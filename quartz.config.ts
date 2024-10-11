@@ -8,14 +8,14 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴ruukr8080 blog",
+    pageTitle: "🪴",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
+    locale: "ko-KR",
     baseUrl: "ruukr8080.github.io",
     ignorePatterns: ["private", "templates", "README.md", ],
     defaultDateType: "created",
