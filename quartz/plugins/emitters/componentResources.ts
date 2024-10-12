@@ -17,8 +17,8 @@ import DepGraph from "../../depgraph"
 
 type ComponentResources = {
   css: string[]
-  beforeDOMLoaded: string[]
-  afterDOMLoaded: string[]
+  beforeDOMLoaded: string[] //초기화용
+  afterDOMLoaded: string[] //beforeDOMLoaded 가 로드 된 이후에 event 등이 할당됨
 }
 
 function getComponentResources(ctx: BuildCtx): ComponentResources {
