@@ -14,15 +14,15 @@ export default function LandingPage(props: QuartzComponentProps) {
   )
 }
 
-LandingPage.css = `
-  .landing-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: calc(100vh - var(--header-height));
-    text-align: center;
-  }
+  LandingPageContent.css = `
+    .landing-page {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: calc(100vh - var(--header-height));
+      text-align: center;
+    }
     .landing-page h1 {
       font-size: 2.5em;
       margin-bottom: 0.5em;
@@ -49,3 +49,7 @@ LandingPage.css = `
     }
   `
 
+  return LandingPageContent
+}
+
+export default LandingPage

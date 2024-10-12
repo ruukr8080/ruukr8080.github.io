@@ -21,7 +21,7 @@ import RecentNotes from "./RecentNotes"
 import Breadcrumbs from "./Breadcrumbs"
 import Comments from "./Comments"
 import PageNav from "./PageNav"// 커스텀
-
+import LandingPage from "./LandingPage" // 커스텀
 export {
   ArticleTitle,
   Content,
@@ -46,6 +46,7 @@ export {
   Breadcrumbs,
   Comments,
   PageNav,// 커스텀
+  LandingPage // 커스텀
 }
 
 

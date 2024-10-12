@@ -200,6 +200,7 @@ export function renderPage(
   } = components
   const Header = HeaderConstructor()
   const Body = BodyConstructor()
+  const LandingPageComponent = LandingPage({})
 
   const LeftComponent = (
     <div class="left sidebar">
@@ -225,7 +226,7 @@ export function renderPage(
         <div id="quartz-root" class="page">
           <Body {...componentData}>
              {isLandingPage ? (
-               <LandingPage {...componentData} />
+               <LandingPageComponent {...componentData} />
              ) : (
               <>
                 {LeftComponent}

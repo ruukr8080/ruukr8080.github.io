@@ -5,6 +5,7 @@ import * as Component from "./quartz/components"
 
 export const landingPageLayout: PageLayout = {
   beforeBody: [
+    Component.LandingPage(),
     Component.PageNav()
   ],
   left: [],
