@@ -20,6 +20,7 @@ import MobileOnly from "./MobileOnly"
 import RecentNotes from "./RecentNotes"
 import Breadcrumbs from "./Breadcrumbs"
 import Comments from "./Comments"
+import PageNav from "./PageNav"// 커스텀
 
 export {
   ArticleTitle,
@@ -44,7 +45,7 @@ export {
   NotFound,
   Breadcrumbs,
   Comments,
+  // PageNav,// 커스텀
 }
-// 커스텀
-export { default as LayoutWithNavBar } from "./LayoutWithNavBar"
-export { default as NavBar } from "./NavBar"
+
+
