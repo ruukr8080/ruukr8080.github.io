@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95d35220-17c5-49b7-97b9-2315c35b6c9e" name="Changes" comment="temp">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/docker-build-push.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/release.yaml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +98,7 @@
       <workItem from="1728712980699" duration="2584000" />
       <workItem from="1728715601752" duration="873000" />
       <workItem from="1728716490944" duration="12422000" />
-      <workItem from="1729478101185" duration="9113000" />
+      <workItem from="1729478101185" duration="9297000" />
     </task>
     <task id="LOCAL-00001" summary="temp">
       <option name="closed" value="true" />
