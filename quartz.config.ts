@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "ko-KR",
-    baseUrl: "ruukr8080.github.io",
+    baseUrl: "https://ruukr8080.github.io",
     ignorePatterns: ["private", "templates", "README.md", ],
     defaultDateType: "created",
     theme: {
