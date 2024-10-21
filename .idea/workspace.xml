@@ -5,24 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95d35220-17c5-49b7-97b9-2315c35b6c9e" name="Changes" comment="temp">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/release.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/docker-build-push.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/docker-build-push.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/About.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/About.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/post/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/블로그-구축.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/post/블로그-구축.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/블로그-구축2.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/post/블로그-구축2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/tags/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quartz.layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/quartz.layout.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/sitemap.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quartz/.quartz-cache/transpiled-build.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/quartz/.quartz-cache/transpiled-build.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quartz/.quartz-cache/transpiled-build.mjs.map" beforeDir="false" afterPath="$PROJECT_DIR$/quartz/.quartz-cache/transpiled-build.mjs.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quartz/cfg.ts" beforeDir="false" afterPath="$PROJECT_DIR$/quartz/cfg.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quartz/components/LandingPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/quartz/components/LandingPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quartz/components/PageNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/quartz/components/PageNav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quartz/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/quartz/components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quartz/components/renderPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/quartz/components/renderPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quartz/plugins/emitters/contentPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/quartz/plugins/emitters/contentPage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,12 +28,12 @@
     &quot;assignee&quot;: &quot;ruukr8080&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/ruukr8080/ruukr8080.github.io.git&quot;,
-    &quot;accountId&quot;: &quot;2d8f5624-9ba4-4dae-87e0-82855f823bc5&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ruukr8080/ruukr8080.github.io.git",
+    "accountId": "e555fa29-9030-4fed-9ea8-ba36410d598f"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -51,30 +41,30 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.codeium.enabled": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/my/ruukr8080.github.io",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev.executor": "Run",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "show.migrate.to.gradle.popup": "false",
-    "ts.external.directory.path": "C:\\my\\ruukr8080.github.io\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/my/ruukr8080.github.io&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\my\\ruukr8080.github.io\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -90,7 +80,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-WS-242.21829.149" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.22855.74" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.22855.74" />
       </set>
     </attachedChunks>
   </component>
@@ -106,6 +97,7 @@
       <workItem from="1728712980699" duration="2584000" />
       <workItem from="1728715601752" duration="873000" />
       <workItem from="1728716490944" duration="12422000" />
+      <workItem from="1729478101185" duration="1049000" />
     </task>
     <task id="LOCAL-00001" summary="temp">
       <option name="closed" value="true" />
