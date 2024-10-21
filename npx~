@@ -1,0 +1,2 @@
+# 도커 이미지 생성
+docker run --rm -itp 8080:8080 $(docker build -q .)
