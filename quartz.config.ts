@@ -9,14 +9,14 @@ import * as Plugin from "./quartz/plugins"
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "HAN",
-    pageTitleSuffix: "",
+    pageTitleSuffix: "de",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
     locale: "ko-KR",
-    baseUrl: "https://ruukr8080.github.io",
+    baseUrl: "ruukr8080.github.io",
     ignorePatterns: ["private", "templates", "README.md", ],
     defaultDateType: "created",
     theme: {
