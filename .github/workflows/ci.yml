@@ -9,7 +9,6 @@ on:
       - main
   workflow_dispatch:
 
-
 jobs:
   build-and-test:
     if: ${{ github.repository == 'ruukr8080/ruukr8080.github.io' }}
