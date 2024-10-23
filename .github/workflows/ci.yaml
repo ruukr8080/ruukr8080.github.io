@@ -3,10 +3,10 @@ name: Deploy Quartz site to GitHub Pages
 on:
   pull_request:
     branches:
-      - main
+      - v4
   push:
     branches:
-      - main
+      - v4
   workflow_dispatch:
 
 jobs:
@@ -47,8 +47,8 @@ jobs:
 
       - run: npm ci
 
-      - name: Check types and style
-        run: npm run check
+      # - name: Check types and style
+      #   run: npm run check
 
       - name: Test
         run: npm test

@@ -2,10 +2,10 @@ name: Docker build & push image
 
 on:
   push:
-    branches: [main]
+    branches: [v4]
     tags: ["v*"]
   pull_request:
-    branches: [main]
+    branches: [v4]
     paths:
       - .github/workflows/docker-build-push.yaml
       - quartz/**
@@ -21,17 +21,17 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@main
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: Setup Node
-        uses: actions/setup-node@main
+        uses: actions/setup-node@v4
         with:
           node-version: 20
 
       - name: Cache dependencies
-        uses: actions/cache@main
+        uses: actions/cache@v4
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
