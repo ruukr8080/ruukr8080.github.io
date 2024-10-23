@@ -27,35 +27,38 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-
-          # npm 버전 맞추기
-      - name: Upgrade npm
-        run : npm install -g npm@10.8.3
-      - name: Check versions
-        run: |
-          node --version
-          npm --version
-
+          cache: npm
           
-      - name: Cache dependencies
-        uses: actions/cache@v4
+      - name: Upgrade npm
+        shell: bash
+        run: |
+          npm install -g npm@10.8.3
+          npm --version
+          
+      - name: Install dependencies
+        shell: bash
+        run: |
+          npm cache clean --force
+          rm -rf node_modules package-lock.json
+          npm install
+
+      - name: Check types and style
+        shell: bash
+        run: npm run check
+        
+      - name: Build Quartz
+        shell: bash
+        run: |
+          npx quartz build --bundleInfo
+          ls -la public/
+
+      - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main' && matrix.os == 'ubuntu-latest'
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
 
-      - run: npm ci
-
-      # - name: Check types and style
-      #   run: npm run check
-
-      - name: Test
-        run: npm test
-
-      - name: Ensure Quartz builds, check bundle info
-        run: npx quartz build --bundleInfo
- 
   publish-tag:
     if: ${{ github.repository == 'ruukr8080/ruukr8080.github.io' && github.ref == 'refs/heads/v4' }}
     runs-on: ubuntu-latest
@@ -63,14 +66,19 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+      
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
+          
+      - name: Upgrade npm
+        run: npm install -g npm@10.8.3
+      
       - name: Get package version
         run: node -p -e '`PACKAGE_VERSION=${require("./package.json").version}`' >> $GITHUB_ENV
+      
       - name: Create release tag
         uses: pkgdeps/git-tag-action@v3
         with:
@@ -79,4 +87,3 @@ jobs:
           version: ${{ env.PACKAGE_VERSION }}
           git_commit_sha: ${{ github.sha }}
           git_tag_prefix: "v"
-  
