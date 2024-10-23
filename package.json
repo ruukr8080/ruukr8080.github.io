@@ -21,7 +21,7 @@
     "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1"
   },
   "engines": {
-    "npm": ">=9.3.1",
+    "npm": ">=10.8.3",
     "node": "20 || >=22"
   },
   "keywords": [
@@ -101,7 +101,7 @@
     "@types/d3": "^7.4.3",
     "@types/hast": "^3.0.4",
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "^22.7.5",
+    "@types/node": "^22.7.9",
     "@types/pretty-time": "^1.1.5",
     "@types/source-map-support": "^0.5.10",
     "@types/ws": "^8.5.12",
