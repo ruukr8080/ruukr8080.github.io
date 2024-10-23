@@ -28,6 +28,15 @@ jobs:
         with:
           node-version: 20
 
+          # npm 버전 맞추기
+      - name: Upgrade npm
+        run : npm install -g npm@10.8.3
+      - name: Check versions
+        run: |
+          node --version
+          npm --version
+
+          
       - name: Cache dependencies
         uses: actions/cache@v4
         with:
@@ -46,7 +55,7 @@ jobs:
 
       - name: Ensure Quartz builds, check bundle info
         run: npx quartz build --bundleInfo
-
+ 
   # publish-tag:
   #   if: ${{ github.repository == 'ruukr8080/ruukr8080.github.io' && github.ref == 'refs/heads/v4' }}
   #   runs-on: ubuntu-latest
