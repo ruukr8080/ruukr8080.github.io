@@ -11,12 +11,12 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@main # 액션 필터 브랜치 체크아웃
         with:
           fetch-depth: 0
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@main # 체크아웃
         with:
           node-version: '20'  # Node.js 버전을 명시적으로 지정
           cache: 'npm'
