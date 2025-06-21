@@ -2,8 +2,8 @@
   "version": "1.4.5",
   "display_language": "local",
   "filter_mode": "0",
-  "translation_service": "google_translate",
-  "security_setting": "none",
+  "translation_service": "deepl",
+  "security_setting": "local_only",
   "switch_button_action": "switch-text",
   "translation_command_action": "replace",
   "apply_glossary": true,
@@ -36,7 +36,8 @@
   "default_target_language": "ko",
   "filtered_services": [
     "google_translate",
-    "fasttext"
+    "fasttext",
+    "deepl"
   ],
   "hotkeys": [
     {
@@ -67,7 +68,6 @@
         "ko",
         "en"
       ],
-      "api_key": "AIzaSyBznrjV-IKD9Lrzgm4KwklbzkfQlKpc3Y4",
       "auto_translate": true,
       "auto_translate_interval": 500,
       "validated": true,
@@ -266,13 +266,13 @@
         "jv",
         "zh-CN"
       ],
-      "version": "1.1.0"
+      "version": "1.1.0",
+      "api_key": ""
     },
     "azure_translator": {
       "selected_languages": [
         "ko"
       ],
-      "api_key": "",
       "region": "",
       "host": null,
       "auto_translate": false,
@@ -415,13 +415,13 @@
         "zh-Hant",
         "zu"
       ],
-      "version": "1.1.0"
+      "version": "1.1.0",
+      "api_key": ""
     },
     "openai_translator": {
       "selected_languages": [
         "ko"
       ],
-      "api_key": "",
       "host": "api.openai.com",
       "auto_translate": false,
       "auto_translate_interval": 500,
@@ -1086,7 +1086,8 @@
         "zxx",
         "zza"
       ],
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "api_key": ""
     },
     "libre_translate": {
       "selected_languages": [
@@ -1130,6 +1131,81 @@
         "zh"
       ],
       "version": "1.0.2"
+    },
+    "deepl": {
+      "selected_languages": [
+        "ko"
+      ],
+      "auto_translate": false,
+      "auto_translate_interval": 500,
+      "validated": null,
+      "available_languages": [
+        "bg",
+        "cs",
+        "da",
+        "de",
+        "el",
+        "en",
+        "es",
+        "et",
+        "fi",
+        "fr",
+        "hu",
+        "id",
+        "it",
+        "ja",
+        "ko",
+        "lt",
+        "lv",
+        "nb",
+        "nl",
+        "pl",
+        "pt",
+        "ro",
+        "ru",
+        "sk",
+        "sl",
+        "sv",
+        "tr",
+        "uk",
+        "zh"
+      ],
+      "glossary_languages": {
+        "de": [
+          "en",
+          "fr"
+        ],
+        "en": [
+          "de",
+          "es",
+          "fr",
+          "ja",
+          "it",
+          "pl",
+          "nl"
+        ],
+        "es": [
+          "en"
+        ],
+        "fr": [
+          "de",
+          "en"
+        ],
+        "ja": [
+          "en"
+        ],
+        "it": [
+          "en"
+        ],
+        "pl": [
+          "en"
+        ],
+        "nl": [
+          "en"
+        ]
+      },
+      "version": "1.0.3",
+      "api_key": ""
     }
   }
 }

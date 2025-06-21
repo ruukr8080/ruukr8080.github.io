@@ -1812,10 +1812,8 @@ var DEFAULT_SETTINGS = {
 var import_obsidian2 = __toModule(require("obsidian"));
 
 // node_modules/js-base64/base64.mjs
-var version = "3.7.5";
+var version = "3.7.7";
 var VERSION = version;
-var _hasatob = typeof atob === "function";
-var _hasbtoa = typeof btoa === "function";
 var _hasBuffer = typeof Buffer === "function";
 var _TD = typeof TextDecoder === "function" ? new TextDecoder() : void 0;
 var _TE = typeof TextEncoder === "function" ? new TextEncoder() : void 0;
@@ -1842,7 +1840,7 @@ var btoaPolyfill = (bin) => {
   }
   return pad ? asc.slice(0, pad - 3) + "===".substring(pad) : asc;
 };
-var _btoa = _hasbtoa ? (bin) => btoa(bin) : _hasBuffer ? (bin) => Buffer.from(bin, "binary").toString("base64") : btoaPolyfill;
+var _btoa = typeof btoa === "function" ? (bin) => btoa(bin) : _hasBuffer ? (bin) => Buffer.from(bin, "binary").toString("base64") : btoaPolyfill;
 var _fromUint8Array = _hasBuffer ? (u8a) => Buffer.from(u8a).toString("base64") : (u8a) => {
   const maxargs = 4096;
   let strs = [];
@@ -1891,7 +1889,7 @@ var atobPolyfill = (asc) => {
   }
   return bin;
 };
-var _atob = _hasatob ? (asc) => atob(_tidyB64(asc)) : _hasBuffer ? (asc) => Buffer.from(asc, "base64").toString("binary") : atobPolyfill;
+var _atob = typeof atob === "function" ? (asc) => atob(_tidyB64(asc)) : _hasBuffer ? (asc) => Buffer.from(asc, "base64").toString("binary") : atobPolyfill;
 var _toUint8Array = _hasBuffer ? (a) => _U8Afrom(Buffer.from(a, "base64")) : (a) => _U8Afrom(_atob(a).split("").map((c) => c.charCodeAt(0)));
 var toUint8Array = (a) => _toUint8Array(_unURI(a));
 var _decode = _hasBuffer ? (a) => Buffer.from(a, "base64").toString("utf8") : _TD ? (a) => _TD.decode(_toUint8Array(a)) : (a) => btou(_atob(a));
@@ -1973,7 +1971,7 @@ function getUserAgent() {
   if (typeof navigator === "object" && "userAgent" in navigator) {
     return navigator.userAgent;
   }
-  if (typeof process === "object" && "version" in process) {
+  if (typeof process === "object" && process.version !== void 0) {
     return `Node.js/${process.version.substr(1)} (${process.platform}; ${process.arch})`;
   }
   return "<environment undetectable>";
@@ -2728,8 +2726,8 @@ function generateBlobHash(content) {
 // src/Validator.ts
 var import_obsidian = __toModule(require("obsidian"));
 function validatePublishFrontmatter(frontMatter) {
-  if (frontMatter && frontMatter["isDraft"]) {
-    new import_obsidian.Notice("Note is marked as draft. Please remove `isDraft` from the frontmatter and again.");
+  if (frontMatter && frontMatter["publish"] === false) {
+    new import_obsidian.Notice("Note is marked as not publishable.");
     return false;
   }
   return true;
@@ -2753,8 +2751,8 @@ function validateSettings(settings) {
 // src/Publisher.ts
 var Publisher = class {
   constructor(vault, metadataCache, settings) {
-    this.notesRepoPath = "content";
-    this.assetsRepoPath = "public";
+    this.notesRepoPath = "";
+    this.assetsRepoPath = "";
     this.vault = vault;
     this.metadataCache = metadataCache;
     this.settings = settings;
@@ -2787,7 +2785,7 @@ var Publisher = class {
       const assetsToPublish = new Set();
       for (const file of files) {
         const frontMatter = this.metadataCache.getCache(file.path).frontmatter;
-        if (!frontMatter || !frontMatter["isDraft"]) {
+        if (!frontMatter || frontMatter["publish"] !== false) {
           notesToPublish.push(file);
           const text = yield this.vault.read(file);
           const images = yield this.extractEmbeddedImageFiles(text, file.path);
@@ -2803,14 +2801,12 @@ var Publisher = class {
   uploadMarkdown(content, filePath) {
     return __async(this, null, function* () {
       content = gBase64.encode(content);
-      const path = `${this.notesRepoPath}/${filePath}`;
-      yield this.uploadToGithub(path, content);
+      yield this.uploadToGithub(filePath, content);
     });
   }
   deleteMarkdown(filePath) {
     return __async(this, null, function* () {
-      const path = `${this.notesRepoPath}/${filePath}`;
-      yield this.deleteFromGithub(path);
+      yield this.deleteFromGithub(filePath);
     });
   }
   uploadAssets(assets) {
@@ -2831,16 +2827,12 @@ var Publisher = class {
   }
   uploadImage(filePath, content) {
     return __async(this, null, function* () {
-      const publicPath = `${this.assetsRepoPath}/${filePath}`;
-      yield this.uploadToGithub(publicPath, content);
-      const contentPath = `${this.notesRepoPath}/${filePath}`;
-      yield this.uploadToGithub(contentPath, content);
+      yield this.uploadToGithub(filePath, content);
     });
   }
   deleteImage(filePath) {
     return __async(this, null, function* () {
-      const path = `${this.assetsRepoPath}/${filePath}`;
-      return yield this.deleteFromGithub(path);
+      return yield this.deleteFromGithub(filePath);
     });
   }
   uploadToGithub(path, content) {
@@ -2863,9 +2855,10 @@ var Publisher = class {
           repo: this.settings.githubRepo,
           path
         });
-        if (response.status === 200 && response.data.type === "file") {
+        const fileData = Array.isArray(response.data) ? null : response.data;
+        if (response.status === 200 && (fileData == null ? void 0 : fileData.type) === "file") {
           payload.message = `Update content ${path}`;
-          payload.sha = response.data.sha;
+          payload.sha = fileData.sha;
         }
       } catch (e) {
       }
@@ -2890,8 +2883,9 @@ var Publisher = class {
         repo: this.settings.githubRepo,
         path
       });
-      if (response.status === 200 && response.data.type === "file") {
-        payload.sha = response.data.sha;
+      const fileData = Array.isArray(response.data) ? null : response.data;
+      if (response.status === 200 && (fileData == null ? void 0 : fileData.type) === "file") {
+        payload.sha = fileData.sha;
       }
       yield octokit.request("DELETE /repos/{owner}/{repo}/contents/{path}", payload);
     });
@@ -3032,6 +3026,8 @@ var import_obsidian3 = __toModule(require("obsidian"));
 var PublishStatusModal = class {
   constructor(app, publishStatusManager, publisher, settings) {
     this.modal = new import_obsidian3.Modal(app);
+    this.app = app;
+    this.settings = settings;
     this.publishStatusManager = publishStatusManager;
     this.publisher = publisher;
     this.initialize();
@@ -3041,16 +3037,57 @@ var PublishStatusModal = class {
   }
   initialize() {
     return __async(this, null, function* () {
-      this.modal.titleEl.innerText = "\u{1F337} Flowershow";
       this.modal.contentEl.addClass("digital-garden-publish-status-view");
-      this.modal.contentEl.createEl("h2", { text: "Publication Status" });
+      const headerEl = this.modal.contentEl.createEl("div", { cls: "publish-header" });
+      headerEl.style.display = "flex";
+      headerEl.style.justifyContent = "space-between";
+      headerEl.style.alignItems = "center";
+      headerEl.style.marginBottom = "20px";
+      headerEl.style.padding = "10px";
+      headerEl.style.borderBottom = "1px solid var(--background-modifier-border)";
+      const headerLeft = headerEl.createEl("div");
+      const repoUrl = `https://github.com/${this.settings.githubUserName}/${this.settings.githubRepo}`;
+      const headerText = headerLeft.createEl("p", { cls: "publish-header-text" });
+      headerText.style.margin = "0";
+      headerText.setText("Publishing to ");
+      const link = headerText.createEl("a", {
+        text: `${this.settings.githubUserName}/${this.settings.githubRepo}`,
+        href: repoUrl
+      });
+      link.style.color = "var(--text-accent)";
+      link.style.textDecoration = "none";
+      const iconsContainer = headerEl.createEl("div");
+      iconsContainer.style.display = "flex";
+      iconsContainer.style.gap = "8px";
+      const syncIcon = iconsContainer.createEl("div", { cls: "clickable-icon" });
+      syncIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-refresh-cw"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path><path d="M3 21v-5h5"></path></svg>`;
+      syncIcon.style.cursor = "pointer";
+      syncIcon.addEventListener("click", () => __async(this, null, function* () {
+        this.progressContainer.innerText = `\u231B Refreshing status...`;
+        yield this.refreshStatus();
+        this.progressContainer.innerText = `\u2705 Status refreshed`;
+        setTimeout(() => {
+          this.progressContainer.innerText = "";
+        }, 2e3);
+      }));
+      const settingsIcon = iconsContainer.createEl("div", { cls: "clickable-icon" });
+      settingsIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-settings"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg>`;
+      settingsIcon.style.cursor = "pointer";
+      settingsIcon.addEventListener("click", () => {
+        var _a, _b;
+        this.modal.close();
+        (_a = this.app.setting) == null ? void 0 : _a.open();
+        (_b = this.app.setting) == null ? void 0 : _b.openTabById("obsidian-flowershow");
+      });
       this.progressContainer = this.modal.contentEl.createEl("div");
       this.progressContainer.addClass("progress-container");
+      this.progressContainer.style.padding = "0 10px";
+      this.progressContainer.style.marginBottom = "8px";
       [this.publishedCounter, this.publishedList] = this.createSection("Published", null, null);
-      [this.changedCounter, this.changedList] = this.createSection("Changed", "Update changed notes", () => __async(this, null, function* () {
+      [this.changedCounter, this.changedList] = this.createSection("Changed", "Update notes", () => __async(this, null, function* () {
         return this.publishChangedNotes();
       }));
-      [this.unpublishedCounter, this.unpublishedList] = this.createSection("Unpublished", "Publish unpublished notes", () => __async(this, null, function* () {
+      [this.unpublishedCounter, this.unpublishedList] = this.createSection("Unpublished", "Publish notes", () => __async(this, null, function* () {
         return this.publishUnpublishedNotes();
       }));
       [this.deletedCounter, this.deletedList] = this.createSection("Deleted", "Delete notes from site", () => __async(this, null, function* () {
@@ -3063,10 +3100,18 @@ var PublishStatusModal = class {
   createSection(title, buttonText, buttonCallback) {
     const headerContainer = this.modal.contentEl.createEl("div");
     headerContainer.addClass("header-container");
+    headerContainer.style.marginBottom = "8px";
     const collapsableList = this.modal.contentEl.createEl("ul");
+    collapsableList.style.padding = "4px 0 4px 20px";
+    collapsableList.style.margin = "0";
     const titleContainer = headerContainer.createEl("div");
     titleContainer.addClass("title-container");
-    const toggleHeader = titleContainer.createEl("h3", { text: `\u2795\uFE0F ${title}`, attr: { class: "collapsable collapsed" } });
+    const toggleHeader = titleContainer.createEl("h3", {
+      text: `\u25B6 ${title}`,
+      attr: { class: "collapsable collapsed" },
+      cls: "small-chevron"
+    });
+    toggleHeader.style.fontSize = "1em";
     const counter = titleContainer.createEl("span");
     counter.addClass("count");
     collapsableList.hide();
@@ -3080,12 +3125,12 @@ var PublishStatusModal = class {
     }
     headerContainer.onClickEvent(() => {
       if (collapsableList.isShown()) {
-        toggleHeader.textContent = `\u2795\uFE0F ${title}`;
+        toggleHeader.textContent = `\u25B6 ${title}`;
         collapsableList.hide();
         toggleHeader.removeClass("open");
         toggleHeader.addClass("collapsed");
       } else {
-        toggleHeader.textContent = `\u2796 ${title}`;
+        toggleHeader.textContent = `\u25BC ${title}`;
         collapsableList.show();
         toggleHeader.removeClass("collapsed");
         toggleHeader.addClass("open");
@@ -3102,6 +3147,7 @@ var PublishStatusModal = class {
       publishedNotes.forEach((file) => {
         const li = document.createElement("li");
         li.textContent = file.path;
+        li.style.padding = "2px 0";
         this.publishedList.appendChild(li);
       });
       this.unpublishedCounter.textContent = `(${unpublishedNotes.length} notes)`;
@@ -3109,6 +3155,7 @@ var PublishStatusModal = class {
       unpublishedNotes.forEach((file) => {
         const li = document.createElement("li");
         li.textContent = file.path;
+        li.style.padding = "2px 0";
         this.unpublishedList.appendChild(li);
       });
       this.changedCounter.textContent = `(${changedNotes.length} notes)`;
@@ -3116,6 +3163,7 @@ var PublishStatusModal = class {
       changedNotes.forEach((file) => {
         const li = document.createElement("li");
         li.textContent = file.path;
+        li.style.padding = "2px 0";
         this.changedList.appendChild(li);
       });
       this.deletedCounter.textContent = `(${deletedNotePaths.length} notes)`;
@@ -3123,6 +3171,7 @@ var PublishStatusModal = class {
       deletedNotePaths.forEach((path) => {
         const li = document.createElement("li");
         li.textContent = path;
+        li.style.padding = "2px 0";
         this.deletedList.appendChild(li);
       });
     });
@@ -3234,10 +3283,9 @@ var SiteManager = class {
         tree_sha: "HEAD"
       });
       const files = response.data.tree;
-      const notes = files.filter((file) => file.path.startsWith("content/") && file.type === "blob" && file.path !== "content/config.mjs");
+      const notes = files.filter((file) => file.type === "blob" && file.path.endsWith(".md"));
       const hashes = notes.reduce((dict, note) => {
-        const vaultPath = note.path.replace("content/", "");
-        dict[vaultPath] = note.sha;
+        dict[note.path] = note.sha;
         return dict;
       }, {});
       return hashes;
@@ -3252,10 +3300,9 @@ var SiteManager = class {
         tree_sha: "HEAD"
       });
       const files = response.data.tree;
-      const images = files.filter((file) => file.path.startsWith("public/assets/") && file.type === "blob");
+      const images = files.filter((file) => file.type === "blob" && /\.(png|jpg|jpeg|gif|svg|webp|bmp)$/i.test(file.path));
       const hashes = images.reduce((dict, img) => {
-        const vaultPath = decodeURI(img.path.replace("public/", ""));
-        dict[vaultPath] = img.sha;
+        dict[decodeURI(img.path)] = img.sha;
         return dict;
       }, {});
       return hashes;
@@ -3279,11 +3326,10 @@ var SettingView = class {
       this.settingsRootElement.createEl("h1", { text: "Flowershow Settings" });
       const linkDiv = this.settingsRootElement.createEl("div");
       linkDiv.addClass("pr-link");
-      linkDiv.createEl("span", { text: "Remember to read the setup guide if you haven't already. It can be found " });
-      linkDiv.createEl("a", { text: "here.", href: "https://github.com/datopian/obsidian-flowershow" });
-      this.settingsRootElement.createEl("h3", { text: "GitHub Authentication (required)" }).prepend((0, import_obsidian4.getIcon)("github"));
-      this.initializeGitHubRepoSetting();
+      linkDiv.createEl("a", { text: "Sign up for Flowershow \u2192", href: "https://cloud.flowershow.app/login?utm_source=obsidian&utm_medium=referral" });
+      this.settingsRootElement.createEl("h3", { text: "GitHub Authentication" }).prepend((0, import_obsidian4.getIcon)("github"));
       this.initializeGitHubUserNameSetting();
+      this.initializeGitHubRepoSetting();
       this.initializeGitHubTokenSetting();
     });
   }
@@ -3303,13 +3349,13 @@ var SettingView = class {
     });
   }
   initializeGitHubRepoSetting() {
-    new import_obsidian4.Setting(this.settingsRootElement).setName("GitHub repo name").setDesc("The name of the GitHub repository").addText((text) => text.setPlaceholder("mygithubrepo").setValue(this.settings.githubRepo).onChange((value) => __async(this, null, function* () {
+    new import_obsidian4.Setting(this.settingsRootElement).setName("Repository name").setDesc("Name of the GitHub repository linked to your Flowershow site").addText((text) => text.setPlaceholder("mygithubrepo").setValue(this.settings.githubRepo).onChange((value) => __async(this, null, function* () {
       this.settings.githubRepo = value;
       yield this.saveSettings();
     })));
   }
   initializeGitHubUserNameSetting() {
-    new import_obsidian4.Setting(this.settingsRootElement).setName("GitHub Username").setDesc("Your GitHub Username").addText((text) => text.setPlaceholder("myusername").setValue(this.settings.githubUserName).onChange((value) => __async(this, null, function* () {
+    new import_obsidian4.Setting(this.settingsRootElement).setName("Username").setDesc("Your GitHub username").addText((text) => text.setPlaceholder("myusername").setValue(this.settings.githubUserName).onChange((value) => __async(this, null, function* () {
       this.settings.githubUserName = value;
       yield this.saveSettings();
     })));
@@ -3317,13 +3363,13 @@ var SettingView = class {
   initializeGitHubTokenSetting() {
     const desc = document.createDocumentFragment();
     desc.createEl("span", null, (span) => {
-      span.innerText = "A GitHub token with repo permissions. You can generate it ";
+      span.innerText = "GitHub personal access token with repository permissions. You can generate one ";
       span.createEl("a", null, (link) => {
         link.href = "https://github.com/settings/tokens/new?scopes=repo";
         link.innerText = "here!";
       });
     });
-    new import_obsidian4.Setting(this.settingsRootElement).setName("GitHub token").setDesc(desc).addText((text) => text.setPlaceholder("Secret Token").setValue(this.settings.githubToken).onChange((value) => __async(this, null, function* () {
+    new import_obsidian4.Setting(this.settingsRootElement).setName("Personal Access Token").setDesc(desc).addText((text) => text.setPlaceholder("Secret Token").setValue(this.settings.githubToken).onChange((value) => __async(this, null, function* () {
       this.settings.githubToken = value;
       yield this.saveSettings();
     })));
@@ -3331,7 +3377,7 @@ var SettingView = class {
 };
 
 // src/constants.ts
-var seedling = `<g style="pointer-events:all"><title style="pointer-events: none" opacity="0.33">Layer 1</title><g id="hair" style="pointer-events: none" opacity="0.33"></g><g id="skin" style="pointer-events: none" opacity="0.33"></g><g id="skin-shadow" style="pointer-events: none" opacity="0.33"></g><g id="line"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M47.71119,35.9247" id="svg_3"></path><polyline fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="49.813106536865234,93.05191133916378 49.813106536865234,69.57996462285519 40.03312683105469,26.548054680228233 " id="svg_4"></polyline><line x1="49.81311" x2="59.59309" y1="69.57996" y2="50.02" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" id="svg_5"></line><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M27.99666,14.21103C35.9517,16.94766 39.92393,26.36911 39.92393,26.36911S30.99696,31.3526 23.04075,28.61655S11.11348,16.45847 11.11348,16.45847S20.04456,11.4789 27.99666,14.21103z" id="svg_6"></path><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M76.46266698455811,45.61669603088379 C84.67706698455811,47.43146603088379 89.6945869845581,56.34024603088379 89.6945869845581,56.34024603088379 S81.3917769845581,62.30603603088379 73.17639698455811,60.492046030883785 S59.94447698455811,49.768496030883796 59.94447698455811,49.768496030883796 S68.2515869845581,43.80622603088379 76.46266698455811,45.61669603088379 z" id="svg_7"></path></g></g>`;
+var flowershowIcon = `<path fill="currentColor" d="M53.333 72.292V55.795c11.494-2.963 20-13.366 20-25.795V10C63.291 10 54.548 15.561 50 23.77 45.452 15.561 36.712 10 26.667 10v20c0 12.429 8.509 22.832 20 25.795v16.497L20 45.625v3.334c0 7.363 2.988 14.029 7.813 18.854L50 90l22.188-22.188C77.012 62.988 80 56.322 80 48.959v-3.334L53.333 72.292zm13.334-54.479V30c0 8.691-5.573 16.107-13.334 18.861V36.667c0-8.691 5.573-16.106 13.334-18.854zM33.333 30V17.813c7.761 2.748 13.334 10.163 13.334 18.854v12.194C38.906 46.107 33.333 38.691 33.333 30z"/>`;
 
 // main.ts
 var Flowershow = class extends import_obsidian5.Plugin {
@@ -3345,7 +3391,7 @@ var Flowershow = class extends import_obsidian5.Plugin {
       this.publishStatusManager = new PublishStatusManager(this.siteManager, this.publisher);
       this.addSettingTab(new FlowershowSettingTab(this.app, this));
       yield this.addCommands();
-      (0, import_obsidian5.addIcon)("flowershow-icon", seedling);
+      (0, import_obsidian5.addIcon)("flowershow-icon", flowershowIcon);
       this.addRibbonIcon("flowershow-icon", "Publish with Flowershow", () => __async(this, null, function* () {
         this.openPublishStatusModal();
       }));

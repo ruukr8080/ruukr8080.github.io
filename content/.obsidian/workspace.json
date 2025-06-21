@@ -15,14 +15,27 @@
               "state": {
                 "file": "private/template/cote.md",
                 "mode": "source",
-                "backlinks": false,
-                "source": false
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
               "title": "cote"
             }
+          },
+          {
+            "id": "d2cd4317ec87e8af",
+            "type": "leaf",
+            "state": {
+              "type": "mk-uri-view",
+              "state": {
+                "path": "https://www.make.md/static/GetStarted.md"
+              },
+              "icon": "lucide-file",
+              "title": "https://www.make.md/static/GetStarted.md"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -41,20 +54,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "파일 탐색기"
-            }
-          },
-          {
-            "id": "7ec6b9d5153c24fb",
-            "type": "leaf",
-            "state": {
-              "type": "mk-path-view",
-              "state": {},
-              "icon": "layout-grid",
-              "title": "Spaces"
             }
           },
           {
@@ -214,8 +218,8 @@
                   "copy"
                 ]
               },
-              "icon": "google_translate",
-              "title": "Google Translate"
+              "icon": "lucide-file",
+              "title": "플러그인이 더 이상 활성화돼있지 않음"
             }
           },
           {
@@ -224,8 +228,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-file",
+              "title": "플러그인이 더 이상 활성화돼있지 않음"
             }
           },
           {
@@ -234,8 +238,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-file",
+              "title": "플러그인이 더 이상 활성화돼있지 않음"
             }
           },
           {
@@ -342,6 +346,46 @@
             "id": "131d9316339d682a",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "새 탭"
+            }
+          },
+          {
+            "id": "565bd1b7d3547424",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "새 탭"
+            }
+          },
+          {
+            "id": "8175731a3ec4fd62",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "새 탭"
+            }
+          },
+          {
+            "id": "630697f8f03c8e09",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "새 탭"
+            }
+          },
+          {
+            "id": "429eb69ce5ad5595",
+            "type": "leaf",
+            "state": {
               "type": "BC-matrix",
               "state": {},
               "icon": "BC-trail-icon",
@@ -349,7 +393,7 @@
             }
           },
           {
-            "id": "565bd1b7d3547424",
+            "id": "14f5b11a589fc80f",
             "type": "leaf",
             "state": {
               "type": "BC-tree",
@@ -359,7 +403,7 @@
             }
           }
         ],
-        "currentTab": 19
+        "currentTab": 23
       }
     ],
     "direction": "horizontal",
@@ -368,23 +412,23 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:퀵 스위처 열기": true,
+      "switcher:빠른 전환기 열기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
-      "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
-      "flowershow:Publish with Flowershow": false,
       "obsidian-kanban:새 보드 만들기": false,
       "obsidian-git:Open Git source control": false,
       "translate:Open translation view": false,
       "templater-obsidian:Templater": false,
       "breadcrumbs:Breadcrumbs Visualisation": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "66dab36b9988adb6",
+  "active": "14f5b11a589fc80f",
   "lastOpenFiles": [
+    "private/template/cote.md",
     "코테/코테기초.md~",
     "private/template/cote.md~",
     "private/쿼츠 사용법/쿼츠 Todo.md",
@@ -407,7 +451,6 @@
     "private/쿼츠 사용법/Feature.md",
     "private/template/Feature.md",
     "private/template/callout.md",
-    "private/template/cote.md",
     "코테/0_3-문자열 반복해서 출력하기.md",
     "코테/0_4-대소문자 바꿔서 출력하기.md",
     "코테/0_3-대소문자 바꿔서 출력하기.md",

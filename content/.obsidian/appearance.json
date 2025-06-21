@@ -1,5 +1,5 @@
 {
-  "accentColor": "",
+  "theme": "moonstone",
   "cssTheme": "MagicUser",
-  "showViewHeader": true
+  "accentColor": "#5724ff"
 }
