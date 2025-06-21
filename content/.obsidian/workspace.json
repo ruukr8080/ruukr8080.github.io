@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "코테/index.md",
+                "file": "코테/코테기초.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "코테기초"
             }
           }
         ],
@@ -87,7 +87,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Linter",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TEST/Clippings/Dynamic modules  Nest.js 공식문서 번역.md",
+                "file": "코테/코테기초.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +138,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Dynamic modules  Nest.js 공식문서 번역의 백링크"
+              "title": "코테기초 의 백링크"
             }
           },
           {
@@ -147,12 +147,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TEST/Clippings/Dynamic modules  Nest.js 공식문서 번역.md",
+                "file": "코테/코테기초.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Dynamic modules  Nest.js 공식문서 번역의 나가는 링크"
+              "title": "코테기초 의 나가는 링크"
             }
           },
           {
@@ -173,9 +173,14 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "코테/코테기초.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-list",
-              "title": "개요"
+              "title": "코테기초 의 개요"
             }
           },
           {
@@ -189,7 +194,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
-              "title": "All properties"
+              "title": "모든 속성"
             }
           },
           {
@@ -221,8 +226,8 @@
                   "copy"
                 ]
               },
-              "icon": "lucide-file",
-              "title": "플러그인이 더 이상 활성화돼있지 않음"
+              "icon": "google_translate",
+              "title": "Google Translate"
             }
           },
           {
@@ -231,8 +236,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "플러그인이 더 이상 활성화돼있지 않음"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           },
           {
@@ -241,176 +246,28 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "lucide-file",
-              "title": "플러그인이 더 이상 활성화돼있지 않음"
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           },
           {
-            "id": "3960414f30da5d5b",
+            "id": "aa557d26e5ec48f5",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
-            }
-          },
-          {
-            "id": "444aebb3080a2a75",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
-            }
-          },
-          {
-            "id": "3cda733b4388a81a",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
-            }
-          },
-          {
-            "id": "cfe8de598cc957df",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
-            }
-          },
-          {
-            "id": "a00db3e9f1cf64c4",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
-            }
-          },
-          {
-            "id": "081273630f94ffc3",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
-            }
-          },
-          {
-            "id": "5e2667a83e80eda0",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
-            }
-          },
-          {
-            "id": "d766d4aef55ee609",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
-            }
-          },
-          {
-            "id": "0dce56782bfd813f",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
-            }
-          },
-          {
-            "id": "563270c4b9b2da08",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
-            }
-          },
-          {
-            "id": "131d9316339d682a",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
-            }
-          },
-          {
-            "id": "565bd1b7d3547424",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
-            }
-          },
-          {
-            "id": "8175731a3ec4fd62",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
-            }
-          },
-          {
-            "id": "630697f8f03c8e09",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
-            }
-          },
-          {
-            "id": "429eb69ce5ad5595",
-            "type": "leaf",
-            "state": {
-              "type": "BC-matrix",
-              "state": {},
-              "icon": "BC-trail-icon",
-              "title": "Breadcrumbs Matrix"
-            }
-          },
-          {
-            "id": "14f5b11a589fc80f",
-            "type": "leaf",
-            "state": {
-              "type": "BC-tree",
-              "state": {},
-              "icon": "feather-corner-right-down",
-              "title": "Breadcrumbs Down"
+              "type": "file-properties",
+              "state": {
+                "file": "코테/코테기초.md"
+              },
+              "icon": "lucide-info",
+              "title": "코테기초 의 파일 속성"
             }
           }
         ],
-        "currentTab": 23
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 328.5,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -425,14 +282,22 @@
       "obsidian-git:Open Git source control": false,
       "translate:Open translation view": false,
       "templater-obsidian:Templater": false,
-      "breadcrumbs:Breadcrumbs Visualisation": false,
-      "obsidian-excalidraw-plugin:New drawing": false
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "markdown-importer:마크다운 형식 불러오기 열기": false,
+      "publish:변경사항 게재": false
     }
   },
   "active": "d2cd4317ec87e8af",
   "lastOpenFiles": [
-    "코테/코테기초.md",
     "코테/index.md",
+    "private/Obsidian/plugin-Linter.md",
+    "코테/코테기초.md",
+    "private/Obsidian/image/image.png",
+    "private/Obsidian/image",
+    "private/Obsidian/image.png",
+    "private/Obsidian/plugin-Linter",
+    "private/Obsidian",
+    "수치코테.md",
     "private/template/cote.md",
     "코테/코테기초.md~",
     "private/template/cote.md~",
@@ -446,9 +311,6 @@
     "Clippings",
     "코테/README.md~",
     "코테/README.md",
-    "코테/0_1-문자열 출력하기.md~",
-    "private/template/word.md~",
-    "IT 대사전.md~",
     "노트/w_readline.md",
     "private/쿼츠 사용법/쿼츠 사용법.md",
     "private/쿼츠 사용법/Feature.md",
@@ -464,8 +326,6 @@
     "private/커뮤니티 활성화 및 결속력 강화를 위한 미팅 타입테이블.md",
     "private/글지대봇-docs.md",
     "IT 대사전.md",
-    "private/쿼츠 Todo.md",
-    "private/블로그 Todo.md",
     "Pasted image 20241115135911.png",
     "Pasted image 20241115134856.png",
     "Pasted image 20241115111419.png",
@@ -475,8 +335,6 @@
     "posting/resource/Pasted image 20241112123244.png",
     "Pasted image 20241112123244.png",
     "resource/깃헙시스템.png",
-    "resource/오은영소통.png",
-    "Pasted image 20241104181655.png",
     "private/자기소개script/1분 pr.canvas"
   ]
 }

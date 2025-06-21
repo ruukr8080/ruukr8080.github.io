@@ -1,7 +1,7 @@
 {
   "ruleConfigs": {
     "add-blank-line-after-yaml": {
-      "enabled": false
+      "enabled": true
     },
     "dedupe-yaml-array-values": {
       "enabled": false,
@@ -113,20 +113,20 @@
     },
     "auto-correct-common-misspellings": {
       "enabled": false,
-      "ignore-words": "",
+      "ignore-words": "Integer",
       "skip-words-with-multiple-capitals": false,
       "extra-auto-correct-files": []
     },
     "blockquote-style": {
-      "enabled": false,
-      "style": "space"
+      "enabled": true,
+      "style": "no space"
     },
     "convert-bullet-list-markers": {
       "enabled": false
     },
     "default-language-for-code-fences": {
-      "enabled": false,
-      "default-language": ""
+      "enabled": true,
+      "default-language": "js"
     },
     "emphasis-style": {
       "enabled": false,
@@ -146,16 +146,16 @@
     },
     "quote-style": {
       "enabled": false,
-      "single-quote-enabled": true,
-      "single-quote-style": "''",
+      "single-quote-enabled": false,
+      "single-quote-style": "‘’",
       "double-quote-enabled": true,
-      "double-quote-style": "\"\""
+      "double-quote-style": "“”"
     },
     "remove-consecutive-list-markers": {
       "enabled": false
     },
     "remove-empty-list-markers": {
-      "enabled": false
+      "enabled": true
     },
     "remove-hyphenated-line-breaks": {
       "enabled": false
@@ -168,7 +168,7 @@
       "style": "consistent"
     },
     "two-spaces-between-lines-with-content": {
-      "enabled": false,
+      "enabled": true,
       "line-break-indicator": "  "
     },
     "unordered-list-style": {
@@ -187,7 +187,7 @@
       "tabsize": 4
     },
     "empty-line-around-blockquotes": {
-      "enabled": false
+      "enabled": true
     },
     "empty-line-around-code-fences": {
       "enabled": false
@@ -196,7 +196,7 @@
       "enabled": false
     },
     "empty-line-around-math-blocks": {
-      "enabled": false
+      "enabled": true
     },
     "empty-line-around-tables": {
       "enabled": false
@@ -278,7 +278,7 @@
   "settingsConvertedToConfigKeyValues": true,
   "foldersToIgnore": [],
   "filesToIgnore": [],
-  "linterLocale": "system-default",
+  "linterLocale": "ko",
   "logLevel": "ERROR",
   "lintCommands": [],
   "customRegexes": [],
@@ -287,6 +287,6 @@
     "tagArrayStyle": "single-line",
     "minimumNumberOfDollarSignsToBeAMathBlock": 2,
     "escapeCharacter": "'",
-    "removeUnnecessaryEscapeCharsForMultiLineArrays": false
+    "removeUnnecessaryEscapeCharsForMultiLineArrays": true
   }
 }

@@ -83,5 +83,13 @@
       "modifiers": [],
       "key": "F4"
     }
+  ],
+  "publish:open-in-live-site": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "F5"
+    }
   ]
 }

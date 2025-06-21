@@ -1,5 +1,8 @@
 {
-  "theme": "moonstone",
+  "accentColor": "#5724ff",
   "cssTheme": "MagicUser",
-  "accentColor": "#5724ff"
+  "theme": "moonstone",
+  "interfaceFontFamily": "",
+  "textFontFamily": "",
+  "monospaceFontFamily": "Consolas"
 }

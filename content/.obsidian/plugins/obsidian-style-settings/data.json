@@ -1,3 +1,5 @@
 {
-  "magicuser-theme-for-obsidian@@mu-presets-themes": "magicuser-concentration-theme"
+  "magicuser-theme-for-obsidian@@mu-presets-themes": "magicuser-concentration-theme",
+  "magicuser-theme-for-obsidian@@mu-outline-code": false,
+  "magicuser-theme-for-obsidian@@mu-outline-inline-code": false
 }

@@ -8,5 +8,9 @@
   "foldHeading": true,
   "propertiesInDocument": "hidden",
   "strictLineBreaks": true,
-  "promptDelete": false
+  "promptDelete": false,
+  "autoPairMarkdown": true,
+  "uriCallbacks": false,
+  "showLineNumber": false,
+  "smartIndentList": true
 }
