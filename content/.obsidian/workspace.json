@@ -26,12 +26,15 @@
             "id": "d2cd4317ec87e8af",
             "type": "leaf",
             "state": {
-              "type": "mk-uri-view",
+              "type": "markdown",
               "state": {
-                "path": "https://www.make.md/static/GetStarted.md"
+                "file": "코테/index.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "https://www.make.md/static/GetStarted.md"
+              "title": "index"
             }
           }
         ],
@@ -426,15 +429,15 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "14f5b11a589fc80f",
+  "active": "d2cd4317ec87e8af",
   "lastOpenFiles": [
+    "코테/코테기초.md",
+    "코테/index.md",
     "private/template/cote.md",
     "코테/코테기초.md~",
     "private/template/cote.md~",
     "private/쿼츠 사용법/쿼츠 Todo.md",
     "코테/index.md~",
-    "코테/코테기초.md",
-    "코테/index.md",
     "Clippings/Readline  Node.js v22.11.0 Documentation.md",
     "코테/수치코테.md",
     "코테/수치코테.md~",

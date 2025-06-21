@@ -13,7 +13,7 @@ tags: [ cote ]
 >🚨**사전 학습 하고** 문제 풀기._( 알고리즘 , 인터페이스 함수 ...)_  
 >🚨변수명과 로직을 명확하게 해서 **가독성이 좋고 일관되게 작성하도록**하자.
 
-<<<<<<< HEAD
+
 | 날짜       | 문제 | 문제 이름           | 레벨                                                                                | 분류  |
 |----------|----|-----------------|-----------------------------------------------------------------------------------| --- |
 | 24.11.15 | 1개 | a와 b출력하기        | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/1.svg"/> | 구현 |
@@ -53,6 +53,7 @@ tags: [ cote ]
 | 24.12.02 | 1개     | 수 조작하기2          | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/1.svg"/> | 구현 |
 | 24.12.03 | 1개     | 수 조작하기2          | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/1.svg"/> | 구현 |
 | 24.12.04 | 1개     | 수 조작하기2          | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/1.svg"/> | 구현 |
->>>>>>> f715059553dd1a914870f72788d211007ed8df29
+
+
   
   
