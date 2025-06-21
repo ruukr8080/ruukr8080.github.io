@@ -13,13 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "private/template/cote.md",
+                "file": "코테/풀이 기록.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "cote"
+              "title": "풀이 기록"
+            }
+          },
+          {
+            "id": "d9cc6f2c59a0c907",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "코테/풀이 기록.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "풀이 기록"
             }
           },
           {
@@ -28,13 +43,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "코테/코테기초.md",
+                "file": "코테/풀이 기록.md",
                 "mode": "source",
                 "source": false,
-                "backlinks": false
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
-              "title": "코테기초"
+              "title": "풀이 기록"
             }
           }
         ],
@@ -87,7 +111,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Linter",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -142,20 +166,6 @@
             }
           },
           {
-            "id": "0398b6fdd33f2aa2",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "코테/코테기초.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "코테기초 의 나가는 링크"
-            }
-          },
-          {
             "id": "01caa708d416944f",
             "type": "leaf",
             "state": {
@@ -166,21 +176,6 @@
               },
               "icon": "lucide-tags",
               "title": "Tags"
-            }
-          },
-          {
-            "id": "933beeceee629202",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "코테/코테기초.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "코테기초 의 개요"
             }
           },
           {
@@ -226,8 +221,8 @@
                   "copy"
                 ]
               },
-              "icon": "google_translate",
-              "title": "Google Translate"
+              "icon": "lucide-file",
+              "title": "플러그인이 더 이상 활성화돼있지 않음"
             }
           },
           {
@@ -236,18 +231,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
-          },
-          {
-            "id": "905869c8ffa3d640",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-file",
+              "title": "플러그인이 더 이상 활성화돼있지 않음"
             }
           },
           {
@@ -261,9 +246,48 @@
               "icon": "lucide-info",
               "title": "코테기초 의 파일 속성"
             }
+          },
+          {
+            "id": "f55f49e7e9220282",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "코테/풀이 기록.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "풀이 기록 의 개요"
+            }
+          },
+          {
+            "id": "0a3f79fad7c20baf",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "코테/풀이 기록.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "풀이 기록 의 나가는 링크"
+            }
+          },
+          {
+            "id": "041af5cee1f5b067",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -278,27 +302,29 @@
       "canvas:새 캔버스 만들기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
+      "markdown-importer:마크다운 형식 불러오기 열기": false,
+      "publish:변경사항 게재": false,
+      "zk-prefixer:새 고유 노트 생성": false,
       "obsidian-kanban:새 보드 만들기": false,
       "obsidian-git:Open Git source control": false,
       "translate:Open translation view": false,
-      "templater-obsidian:Templater": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "markdown-importer:마크다운 형식 불러오기 열기": false,
-      "publish:변경사항 게재": false
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "d2cd4317ec87e8af",
+  "active": "d9cc6f2c59a0c907",
   "lastOpenFiles": [
+    "private/cote.md",
+    "private/IT 대사전.md",
     "코테/index.md",
+    "코테/풀이 기록.md",
+    "private/template/cote.md",
     "private/Obsidian/plugin-Linter.md",
-    "코테/코테기초.md",
     "private/Obsidian/image/image.png",
     "private/Obsidian/image",
     "private/Obsidian/image.png",
     "private/Obsidian/plugin-Linter",
     "private/Obsidian",
     "수치코테.md",
-    "private/template/cote.md",
     "코테/코테기초.md~",
     "private/template/cote.md~",
     "private/쿼츠 사용법/쿼츠 Todo.md",
@@ -325,7 +351,6 @@
     "코테/1문자열 출력하기.md",
     "private/커뮤니티 활성화 및 결속력 강화를 위한 미팅 타입테이블.md",
     "private/글지대봇-docs.md",
-    "IT 대사전.md",
     "Pasted image 20241115135911.png",
     "Pasted image 20241115134856.png",
     "Pasted image 20241115111419.png",

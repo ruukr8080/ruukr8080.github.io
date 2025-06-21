@@ -12,5 +12,7 @@
   "autoPairMarkdown": true,
   "uriCallbacks": false,
   "showLineNumber": false,
-  "smartIndentList": true
+  "smartIndentList": true,
+  "autoPairBrackets": true,
+  "autoConvertHtml": true
 }

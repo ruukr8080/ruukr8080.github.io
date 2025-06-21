@@ -1,19 +1,13 @@
 [
-  "emoji-shortcodes",
   "obsidian-emoji-toolbar",
-  "better-export-pdf",
-  "obsidian-enhancing-export",
-  "obsidian-excalidraw-plugin",
-  "make-md",
   "obsidian-kanban",
   "obsidian-git",
   "translate",
-  "templater-obsidian",
-  "obsidian-linter",
   "obsidian-clipper",
   "settings-search",
   "calendar",
-  "obsidian-advanced-uri",
-  "obsidian-pandoc",
-  "obsidian-style-settings"
+  "emoji-shortcodes",
+  "templater-obsidian",
+  "obsidian-linter",
+  "better-export-pdf"
 ]

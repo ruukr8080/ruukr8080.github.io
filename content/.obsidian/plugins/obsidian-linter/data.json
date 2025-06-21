@@ -277,7 +277,13 @@
   "displayLintOnFileChangeNotice": true,
   "settingsConvertedToConfigKeyValues": true,
   "foldersToIgnore": [],
-  "filesToIgnore": [],
+  "filesToIgnore": [
+    {
+      "match": "^코테/코테기초\\.md$",
+      "flags": "",
+      "label": ""
+    }
+  ],
   "linterLocale": "ko",
   "logLevel": "ERROR",
   "lintCommands": [],

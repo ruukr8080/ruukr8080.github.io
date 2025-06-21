@@ -2,13 +2,14 @@
 title: "기초"
 tags: [ cote ]
 ---
+
 ❌
 ---
 
-
->> [!Example]- 문자열 반복해서 출력하기
+>>[!Example]- 문자열 반복해서 출력하기
 >>### **JavaScript**
 >>_⏰5 min_ | [[수치코테#Functions|repeat(`n`)]]
+>>
 >>>```js
 >>>const readline = require('readline');
 >>>const rl = readline.createInterface({
@@ -32,6 +33,7 @@ tags: [ cote ]
 >>
 >>### **JAVA**
 >>_⏰1 min_ |
+>>
 >>>  ```java
 >>>
 >>> >>>import java.util.Scanner;
@@ -49,9 +51,4 @@ tags: [ cote ]
 >>>    }
 >>>}
 >>>```
->>>
->>
 >
-
-
-
