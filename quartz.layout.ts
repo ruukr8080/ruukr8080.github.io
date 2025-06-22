@@ -2,7 +2,7 @@ import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 import { cursor } from "sisteransi"
 import left = cursor.left
-import { QuartzEmitterPlugin } from "./quartz/plugins/types"
+// import { QuartzEmitterPlugin } from "./quartz/plugins/types"
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {

@@ -8,7 +8,7 @@ tags: [ cote ]
 
 >>[!Example]- 문자열 반복해서 출력하기
 >>### **JavaScript**
->>_⏰5 min_ | [[수치코테#Functions|repeat(`n`)]]
+>>_⏰5 min_ | 
 >>
 >>>```js
 >>>const readline = require('readline');
