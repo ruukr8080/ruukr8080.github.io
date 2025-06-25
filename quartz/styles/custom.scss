@@ -24,10 +24,8 @@ section {
 // side bar
 .sidebar.left {
   display: flex;
-  //flex-direction: row;
-  background: #F6F8FA;
-  border-right: solid 1px #EFEFEF;
-
+  // flex-direction: row;
+  background-color: color-mix(in srgb, var(--light) 97%, var(--darkgray));
 }
 #explorer-content ul{
   font-size: .8rem;
@@ -182,8 +180,8 @@ section {
       margin-top: 5rem;
       max-width: 100%;
       min-width: 100%;
-      //margin-left: auto;
-      //margin-right: auto;
+      margin-left: 0 auto;
+      margin-right: 0 auto;
       @media all and ($tablet) {
         margin-right: 0;
       }
@@ -238,7 +236,7 @@ section {
     cursor: pointer;
     white-space: nowrap;
     width: 100%;
-    //justify-content: space-between;
+    // justify-content: space-between;
 
     & > p {
       display: inline;
@@ -375,6 +373,7 @@ svg {
 }
 
 .folder-container {
+  cursor: pointer;
   flex-direction: row;
   display: flex;
   align-items: center;
@@ -418,9 +417,8 @@ svg {
 }
 
 .folder-icon {
-  margin-right: 5px;
+  margin-right: 2px;
   color: var(--secondary);
-  cursor: pointer;
   transition: transform 0.3s ease;
   backface-visibility: visible;
 }

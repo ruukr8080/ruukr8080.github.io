@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "812c2083c580c010",
+        "id": "5cb77a4fe1f7906b",
         "type": "tabs",
         "children": [
           {
-            "id": "66dab36b9988adb6",
+            "id": "5f495a0c2a33e321",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "코테/풀이 기록.md",
+                "file": "코테/1Lv/1.크기가 작은 부분 문자열.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "풀이 기록"
+              "title": "1.크기가 작은 부분 문자열"
             }
           }
         ]
@@ -271,9 +271,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "66dab36b9988adb6",
+  "active": "5f495a0c2a33e321",
   "lastOpenFiles": [
     "코테/index.md",
+    "코테/1Lv/1.크기가 작은 부분 문자열.md",
+    "코테/0Lv/1.0렙.md",
+    "코테/0Lv/index.md",
     "코테/풀이 기록.md",
     "코테/코테기초.md",
     "private/cote.md",
@@ -308,9 +311,6 @@
     "코테/0_3-대소문자 바꿔서 출력하기.md",
     "코테/0_2-a와 b출력하기.md",
     "코테/0_1-문자열 출력하기.md",
-    "코테/0_2a와 b출력하기.md",
-    "코테/1문자열 출력하기.md",
-    "private/커뮤니티 활성화 및 결속력 강화를 위한 미팅 타입테이블.md",
     "Pasted image 20241115135911.png",
     "Pasted image 20241115134856.png",
     "Pasted image 20241115111419.png",

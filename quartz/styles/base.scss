@@ -185,6 +185,7 @@ a {
       padding: $topSpacing 2rem 2rem 2rem;
       display: flex;
       height: 100vh;
+      width: 100%;
       position: sticky;
     }
 
@@ -322,7 +323,7 @@ thead {
   font-family: var(--headerFont);
   color: var(--dark);
   font-weight: revert;
-  margin-bottom: 0;
+  margin-bottom: 21em;
 
   article > & > a[role="anchor"] {
     color: var(--dark);
@@ -366,7 +367,7 @@ h2 {
 h3 {
   font-size: 1.12rem;
   margin-top: 1.62rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 h4,
@@ -374,7 +375,7 @@ h5,
 h6 {
   font-size: 1rem;
   margin-top: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 figure[data-rehype-pretty-code-figure] {
@@ -385,9 +386,10 @@ figure[data-rehype-pretty-code-figure] {
 
   & > [data-rehype-pretty-code-title] {
     font-family: var(--codeFont);
+    font-weight: $boldWeight;
     font-size: 0.9rem;
     padding: 0.1rem 0.5rem;
-    border: 1px solid var(--lightgray);
+    border: 1px solid var(--gray);
     width: max-content;
     border-radius: 5px;
     margin-bottom: -0.5rem;
@@ -400,29 +402,29 @@ figure[data-rehype-pretty-code-figure] {
 }
 
 pre {
-  font-family: var(--codeFont);
-  padding: 0 0.5rem;
+  font-family: var(--codeFont)!important;
+  padding: 0 0.1rem;
   border-radius: 5px;
   overflow-x: auto;
-  border: 1px solid var(--lightgray);
+  border: 1px solid var(--lightgray)!important;
   position: relative;
 
   &:has(> code.mermaid) {
-    border: none;
+    border: none!important;
   }
 
   & > code {
-    background: none;
+    background: none!important;
     padding: 0;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     counter-reset: line;
     counter-increment: line 0;
     display: grid;
-    padding: 0.5rem 0;
+    padding: 0.5rem 0.5rem 0.5rem 0.75rem;
     overflow-x: auto;
 
     & [data-highlighted-chars] {
-      background-color: var(--highlight);
+      background-color: var(--highlight)!important;
       border-radius: 5px;
     }
 
@@ -459,11 +461,11 @@ pre {
 
 code {
   font-size: 0.9em;
-  color: var(--dark);
-  font-family: var(--codeFont);
+  color: var(--dark)!important;
+  font-family: var(--codeFont)!important;
   border-radius: 5px;
   padding: 0.1rem 0.2rem;
-  background: var(--lightgray);
+  background: var(--lightgray)!important;
 }
 
 tbody,

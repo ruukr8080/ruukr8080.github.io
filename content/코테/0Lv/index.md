@@ -17,15 +17,15 @@ types: 'index'
 
 ---
 
-> [!Danger]- `Readline` : 입출력 인터페이스
+>[!Danger]- `Readline` : 입출력 인터페이스
 >
-> #### 문자열 출력하기
+>#### 문자열 출력하기
 >
 > ```js
 >
 > ```
 
-> [!Danger]- `split('')` : 구분자(delimiter)지정
+>[!Danger]- `split('')` : 구분자(delimiter)지정
 >
 > ```js
 > let line = "안녕하세요 반갑습니다 ㄱ ㄴ"
@@ -45,14 +45,14 @@ types: 'index'
 > console.log(str3.split("")) // ['H', 'e', 'l', 'l', 'o']
 > ```
 
-> [!Danger]- `repeat(n)` : 문자열을 n번 반복해서 새로운 문자열을 반환.
+>[!Danger]- `repeat(n)` : 문자열을 n번 반복해서 새로운 문자열을 반환.
 >
 > ```js
 >
 > ```
 
-> [!Danger]- `join("")` : 배열의 모든 요소를 하나의 문자열로 합쳐줌.  
-> " " 안에 구분자 지정해줄 수 있음.
+>[!Danger]- `join("")` : 배열의 모든 요소를 하나의 문자열로 합쳐줌.  
+>" " 안에 구분자 지정해줄 수 있음.
 >
 > ```js
 > const arr = ["바람", "비", "물"]
@@ -64,19 +64,19 @@ types: 'index'
 > // 바람-비-물
 > ```
 
-> [!Danger]- `String.valueOf()` : ()안의 객체 String 타입으로 형변환시킴.
+>[!Danger]- `String.valueOf()` : ()안의 객체 String 타입으로 형변환시킴.
 >
 > - str1과 str2의 각 위치(i)의 문자를 charAt()으로 가져와 번갈아가며 추가함.
 > - 문자열(String)과 문자(char)를 합치면 문자열이 나오지만. 문자(char)끼리 더하면 아스키코드 값으로 출력되므로  
->   String.valueOf()를 통해 `str1`을 String으로 형변환 해서 원하는 문자열로 출력해냄.  
->   ^441b93
+>String.valueOf()를 통해 `str1`을 String으로 형변환 해서 원하는 문자열로 출력해냄.  
+>^441b93
 
-> [!Danger]- `parseInt(String)` : "" + int = String type으로 형변환됨.
+>[!Danger]- `parseInt(String)` : "" + int = String type으로 형변환됨.
 >
 > ```java
 > int aLong = Integer.parseInt(""+a+b);
 > ```
 >
-> ```
+> ```js
 >
 > ```

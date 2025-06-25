@@ -8,19 +8,19 @@ import { QuartzPluginData } from "../plugins/vfile"
 import { classNames } from "../util/lang"
 import { i18n } from "../i18n"
 
-// Options interface defined in `ExplorerNode` to avoid circular dependency
+// Options 인터페이스는 순환 참조를 피하기 위해 `ExplorerNode`에서 정의됨
 const defaultOptions = {
-  folderClickBehavior: "collapse",
-  folderDefaultState: "collapsed",
-  useSavedState: false,
+  folderClickBehavior: "collapse", // 폴더 클릭 시 동작: "collapse"(접기)
+  folderDefaultState: "collapsed", // 폴더의 기본 상태: "collapsed"(접힘)
+  useSavedState: false, // 저장된 상태 사용 여부
   mapFn: (node) => {
     return node
   },
   sortFn: (a, b) => {
-    // Sort order: folders first, then files. Sort folders and files alphabetically
+    // 정렬 순서: 폴더가 먼저, 그 다음 파일. 폴더와 파일은 각각 알파벳순 정렬
     if ((!a.file && !b.file) || (a.file && b.file)) {
-      // numeric: true: Whether numeric collation should be used, such that "1" < "2" < "10"
-      // sensitivity: "base": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A
+      // numeric: true: 숫자 정렬 사용, 예: "1" < "2" < "10"
+      // sensitivity: "base": 기본 문자만 다르면 다르게 취급. 예: a ≠ b, a = á, a = A
       return a.displayName.localeCompare(b.displayName, undefined, {
         numeric: true,
         sensitivity: "base",
@@ -33,8 +33,8 @@ const defaultOptions = {
       return -1
     }
   },
-  filterFn: (node) => node.name !== "tags",
-  order: ["filter", "map", "sort"],
+  filterFn: (node) => node.name !== "tags", // "tags" 폴더는 제외
+  order: ["filter", "map", "sort"], // 함수 실행 순서
 } satisfies Options
 
 export default ((userOpts?: Partial<Options>) => {
@@ -87,7 +87,7 @@ export default ((userOpts?: Partial<Options>) => {
     return (
       <div class={classNames(displayClass, "explorer")}>
         <button
-          type="button"
+          type="none"
           id="explorer"
           data-behavior={opts.folderClickBehavior}
           data-collapsed={opts.folderDefaultState}
@@ -96,9 +96,9 @@ export default ((userOpts?: Partial<Options>) => {
           aria-controls="explorer-content"
           aria-expanded={opts.folderDefaultState === "open"}
         >
-          <h2>{opts.title ?? i18n(cfg.locale).components.explorer.title}</h2>
-          {/*<h2>🪴POST</h2>*/}
-          <svg
+          {/* <h2>{opts.title ?? i18n(cfg.locale).components.explorer.title}</h2> */}
+          {/* <h2>🪴POST</h2> */}
+          {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             width="14"
             height="14"
@@ -111,7 +111,7 @@ export default ((userOpts?: Partial<Options>) => {
             class="fold"
           >
             <polyline points="6 9 12 15 18 9"></polyline>
-          </svg>
+          </svg> */}
         </button>
         <div id="explorer-content">
           <ul class="overflow" id="explorer-ul">

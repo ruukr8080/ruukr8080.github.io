@@ -15,7 +15,7 @@ export const sharedPageComponents: SharedLayout = {
     Component.Search(), //검색 기능
     Component.DesktopOnly(
       Component.Explorer({
-        title: "드롭다운",
+        // title: "드롭다운",
         folderClickBehavior: "collapse",
         folderDefaultState: "collapsed",
         useSavedState: true,
@@ -41,11 +41,13 @@ export const mainPageLayout: PageLayout = {
 
 
 
-// 리스트 페이지 컴포넌트 (e.g home> 노트) 페이지
+// 폴더 페이지 컴포넌트 (e.g home> 노트) 페이지
 export const defaultListPageLayout: PageLayout = {
-  header: [Component.Breadcrumbs(), Component.ContentMeta(), ],
-  beforeBody: [Component.Graph()],
+  header: [Component.Breadcrumbs()  ],
+  beforeBody: [Component.Graph(), Component.DesktopOnly(Component.RecentNotes({ title: "최근 글" })),],
   afterBody: [
+
+    
   ],
   right: [
     // Component.Graph(),
@@ -57,12 +59,14 @@ export const defaultListPageLayout: PageLayout = {
 
 // 단일 페이지 컴포넌트 (content 페이지) (e.g home> 노트 > 제목) 페이지
 export const defaultContentPageLayout: PageLayout = {
-  header: [Component.ArticleTitle()],
+  header: [
+    // Component.ArticleTitle(),
+  ],
   beforeBody: [
 
     Component.Breadcrumbs(),
     // Component.ArticleTitle(), // 글 제목
-    Component.ContentMeta(), // 메타 정보
+    // Component.ContentMeta(), // 메타 정보
   ],
   afterBody: [
     Component.Comments({

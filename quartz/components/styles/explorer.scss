@@ -85,6 +85,7 @@ button#explorer {
 
   & ul {
     list-style: none;
+    width: 100%;
     margin: 0.08rem 0;
     padding: 0;
     transition:
@@ -99,6 +100,7 @@ button#explorer {
   }
   > #explorer-ul {
     max-height: none;
+
   }
 }
 
@@ -175,7 +177,7 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
 
 #explorer-end {
   // needs height so IntersectionObserver gets triggered
-  height: 4px;
+  height: 30px;
   // remove default margin from li
   margin: 0;
 }
