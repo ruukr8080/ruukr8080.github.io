@@ -8,11 +8,11 @@ tags:
 ---
 ## Github Actions 란
 
-엔드투엔드 깃허브 중심 [SDLC](SDLC) 자동화 프로세스 :
+엔드투엔드 깃허브 중심 [SDLC](../../Devops/SDLC) 자동화 프로세스 :
 '딸깍'하면 GitHub가 자동으로 첨부터 끝까지 다 해줌"
 
 
-프로젝트를 체계적으로 관리할 수 있고 그 과정을 통합하고 자동화해주는 플랫폼과 프레임워크는 원래 있었다. ([Jenkins](Jenkins), [CircleCI](CircleCI), [Travis-CI](Travis-CI) 등..)
+프로젝트를 체계적으로 관리할 수 있고 그 과정을 통합하고 자동화해주는 플랫폼과 프레임워크는 원래 있었다. ([Jenkins](../../Devops/Jenkins), [CircleCI](../../Devops/CircleCI), [Travis-CI](../../Devops/Travis-CI) 등..)
 그리고 이런 툴로 SDLC 자동화를 구축 해주는건 국룰이었다.
 
 

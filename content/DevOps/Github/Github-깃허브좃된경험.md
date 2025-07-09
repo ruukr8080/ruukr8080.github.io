@@ -29,16 +29,16 @@ docs: Update README installation guide
 (실무 팀프로젝트에서 커밋 메세지 이런식으로 쓰면 mz소리 들음)
 ```
 
-> 커밋메세지는 진지하게 써야하는거다. 어떻게 쓰는지 모르겠다면 [커밋컨벤션](커밋컨벤션.md)이라는게 있으니 찾아보면 된다.
+> 커밋메세지는 진지하게 써야하는거다. 어떻게 쓰는지 모르겠다면 [커밋컨벤션](../../Devops/%EC%BB%A4%EB%B0%8B%EC%BB%A8%EB%B2%A4%EC%85%98.md)이라는게 있으니 찾아보면 된다.
 
 ---
 
 ## `🙊('.gitignore' 생성) 까지가 'git init'이다`
 
 >- **짜증나는 상황** : 허브에서 clone 혹은 pull 받는데 오래걸림
-> -> [node_module](node_module)올라와 있음.
+> -> [node_module](../../Devops/node_module)올라와 있음.
 
->- **ㅈ된 상황** : 허브에 게시되면 안될게 올라와있음. -> [APIkey](APIkey),[env](env),[secetkey](secetkey) 올라와 있음. 
+>- **ㅈ된 상황** : 허브에 게시되면 안될게 올라와있음. -> [APIkey](../../Devops/APIkey),[env](../../Devops/env),[secetkey](../../Devops/secetkey) 올라와 있음. 
 
 '.gitignore'로 예방하고 광명찾자.
 ```bash

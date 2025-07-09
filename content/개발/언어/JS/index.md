@@ -1,6 +1,5 @@
 ---
-title: "1Lv"
+title: "JS"
 types: "index"
 ---
 
----

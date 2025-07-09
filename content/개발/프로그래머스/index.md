@@ -1,12 +1,18 @@
 ---
-title: "코테"
+title: "프로그래머스"
 tags: [cote]
 ---
 
-[프로그래머스](https://school.programmers.co.kr/learn/challenges?order=recent&page=1&levels=0)
+[Programmers.co.kr](https://programmers.co.kr/)
 
->[!Tip] 규칙  
->🚨**사전 학습 하고** 문제 풀기._( 알고리즘 , 인터페이스 함수 ...)_  
+[[개발/프로그래머스/0Lv| 0렙]]
+
+[[개발/프로그래머스/1Lv| 1렙]]
+
+
+<!--
+>[!Tip] 규칙
+>🚨**사전 학습 하고** 문제 풀기._( 알고리즘 , 인터페이스 함수 ...)_
 >🚨**변수명과 로직을 명확하게** 하자.
 
 | 날짜       | 문제     | 문제 이름             | 레벨                                                                                | 분류  |
@@ -30,4 +36,4 @@ tags: [cote]
 | 24.12.01 | 1개     | 수 조작하기2           | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/1.svg"/> | 구현  |
 | 24.12.02 | 1개     | 수 조작하기2           | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/1.svg"/> | 구현  |
 | 24.12.03 | 1개     | 수 조작하기2           | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/1.svg"/> | 구현  |
-| 24.12.04 | 1개     | 수 조작하기2           | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/1.svg"/> | 구현  |
+| 24.12.04 | 1개     | 수 조작하기2           | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/1.svg"/> | 구현  | -->
