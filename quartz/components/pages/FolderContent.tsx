@@ -1,7 +1,7 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "../types"
 import path from "path"
-
-import style from "../styles/listPage.scss"
+// import style from "../styles/listPage.scss"
+import style from "../styles/popover.scss"
 import { PageList, SortFn } from "../PageList"
 import { stripSlashes, simplifySlug } from "../../util/path"
 import { Root } from "hast"
@@ -17,7 +17,7 @@ interface FolderContentOptions {
 }
 
 const defaultOptions: FolderContentOptions = {
-  showFolderCount: true,
+  showFolderCount: false,
 }
 
 export default ((opts?: Partial<FolderContentOptions>) => {

@@ -1,14 +1,11 @@
 ---
 title: "프로그래머스"
+types: index
 tags: [cote]
 ---
 
-[Programmers.co.kr](https://programmers.co.kr/)
-
-[[개발/프로그래머스/0Lv| 0렙]]
-
-[[개발/프로그래머스/1Lv| 1렙]]
-
+> [!info]+코테
+> [[https://programmers.co.kr/|Programmers.co.kr]]
 
 <!--
 >[!Tip] 규칙
