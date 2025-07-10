@@ -18,9 +18,6 @@ section {
   color: var(--darkgray);
 }
 
-
-
-
 // side bar
 .sidebar.left {
   display: flex;
@@ -160,12 +157,6 @@ section {
     }
     & .page-header > *{
       margin-left: 5rem;
-    }
-
-    & .center > article {
-      margin-top: 2rem;
-      margin-left: 5rem;
-      grid-area: grid-center;
     }
 
     & footer {

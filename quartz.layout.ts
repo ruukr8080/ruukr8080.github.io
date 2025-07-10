@@ -1,4 +1,4 @@
-import { PageLayout, SharedLayout } from "./quartz/cfg"
+import { PageLayout, SharedLayout,FolderPageLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 import { cursor } from "sisteransi"
 import left = cursor.left
@@ -28,9 +28,10 @@ export const sharedPageComponents: SharedLayout = {
       }),
     ),
   ],
-  // footer: Component.RecentNotes({ title: "RecentNotes" })
+  
   footer: Component.ContentMeta()
 }
+
 // 메인 페이지 전용 레이아웃
 export const mainPageLayout: PageLayout = {
   header: [],
@@ -40,15 +41,30 @@ export const mainPageLayout: PageLayout = {
 }
 
 
+export const folderPageLayout: FolderPageLayout = {
+  head: Component.Head(),
+  afterBody: [],
+  
+  beforeBody: [
+    // Component.Graph(),
+    // Component.DesktopOnly(Component.RecentNotes({ title: "최근 글" })),
+  ],
+  right: [
+    // Component.Graph(),
+    // Component.Backlinks(),
+  ]
+}
 
 // 폴더 페이지 컴포넌트 (e.g home> 노트) 페이지
 export const defaultListPageLayout: PageLayout = {
   header: [Component.Breadcrumbs()  ],
-  beforeBody: [Component.Graph(), Component.DesktopOnly(Component.RecentNotes({ title: "최근 글" })),],
   afterBody: [
-
     
   ],
+  beforeBody: [
+    Component.Graph()],
+  // beforeBody: [Component.Graph(), Component.DesktopOnly(Component.RecentNotes({ title: "최근 글" })),],
+  
   right: [
     // Component.Graph(),
     // Component.Backlinks(),

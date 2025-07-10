@@ -5,29 +5,32 @@ import BodyConstructor from "../../components/Body"
 import { pageResources, renderPage } from "../../components/renderPage"
 import { ProcessedContent, QuartzPluginData, defaultProcessedContent } from "../vfile"
 import { FullPageLayout } from "../../cfg"
+import path from "path"
 import {
   FilePath,
   FullSlug,
-  getAllSegmentPrefixes,
+  SimpleSlug,
+  stripSlashes,
   joinSegments,
   pathToRoot,
+  simplifySlug,
 } from "../../util/path"
 import { defaultListPageLayout, sharedPageComponents } from "../../../quartz.layout"
-import { TagContent } from "../../components"
+import { FolderContent } from "../../components"
 import { write } from "./helpers"
 import { i18n } from "../../i18n"
 import DepGraph from "../../depgraph"
 
-interface TagPageOptions extends FullPageLayout {
+interface FolderPageOptions extends FullPageLayout {
   sort?: (f1: QuartzPluginData, f2: QuartzPluginData) => number
 }
 
-export const TagPage: QuartzEmitterPlugin<Partial<TagPageOptions>> = (userOpts) => {
+export const FolderPage: QuartzEmitterPlugin<Partial<FolderPageOptions>> = (userOpts) => {
   const opts: FullPageLayout = {
-    // afterBody: [],
+    // ...afterBody: [],
     ...sharedPageComponents,
     ...defaultListPageLayout,
-    pageBody: TagContent({ sort: userOpts?.sort }),
+    pageBody: FolderContent({ sort: userOpts?.sort }),
     ...userOpts,
   }
 
@@ -36,7 +39,7 @@ export const TagPage: QuartzEmitterPlugin<Partial<TagPageOptions>> = (userOpts) 
   const Body = BodyConstructor()
 
   return {
-    name: "TagPage",
+    name: "FolderPage",
     getQuartzComponents() {
       return [
         Head,
@@ -51,24 +54,19 @@ export const TagPage: QuartzEmitterPlugin<Partial<TagPageOptions>> = (userOpts) 
         Footer,
       ]
     },
-    async getDependencyGraph(ctx, content, _resources) {
+    async getDependencyGraph(_ctx, content, _resources) {
+      // Example graph:
+      // nested/file.md --> nested/index.html
+      // nested/file2.md ------^
       const graph = new DepGraph<FilePath>()
 
-      for (const [_tree, file] of content) {
-        const sourcePath = file.data.filePath!
-        const tags = (file.data.frontmatter?.tags ?? []).flatMap(getAllSegmentPrefixes)
-        // if the file has at least one tag, it is used in the tag index page
-        if (tags.length > 0) {
-          tags.push("index")
+      content.map(([_tree, vfile]) => {
+        const slug = vfile.data.slug
+        const folderName = path.dirname(slug ?? "") as SimpleSlug
+        if (slug && folderName !== "." && folderName !== "tags") {
+          graph.addEdge(vfile.data.filePath!, joinSegments(folderName, "index.html") as FilePath)
         }
-
-        for (const tag of tags) {
-          graph.addEdge(
-            sourcePath,
-            joinSegments(ctx.argv.output, "tags", tag + ".html") as FilePath,
-          )
-        }
-      }
+      })
 
       return graph
     },
@@ -77,43 +75,47 @@ export const TagPage: QuartzEmitterPlugin<Partial<TagPageOptions>> = (userOpts) 
       const allFiles = content.map((c) => c[1].data)
       const cfg = ctx.cfg.configuration
 
-      const tags: Set<string> = new Set(
-        allFiles.flatMap((data) => data.frontmatter?.tags ?? []).flatMap(getAllSegmentPrefixes),
-      )
-
-      // add base tag
-      tags.add("index")
-
-      const tagDescriptions: Record<string, ProcessedContent> = Object.fromEntries(
-        [...tags].map((tag) => {
-          const title =
-            tag === "index"
-              ? i18n(cfg.locale).pages.tagContent.tagIndex
-              : `${i18n(cfg.locale).pages.tagContent.tag}: ${tag}`
-          return [
-            tag,
-            defaultProcessedContent({
-              slug: joinSegments("tags", tag) as FullSlug,
-              frontmatter: { title, tags: [] },
-            }),
-          ]
+      const folders: Set<SimpleSlug> = new Set(
+        allFiles.flatMap((data) => {
+          const slug = data.slug
+          const folderName = path.dirname(slug ?? "") as SimpleSlug
+          if (slug && folderName !== "." && folderName !== "tags") {
+            return [folderName]
+          }
+          return []
         }),
       )
 
+
+      const folderDescriptions: Record<string, ProcessedContent> = Object.fromEntries(
+        [...folders].map((folder) => [
+          folder,
+          defaultProcessedContent({
+            slug: joinSegments(folder, "index") as FullSlug,
+            frontmatter: {
+              title: `${i18n(cfg.locale).pages.folderContent.folder}: ${folder}`,
+              tags: [],
+            },
+          }),
+        ]),
+      )
+
+      // Collect all folder descriptions
       for (const [tree, file] of content) {
-        const slug = file.data.slug!
-        if (slug.startsWith("tags/")) {
-          const tag = slug.slice("tags/".length)
-          if (tags.has(tag)) {
-            tagDescriptions[tag] = [tree, file]
-          }
+        const slug = stripSlashes(simplifySlug(file.data.slug!)) as SimpleSlug
+        if (folders.has(slug)) {
+          folderDescriptions[slug] = [tree, file]
         }
       }
-
-      for (const tag of tags) {
-        const slug = joinSegments("tags", tag) as FullSlug
+      // Write index.html for each folder
+      // This will create a page for each folder with the content of the folder
+      // and a list of all files in that folder
+      
+      for (const folder of folders) {
+        
+        const slug = joinSegments(folder, "index") as FullSlug
         const externalResources = pageResources(pathToRoot(slug), resources)
-        const [tree, file] = tagDescriptions[tag]
+        const [tree, file] = folderDescriptions[folder]
         const componentData: QuartzComponentProps = {
           ctx,
           fileData: file.data,
@@ -123,16 +125,15 @@ export const TagPage: QuartzEmitterPlugin<Partial<TagPageOptions>> = (userOpts) 
           tree,
           allFiles,
         }
-
         const content = renderPage(cfg, slug, componentData, opts, externalResources)
         const fp = await write({
           ctx,
           content,
-          slug: file.data.slug!,
+          slug,
           ext: ".html",
         })
-
         fps.push(fp)
+
       }
       return fps
     },

@@ -1,6 +1,8 @@
 export { ContentPage } from "./contentPage"
 export { TagPage } from "./tagPage"
 export { FolderPage } from "./folderPage"
+// import { NavComponent } from "./NavComponent"
+// export { HomePage } from "./homePage"
 export { ContentIndex } from "./contentIndex"
 export { AliasRedirects } from "./aliases"
 export { Assets } from "./assets"

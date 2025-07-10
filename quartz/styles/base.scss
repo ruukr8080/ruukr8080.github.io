@@ -123,6 +123,7 @@ a {
 .page {
   max-width: calc(#{map-get($breakpoints, desktop)} + 2000px);
   margin: 0 auto;
+  
   & article {
     & > h1 {
       font-size: 2rem;
@@ -144,6 +145,11 @@ a {
       margin-bottom: 0;
     }
 
+    & > p {
+      // margin: 0 auto;
+      margin-top: 1rem;
+      
+    }
     p > strong {
       color: var(--dark);
     }
@@ -241,9 +247,11 @@ a {
     }
 
     & .center > article {
-      margin-top: 5rem;
+      margin-top: 2rem;
+      margin-left: 5rem;
       grid-area: grid-center;
     }
+    
 
     & footer {
       grid-area: grid-footer;
@@ -400,6 +408,8 @@ figure[data-rehype-pretty-code-figure] {
     padding: 0;
   }
 }
+
+
 
 pre {
   font-family: var(--codeFont)!important;

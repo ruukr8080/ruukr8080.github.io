@@ -18,8 +18,12 @@
   z-index: 999;
   position: absolute;
   overflow: visible;
-  padding: 1rem;
-
+  
+  & > article{
+  width: 100%;
+  padding-left: 5rem; 
+  pointer-events: none;
+  }
   & > .popover-inner {
     position: relative;
     width: 30rem;
@@ -61,7 +65,7 @@
   }
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   visibility: hidden;
@@ -81,3 +85,82 @@ a:hover .popover,
   animation-fill-mode: forwards;
   animation-delay: 0.2s;
 }
+
+.section-ul {
+  list-style: none;
+  margin-top: 0.5em;
+  padding-left: 5rem;
+
+  @media all and ($mobile) {
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  & > li.section-li {
+    margin-bottom: 1em;
+    position: relative;
+
+    & > .section {
+      display: grid;
+      grid-template-columns: fit-content(8em) 3fr 1fr;
+
+      @media all and ($mobile) {
+        grid-template-columns: fit-content(8em) 1fr;
+      }
+    }
+  }
+}
+.section-li {
+  margin-bottom: 1em;
+
+    @media all and ($mobile) {
+      & > .tags {
+        display: none;
+      }
+    }
+
+    & > .desc > h3 > a {
+      background-color: transparent;
+    }
+
+    & .meta {
+      margin: 0 1em 0 0;
+      opacity: 0.6;
+    }
+}
+
+.popover-hint {
+  display: block;
+  & > article {
+  pointer-events: auto;
+  margin-left: 5rem;
+
+  @media all and ($mobile) {
+    padding-left: 0;
+  }
+ 
+}
+}
+
+// modifications in popover context
+// .popover .section {
+//   grid-template-columns: fit-content(8em) 1fr !important;
+
+//   & > .page-listing {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     grid-template-rows: auto auto;
+//     grid-gap: 0.5em;
+//     margin-top: 0.5em;
+//   }
+
+//   &> .page-listing > .section-ul {
+//     margin-left: 5rem;
+//     margin-top: 0;
+//     margin-bottom: 0;
+//   }
+//    ul.tags > li::marker{
+//     list-style: none;
+//     display: none;
+//   }
+// }

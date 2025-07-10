@@ -27,7 +27,7 @@ interface FolderPageOptions extends FullPageLayout {
 
 export const FolderPage: QuartzEmitterPlugin<Partial<FolderPageOptions>> = (userOpts) => {
   const opts: FullPageLayout = {
-    // afterBody: [],
+    // ...afterBody: [],
     ...sharedPageComponents,
     ...defaultListPageLayout,
     pageBody: FolderContent({ sort: userOpts?.sort }),
@@ -60,13 +60,13 @@ export const FolderPage: QuartzEmitterPlugin<Partial<FolderPageOptions>> = (user
       // nested/file2.md ------^
       const graph = new DepGraph<FilePath>()
 
-      content.map(([_tree, vfile]) => {
-        const slug = vfile.data.slug
-        const folderName = path.dirname(slug ?? "") as SimpleSlug
-        if (slug && folderName !== "." && folderName !== "tags") {
-          graph.addEdge(vfile.data.filePath!, joinSegments(folderName, "index.html") as FilePath)
-        }
-      })
+      content.forEach(([_tree, vfile]) => {
+  const slug = vfile.data.slug
+  const folderName = path.dirname(slug ?? "") as SimpleSlug
+  if (slug && folderName !== "." && folderName !== "tags") {
+    graph.addEdge(vfile.data.filePath!, joinSegments(folderName, "index.html") as FilePath)
+  }
+})
 
       return graph
     },
@@ -86,6 +86,7 @@ export const FolderPage: QuartzEmitterPlugin<Partial<FolderPageOptions>> = (user
         }),
       )
 
+
       const folderDescriptions: Record<string, ProcessedContent> = Object.fromEntries(
         [...folders].map((folder) => [
           folder,
@@ -99,15 +100,24 @@ export const FolderPage: QuartzEmitterPlugin<Partial<FolderPageOptions>> = (user
         ]),
       )
 
+      // Collect all folder descriptions
       for (const [tree, file] of content) {
         const slug = stripSlashes(simplifySlug(file.data.slug!)) as SimpleSlug
         if (folders.has(slug)) {
           folderDescriptions[slug] = [tree, file]
         }
       }
-
+      // Write index.html for each folder
+      // This will create a page for each folder with the content of the folder
+      // and a list of all files in that folder
+      
       for (const folder of folders) {
+        
         const slug = joinSegments(folder, "index") as FullSlug
+        // const mainCategory = joinSegments(folder,"1index") as FullSlug
+        // const subCategory = joinSegments(folder,"2index") as FullSlug
+        // const hashCategory = joinSegments(folder, "3index") as FullSlug
+       
         const externalResources = pageResources(pathToRoot(slug), resources)
         const [tree, file] = folderDescriptions[folder]
         const componentData: QuartzComponentProps = {
@@ -119,7 +129,6 @@ export const FolderPage: QuartzEmitterPlugin<Partial<FolderPageOptions>> = (user
           tree,
           allFiles,
         }
-
         const content = renderPage(cfg, slug, componentData, opts, externalResources)
         const fp = await write({
           ctx,
@@ -127,8 +136,9 @@ export const FolderPage: QuartzEmitterPlugin<Partial<FolderPageOptions>> = (user
           slug,
           ext: ".html",
         })
-
+        
         fps.push(fp)
+
       }
       return fps
     },
